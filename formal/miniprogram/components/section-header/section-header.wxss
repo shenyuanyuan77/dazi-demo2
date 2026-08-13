@@ -1,0 +1,4 @@
+.section-header { padding: 8rpx 4rpx 20rpx; }
+.section-title { font-size: var(--font-xl); font-weight: 700; color: var(--color-text-primary); }
+.section-subtitle { font-size: var(--font-xs); color: var(--color-text-tertiary); margin-left: 12rpx; }
+.section-action { font-size: var(--font-sm); color: var(--color-primary); font-weight: 500; }

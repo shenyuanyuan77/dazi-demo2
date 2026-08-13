@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fitness Coach Proposal",
+  "type": "object",
+  "required": ["id", "type", "status", "summary", "payload"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "enum": ["dietLog", "workoutPlan", "profilePatch"] },
+    "status": { "enum": ["pending", "confirmed", "cancelled", "writing", "success", "failed"] },
+    "summary": { "type": "string" },
+    "payload": { "type": "object" }
+  }
+}

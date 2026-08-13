@@ -1,0 +1,17 @@
+page { background: #F7F8FA; color: #17191D; }
+.subpage { min-height: 100vh; padding: 0 28rpx 60rpx; box-sizing: border-box; }
+.subnav { position: absolute; left: 28rpx; right: 28rpx; height: 104rpx; display: flex; align-items: center; justify-content: space-between; font-size: 34rpx; font-weight: 800; }
+.subnav button { width: 72rpx; margin: 0; padding: 0; color: #17191D; background: transparent; font-size: 52rpx; font-weight: 300; }
+.subnav button::after { border: 0; }
+.nav-space { width: 72rpx; }
+.brand-card, .card { margin-top: 22rpx; padding: 30rpx; background: #fff; border: 1rpx solid #ECEFF3; }
+.brand-card { padding: 58rpx 30rpx; text-align: center; }
+.brand-mark { width: 96rpx; height: 96rpx; margin: 0 auto; color: #fff; background: #2F6B4F; font-size: 30rpx; font-weight: 800; }
+.brand-title { margin-top: 24rpx; font-size: 34rpx; font-weight: 800; }
+.brand-sub { margin-top: 10rpx; color: #747B84; font-size: 24rpx; }
+.version { margin-top: 24rpx; color: #A0A5AC; font-size: 21rpx; }
+.card { color: #656C75; font-size: 24rpx; line-height: 1.75; }
+.card-title { margin-bottom: 12rpx; color: #17191D; font-size: 29rpx; font-weight: 700; }
+.warning { background: #FFFDF5; }
+.contact { display: flex; align-items: center; justify-content: space-between; color: #17191D; }
+.contact text:last-child { color: #2F6B4F; }

@@ -1,0 +1,136 @@
+<view class="page" style="padding-top: {{statusBarHeight + 56}}px;">
+  <view class="toolbar" style="top: {{statusBarHeight}}px;">
+    <view class="back" bindtap="goBack">‹</view>
+    <view class="title">身体数据</view>
+    <view class="toolbar-space"></view>
+  </view>
+
+  <view class="hero card">
+    <view>
+      <view class="hero-title">今日身体状态</view>
+      <view class="hero-note">当前目标：{{goalName}}</view>
+    </view>
+    <view class="hero-badge">持续记录</view>
+  </view>
+
+  <view class="energy-card card">
+    <view class="energy-title">热量计算说明</view>
+    <view class="energy-row"><text>设备基础代谢</text><text>{{energyAssessment.deviceBmr || '--'}} kcal</text></view>
+    <view class="energy-row"><text>系统公式基础代谢</text><text>{{energyAssessment.systemBmr || '--'}} kcal</text></view>
+    <view class="energy-row"><text>估算 TDEE</text><text>{{energyAssessment.tdee || '--'}} kcal</text></view>
+    <view class="energy-row emphasis"><text>建议每日目标热量</text><text>{{energyAssessment.calorieTarget || '--'}} kcal</text></view>
+    <view class="energy-note">{{energyAssessment.explanation}}</view>
+  </view>
+
+  <view class="section-title">基础身体指标</view>
+  <view class="metric-grid">
+    <view wx:for="{{overview}}" wx:key="key" class="metric-card card" data-key="{{item.key}}" bindtap="editMetric">
+      <view class="metric-name">{{item.label}}</view>
+      <view class="metric-value">{{item.value}}<text>{{item.hasValue ? item.unit : ''}}</text></view>
+      <view class="metric-status">{{item.status}}</view>
+      <view class="metric-change">{{item.changeText}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">身体组成指标</view>
+  <view class="metric-grid">
+    <view wx:for="{{composition}}" wx:key="key" class="metric-card card" data-key="{{item.key}}" bindtap="editMetric">
+      <view class="metric-name">{{item.label}}</view>
+      <view class="metric-value">{{item.value}}<text>{{item.hasValue ? item.unit : ''}}</text></view>
+      <view class="metric-status">{{item.status}}</view>
+      <view class="metric-change">{{item.changeText}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">身体围度记录</view>
+  <view class="metric-grid">
+    <view wx:for="{{circumference}}" wx:key="key" class="metric-card card" data-key="{{item.key}}" bindtap="editMetric">
+      <view class="metric-name">{{item.label}}</view>
+      <view class="metric-value">{{item.value}}<text>{{item.hasValue ? item.unit : ''}}</text></view>
+      <view class="metric-change">{{item.changeText}}</view>
+    </view>
+  </view>
+
+  <view class="section-title">粘贴 / 上传体脂秤数据</view>
+  <view class="import-card card">
+    <view class="import-options">
+      <button class="import-option" disabled="{{recognizingImage}}" bindtap="uploadBodyScreenshot">
+        <text class="import-option-title">{{selectedImagePath ? '重新上传' : '上传截图'}}</text>
+        <text class="import-option-note">支持体脂秤 App 截图</text>
+      </button>
+      <button class="import-option" disabled="{{recognizingImage}}" bindtap="pasteBodyData">
+        <text class="import-option-title">粘贴数据</text>
+        <text class="import-option-note">复制体脂秤文字后粘贴</text>
+      </button>
+    </view>
+    <image
+      wx:if="{{selectedImagePath}}"
+      class="scale-preview"
+      src="{{selectedImagePath}}"
+      mode="aspectFill"
+    />
+    <textarea
+      wx:if="{{!selectedImagePath}}"
+      value="{{importText}}"
+      adjust-position="{{true}}"
+      cursor-spacing="40"
+      placeholder="例如：体重 82kg，体脂率 22.2%，肌肉量 58kg，基础代谢 1750kcal，内脏脂肪 9"
+      bindinput="onImportText"
+    />
+    <view wx:if="{{recognitionHint}}" class="recognition-hint">{{recognitionHint}}</view>
+    <button
+      class="recognize-button"
+      loading="{{recognizingImage}}"
+      disabled="{{recognizingImage || (!selectedImagePath && !importText)}}"
+      bindtap="parseImportText"
+    >{{recognizingImage ? '正在识别' : '识别并预览'}}</button>
+  </view>
+
+  <view class="section-title">训练与饮食数据</view>
+  <view class="insight-list card">
+    <view wx:for="{{insights}}" wx:key="label" class="insight-row">
+      <text>{{item.label}}</text>
+      <text>{{item.value}}{{item.unit}}</text>
+    </view>
+  </view>
+
+  <view class="section-title">历史记录</view>
+  <view class="history-list card">
+    <view wx:if="{{!history.length}}" class="empty">暂无历史记录，点击上方指标添加</view>
+    <view wx:for="{{history}}" wx:key="id" class="history-row">
+      <text>{{item.date}}</text>
+      <text>体重 {{item.weight}} kg</text>
+      <text>体脂 {{item.bodyFat}}%</text>
+    </view>
+  </view>
+
+  <view wx:if="{{pendingMetrics}}" class="mask">
+    <view class="confirm-card card">
+      <view class="confirm-title">我识别到以下身体数据，是否写入？</view>
+      <view wx:for="{{pendingFields}}" wx:key="key" class="confirm-row">
+        <switch checked="{{item.enabled}}" data-key="{{item.key}}" bindchange="togglePendingField" color="#2F6B4F" />
+        <view class="confirm-metric" data-key="{{item.key}}" bindtap="editPendingMetric">
+          <view><text>{{item.label}}</text><text class="confidence {{item.confidence < 0.8 ? 'low' : ''}}">置信度 {{item.confidence * 100}}%</text></view>
+          <text>{{pendingMetrics[item.key]}} {{item.unit}} ›</text>
+        </view>
+      </view>
+      <view class="confirm-actions">
+        <button bindtap="cancelPending">暂不写入</button>
+        <button bindtap="enablePendingEdit">补充缺失指标</button>
+        <button class="primary" bindtap="confirmPending">确认写入</button>
+      </view>
+    </view>
+  </view>
+
+  <floating-input-panel
+    visible="{{editor.visible}}"
+    title="{{editor.title}}"
+    value="{{editor.value}}"
+    unit="{{editor.unit}}"
+    input-type="number"
+    min="{{editor.min}}"
+    max="{{editor.max}}"
+    bindcancel="closeEditor"
+    bindconfirm="confirmEditor"
+  />
+</view>

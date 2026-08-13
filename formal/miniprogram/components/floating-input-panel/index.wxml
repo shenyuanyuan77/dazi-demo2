@@ -1,0 +1,46 @@
+<view wx:if="{{visible}}" class="floating-mask" bindtap="cancel">
+  <view
+    class="floating-panel"
+    style="bottom: {{keyboardHeight ? keyboardHeight + 12 : 20}}px;"
+    catchtap="stop"
+  >
+    <view class="panel-title">{{title}}</view>
+    <view class="panel-input">
+      <input
+        wx:if="{{inputType === 'number' || inputType === 'text'}}"
+        value="{{localValue}}"
+        type="{{inputType === 'number' ? 'digit' : 'text'}}"
+        placeholder="{{placeholder}}"
+        focus="{{inputFocus}}"
+        adjust-position="{{false}}"
+        cursor-spacing="32"
+        bindinput="onInput"
+        bindconfirm="confirm"
+        bindfocus="onFocus"
+        bindblur="onBlur"
+        bindkeyboardheightchange="onKeyboardHeightChange"
+      />
+      <picker
+        wx:elif="{{inputType === 'select'}}"
+        mode="selector"
+        range="{{options}}"
+        bindchange="onSelect"
+      >
+        <view class="picker-value">{{localValue || placeholder}} ›</view>
+      </picker>
+      <picker
+        wx:elif="{{inputType === 'date'}}"
+        mode="date"
+        value="{{localValue}}"
+        bindchange="onDate"
+      >
+        <view class="picker-value">{{localValue || placeholder}} ›</view>
+      </picker>
+      <text wx:if="{{unit}}" class="panel-unit">{{unit}}</text>
+    </view>
+    <view class="panel-actions">
+      <button bindtap="cancel">取消</button>
+      <button class="primary" bindtap="confirm">保存</button>
+    </view>
+  </view>
+</view>

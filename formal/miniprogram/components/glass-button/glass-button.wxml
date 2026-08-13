@@ -1,0 +1,6 @@
+<view class="btn {{'btn-' + type}} {{'btn-' + size}} {{disabled || loading ? 'btn-disabled' : ''}}" catchtap="onTap">
+  <text wx:if="{{loading}}" class="btn-loading"></text>
+  <text wx:if="{{icon}}" class="btn-icon">{{icon}}</text>
+  <text wx:if="{{text}}" class="btn-text">{{text}}</text>
+  <slot wx:else></slot>
+</view>

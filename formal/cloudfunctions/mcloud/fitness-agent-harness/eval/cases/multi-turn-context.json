@@ -1,0 +1,34 @@
+[
+  {
+    "id": "multi-turn-001",
+    "name": "取消待确认后再次确认不能写入",
+    "initialState": { "userProfile": { "goal": "减脂" }, "dietLogs": [] },
+    "turns": [
+      {
+        "user": "刚才喝了一杯奶茶",
+        "expect": {
+          "intent": "DIET_RECORD",
+          "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+          "mustNotWriteDb": true
+        }
+      },
+      {
+        "user": "取消",
+        "expect": {
+          "intent": "CANCEL_WRITE",
+          "dbShouldChange": false,
+          "replyShouldContain": ["已取消"]
+        }
+      },
+      {
+        "user": "确认",
+        "expect": {
+          "intent": "CONFIRM_WRITE",
+          "mustNotCallTools": ["diet.log.create"],
+          "dbShouldChange": false,
+          "replyShouldContain": ["没有等待确认"]
+        }
+      }
+    ]
+  }
+]

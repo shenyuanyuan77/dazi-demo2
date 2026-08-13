@@ -1,0 +1,9 @@
+<view class="section-header flex-between">
+  <view class="flex-row gap-sm">
+    <text class="section-title">{{title}}</text>
+    <text class="section-subtitle" wx:if="{{subtitle}}">{{subtitle}}</text>
+  </view>
+  <view wx:if="{{action || showMore}}" class="section-action" catchtap="onActionTap">
+    {{action || "查看全部"}}
+  </view>
+</view>

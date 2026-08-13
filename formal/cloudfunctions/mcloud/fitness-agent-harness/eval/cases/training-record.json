@@ -1,0 +1,80 @@
+[
+  {
+    "id": "training-record-001",
+    "name": "卧推训练记录不能被识别成饮食",
+    "initialState": { "userProfile": { "heightCm": 165, "weightKg": 57.5, "goal": "减脂" }, "trainingLogs": [], "dietLogs": [] },
+    "turns": [
+      {
+        "user": "今天卧推四组，每组八次，帮我记录",
+        "expect": {
+          "intent": "TRAINING_RECORD",
+          "mustNotCallTools": ["diet.log.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+          "replyShouldContain": ["卧推", "4", "8", "确认"],
+          "slotsShouldContain": { "items.0.exerciseName": "卧推", "items.0.sets": 4, "items.0.reps": 8 }
+        }
+      },
+      {
+        "user": "确认",
+        "expect": {
+          "intent": "CONFIRM_WRITE",
+          "mustCallTools": ["training.log.create"],
+          "dbShouldChange": true,
+          "replyShouldContain": ["已记录"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "training-record-002",
+    "name": "深蹲重量组次解析正确",
+    "initialState": { "userProfile": { "goal": "增肌" }, "trainingLogs": [], "dietLogs": [] },
+    "turns": [
+      {
+        "user": "深蹲 60 公斤做了 5 组，每组 5 次",
+        "expect": {
+          "intent": "TRAINING_RECORD",
+          "mustNotCallTools": ["diet.log.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+          "slotsShouldContain": { "items.0.exerciseName": "深蹲", "items.0.weightKg": 60, "items.0.sets": 5, "items.0.reps": 5 }
+        }
+      }
+    ]
+  },
+  {
+    "id": "training-record-003",
+    "name": "跑步时长识别为训练记录",
+    "initialState": { "userProfile": { "goal": "减脂" }, "trainingLogs": [], "dietLogs": [] },
+    "turns": [
+      {
+        "user": "今天跑步 30 分钟",
+        "expect": {
+          "intent": "TRAINING_RECORD",
+          "mustNotCallTools": ["diet.log.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+          "slotsShouldContain": { "items.0.exerciseName": "跑步", "items.0.durationMin": 30 },
+          "replyShouldContain": ["跑步", "30", "确认"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "training-record-004",
+    "name": "确认缺失 pendingWrite 时不误写入",
+    "initialState": { "userProfile": {}, "trainingLogs": [], "dietLogs": [] },
+    "turns": [
+      {
+        "user": "确认",
+        "expect": {
+          "intent": "CONFIRM_WRITE",
+          "mustNotCallTools": ["diet.log.create", "training.log.create"],
+          "dbShouldChange": false,
+          "replyShouldContain": ["没有等待确认"]
+        }
+      }
+    ]
+  }
+]

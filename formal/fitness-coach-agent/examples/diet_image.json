@@ -1,0 +1,6 @@
+{
+  "quickAction": "拍照记饮食",
+  "hasImages": true,
+  "expectedIntent": "diet_image_recognition",
+  "expectedProposalType": "dietLog"
+}

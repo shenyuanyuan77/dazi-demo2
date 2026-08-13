@@ -1,0 +1,7 @@
+{
+	"usingComponents": {   
+		"floating-tabbar": "/components/floating-tabbar/floating-tabbar"
+	}, 
+	"disableScroll": true, 
+	"navigationBarTitleText": "活动"
+}

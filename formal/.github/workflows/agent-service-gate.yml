@@ -1,0 +1,46 @@
+name: agent-service-gate
+
+on:
+  push:
+    paths:
+      - 'formal/agent-service/**'
+      - '.github/workflows/agent-service-gate.yml'
+  pull_request:
+    paths:
+      - 'formal/agent-service/**'
+
+jobs:
+  operational-gate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: formal/agent-service
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install fastapi uvicorn pydantic pydantic-settings \
+            langgraph langchain-core langchain-openai httpx \
+            structlog tenacity pytest pytest-asyncio respx
+
+      - name: Run full test suite
+        run: pytest -q --tb=short
+
+      - name: Run operational gate
+        run: python -m tests.operational_gate
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: agent-service-test-results
+          path: formal/agent-service/.pytest_cache/
+          retention-days: 7

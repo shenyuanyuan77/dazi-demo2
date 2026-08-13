@@ -1,0 +1,131 @@
+/* ======== TabBar — 墨绿自然风 v2 (标准平底栏, design-reference-v2) ======== */
+
+.tabbar-shell {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .22s ease, visibility .22s ease, transform .22s ease;
+  background: rgba(255, 255, 255, 0.94);
+  -webkit-backdrop-filter: blur(20rpx) saturate(180%);
+  backdrop-filter: blur(20rpx) saturate(180%);
+  border-top: 1rpx solid var(--separator-thin, rgba(60, 66, 60, 0.09));
+  padding-bottom: env(safe-area-inset-bottom);
+  box-sizing: border-box;
+}
+
+.tabbar-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(16rpx);
+}
+
+.tabbar {
+  width: 100%;
+  height: 108rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 0 8rpx;
+  box-sizing: border-box;
+}
+
+.tab-item {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.tab-item:active {
+  opacity: 0.7;
+  transition: opacity .08s ease;
+}
+
+.tab-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rpx;
+  position: relative;
+  z-index: 2;
+  transition: transform .18s ease;
+}
+
+/* 激活态: 顶部小圆点指示 (设计稿 v2) */
+.tab-content.active-content::before {
+  content: "";
+  position: absolute;
+  top: 8rpx;
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: var(--brand-primary, #2F6B4F);
+}
+
+.tab-icon,
+.tab-icon-image {
+  width: 44rpx;
+  height: 44rpx;
+  position: relative;
+}
+
+.tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-icon-image {
+  display: block;
+  flex: none;
+}
+
+.tab-label {
+  font-size: 20rpx;
+  font-weight: 500;
+  color: var(--label-tertiary, #8E938E);
+  line-height: 1;
+}
+
+.tab-item.active .tab-label {
+  color: var(--brand-primary, #2F6B4F);
+  font-weight: 650;
+}
+
+.tab-item.active .tab-icon {
+  color: var(--brand-primary, #2F6B4F);
+}
+
+/* Sparkle icon for AI tab */
+.sparkle-tab-icon { position: relative; width: 44rpx; height: 44rpx; }
+.sparkle-tab-main,
+.sparkle-tab-small {
+  position: absolute;
+  background: var(--label-tertiary, #8E938E);
+  clip-path: polygon(50% 0, 61% 36%, 100% 50%, 61% 64%, 50% 100%, 39% 64%, 0 50%, 39% 36%);
+}
+.sparkle-tab-main { left: 2rpx; top: 2rpx; width: 30rpx; height: 30rpx; }
+.sparkle-tab-small { right: 2rpx; bottom: 3rpx; width: 16rpx; height: 16rpx; background: var(--brand-primary, #2F6B4F); }
+.tab-item.active .sparkle-tab-main { background: var(--brand-primary, #2F6B4F); }
+.tab-item.active .sparkle-tab-small { background: var(--ios-indigo, #5856D6); }
+
+@media (prefers-color-scheme: dark) {
+  .tabbar-shell {
+    background: rgba(28, 28, 30, 0.94);
+    border-top-color: rgba(84, 84, 88, 0.30);
+  }
+  .tab-label { color: #8E8E93; }
+  .tab-content.active-content::before { background: #3E8A67; }
+  .tab-item.active .tab-label,
+  .tab-item.active .tab-icon { color: #3E8A67; }
+}

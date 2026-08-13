@@ -1,0 +1,156 @@
+<!-- 饮食 - 墨绿自然风 (design-reference-v2) -->
+<view class="ios27-page" style="padding-top: {{safeTop}}px;" bindtap="closeSwipe">
+  <view class="ios27-large-title">饮食记录</view>
+  <view class="ios27-subtitle">{{dateLabel}} · {{weekdayLabel}}</view>
+
+  <!-- 周日期选择条 (设计稿 v2) -->
+  <view class="diet-week-strip ios27-anim-slideup">
+    <view
+      wx:for="{{weekDays}}"
+      wx:key="date"
+      wx:for-item="day"
+      class="diet-week-pill {{day.selected ? 'active' : ''}}"
+      data-date="{{day.date}}"
+      catchtap="selectWeekDay"
+    >
+      <view class="diet-week-name">{{day.weekName}}</view>
+      <view class="diet-week-num">{{day.dayNum}}</view>
+    </view>
+    <view class="diet-week-cal" catchtap="openCalendar">
+      <view class="diet-week-cal-icon">📅</view>
+    </view>
+  </view>
+
+  <!-- 今日已摄入 -->
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.06s; margin-bottom: 8rpx;">
+    <view class="ios27-nutrition-head">
+      <view>
+        <view class="ios27-nutrition-label">今日已摄入</view>
+        <view class="ios27-nutrition-value">
+          <text class="ios27-nutrition-now">{{totalCalories}}</text>
+          <text class="ios27-nutrition-target">/ {{goalCalories}} kcal</text>
+        </view>
+      </view>
+      <view class="ios27-badge {{progress >= 100 ? 'red' : (progress >= 85 ? 'orange' : 'blue')}}">
+        {{progress}}%
+      </view>
+    </view>
+    <view class="ios27-progress" style="margin-top: 18rpx;">
+      <view class="ios27-progress-fill {{progress >= 100 ? 'red' : (progress >= 85 ? 'orange' : 'blue')}}"
+            style="width: {{progress}}%;"></view>
+    </view>
+    <!-- 三大营养素 (设计稿 v2) -->
+    <view class="diet-macro-row">
+      <view class="diet-macro-cell">
+        <view class="diet-macro-icon">💪</view>
+        <view class="diet-macro-info">
+          <view class="diet-macro-label">蛋白质</view>
+          <view class="diet-macro-value"><text class="diet-macro-now">{{macroSummary.protein}}</text> / {{macroTargets.protein}}g</view>
+        </view>
+      </view>
+      <view class="diet-macro-divider"></view>
+      <view class="diet-macro-cell">
+        <view class="diet-macro-icon">🌾</view>
+        <view class="diet-macro-info">
+          <view class="diet-macro-label">碳水</view>
+          <view class="diet-macro-value"><text class="diet-macro-now">{{macroSummary.carbs}}</text> / {{macroTargets.carbs}}g</view>
+        </view>
+      </view>
+      <view class="diet-macro-divider"></view>
+      <view class="diet-macro-cell">
+        <view class="diet-macro-icon">💧</view>
+        <view class="diet-macro-info">
+          <view class="diet-macro-label">脂肪</view>
+          <view class="diet-macro-value"><text class="diet-macro-now">{{macroSummary.fat}}</text> / {{macroTargets.fat}}g</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 餐食记录 Section -->
+  <view class="ios27-section-header">
+    <text>餐食记录</text>
+    <text class="ios27-section-action" bindtap="openFoodEditor" data-meal="breakfast">+ 快速记</text>
+  </view>
+
+  <view
+    wx:for="{{meals}}"
+    wx:key="key"
+    wx:for-item="meal"
+    class="ios27-meal-group {{meal.status}} ios27-anim-slideup"
+    style="animation-delay: {{0.10 + index * 0.04}}s;"
+  >
+    <view class="ios27-meal-head" data-meal="{{meal.key}}" catchtap="toggleMeal">
+      <view class="ios27-meal-icon {{meal.key}}">
+        <block wx:if="{{meal.key === 'breakfast'}}">早</block>
+        <block wx:elif="{{meal.key === 'lunch'}}">午</block>
+        <block wx:elif="{{meal.key === 'dinner'}}">晚</block>
+        <block wx:else="">+</block>
+      </view>
+      <view class="ios27-meal-main">
+        <view class="ios27-meal-title">
+          <text>{{meal.name}}</text>
+          <text wx:if="{{meal.statusLabel}}" class="ios27-meal-status-badge {{meal.status}}">{{meal.statusLabel}}</text>
+        </view>
+        <view class="ios27-meal-sub">{{meal.summary.calories}} / {{meal.targets.calories}} kcal</view>
+      </view>
+      <button wx:if="{{meal.expanded}}" class="ios27-button-tinted" data-meal="{{meal.key}}" catchtap="openFoodEditor">+ 添加</button>
+      <text class="ios27-meal-chevron">{{meal.expanded ? '⌃' : '⌄'}}</text>
+    </view>
+
+    <view wx:if="{{meal.expanded}}">
+      <view wx:if="{{meal.summary.carbs || meal.summary.protein || meal.summary.fat}}"
+            class="ios27-meal-macros">
+        <view><text class="ios27-macro-now">{{meal.summary.carbs}}</text><text class="ios27-macro-target">g 碳</text></view>
+        <view><text class="ios27-macro-now">{{meal.summary.protein}}</text><text class="ios27-macro-target">g 蛋</text></view>
+        <view><text class="ios27-macro-now">{{meal.summary.fat}}</text><text class="ios27-macro-target">g 脂</text></view>
+      </view>
+
+      <view wx:if="{{meal.items.length}}" class="ios27-meal-items">
+        <view
+          wx:for="{{meal.items}}"
+          wx:for-item="food"
+          wx:key="id"
+          class="ios27-swipe-row {{swipeMeal === meal.key && swipeId === food.id ? 'open' : ''}}"
+          catchtap="noop"
+        >
+          <view
+            class="ios27-food-row"
+            style="transform: translateX({{swipeMeal === meal.key && swipeId === food.id ? '-160rpx' : '0'}});"
+            data-meal="{{meal.key}}"
+            data-id="{{food.id}}"
+            bindtouchstart="onSwipeStart"
+            bindtouchend="onFoodSwipeEnd"
+          >
+            <view class="ios27-food-icon" aria-hidden="true">{{food.icon || '🍽'}}</view>
+            <view class="ios27-food-info">
+              <view class="ios27-food-name">{{food.name}}</view>
+              <view class="ios27-food-amount">{{food.amount}}{{food.unit || 'g'}}</view>
+            </view>
+            <view class="ios27-food-kcal">{{food.calories}}<text class="ios27-food-kcal-unit"> kcal</text></view>
+          </view>
+          <button class="ios27-swipe-delete" data-meal="{{meal.key}}" data-id="{{food.id}}" catchtap="removeFood">
+            删除
+          </button>
+        </view>
+      </view>
+      <view wx:else class="ios27-meal-empty">点击「+ 添加」记录食物</view>
+
+      <view wx:if="{{meal.advice}}" class="ios27-meal-advice">
+        <text class="ios27-advice-pill">AI</text>
+        <text class="ios27-advice-text">{{meal.advice}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部: 今日还可摄入 + 饮食分析 (设计稿 v2) -->
+  <view class="diet-remaining-bar ios27-anim-slideup" style="animation-delay:.3s;">
+    <view class="diet-remaining-info">
+      <view class="diet-remaining-label">今日还可摄入</view>
+      <view class="diet-remaining-value"><text class="diet-remaining-num">{{remainingCalories}}</text> kcal</view>
+    </view>
+    <button class="diet-analysis-btn" bindtap="goDietAnalysis">📊 饮食分析</button>
+  </view>
+
+  <view style="height: calc(140rpx + env(safe-area-inset-bottom));"></view>
+</view>

@@ -1,0 +1,307 @@
+/* 首页 - iOS 27 (对齐设计稿) */
+
+page { background: var(--bg-system); color: var(--label-primary); }
+
+/* ====== Ring Card ====== */
+.ios27-ring-card {
+  margin: 8rpx 32rpx 24rpx;
+  padding: 28rpx 32rpx;
+  background: var(--bg-elevated);
+  border-radius: 32rpx;
+  box-shadow: var(--shadow-sm);
+}
+.ios27-ring-row {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+}
+.ios27-ring-info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ios27-ring-info-label {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1rpx;
+}
+.ios27-ring-info-value {
+  margin-top: 6rpx;
+  display: flex;
+  align-items: baseline;
+  gap: 4rpx;
+  font-variant-numeric: tabular-nums;
+}
+.ios27-ring-info-now {
+  font-size: 64rpx;
+  font-weight: 800;
+  color: var(--system-blue);
+  letter-spacing: -1.5rpx;
+  line-height: 1;
+}
+.ios27-ring-info-unit {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  font-weight: 500;
+}
+.ios27-sparkline {
+  margin-top: 18rpx;
+  display: flex;
+  align-items: flex-end;
+  gap: 6rpx;
+  height: 56rpx;
+}
+.ios27-sparkline-bar {
+  width: 12rpx;
+  background: var(--system-blue);
+  border-radius: 4rpx;
+  opacity: 0.55;
+  transition: all var(--duration-mid) var(--ease-out);
+}
+.ios27-sparkline-bar:last-child { opacity: 1; }
+
+.ios27-ring-wrap {
+  position: relative;
+  flex: none;
+}
+.ios27-ring-svg {
+  width: 240rpx;
+  height: 240rpx;
+  display: block;
+}
+.ios27-ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.ios27-ring-value {
+  font-size: 56rpx;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1rpx;
+  color: var(--label-primary);
+  font-variant-numeric: tabular-nums;
+}
+.ios27-ring-unit {
+  margin-top: 4rpx;
+  font-size: 20rpx;
+  font-weight: 500;
+  color: var(--label-tertiary);
+}
+
+.ios27-ring-stats {
+  margin-top: 24rpx;
+  padding-top: 20rpx;
+  border-top: 1rpx solid var(--separator-thin);
+  display: flex;
+}
+.ios27-ring-stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rpx;
+  position: relative;
+}
+.ios27-ring-stat::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 1rpx;
+  background: var(--separator-thin);
+}
+.ios27-ring-stat:last-child::after { display: none; }
+.ios27-ring-stat-label {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  font-weight: 500;
+}
+.ios27-ring-stat-val {
+  font-size: 32rpx;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.5rpx;
+}
+
+/* ====== Macro Row ====== */
+.ios27-macro-row {
+  padding: 22rpx 28rpx;
+  background: var(--bg-elevated);
+  position: relative;
+}
+.ios27-macro-row::after {
+  content: "";
+  position: absolute;
+  left: 28rpx;
+  right: 0;
+  bottom: 0;
+  height: 1rpx;
+  background: var(--separator-thin);
+}
+.ios27-macro-row.is-last::after { display: none; }
+
+.ios27-macro-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ios27-macro-name {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: var(--label-primary);
+}
+.ios27-macro-dot {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background: var(--system-blue);
+}
+.ios27-macro-dot.green   { background: var(--system-green); }
+.ios27-macro-dot.orange  { background: var(--system-orange); }
+.ios27-macro-dot.blue    { background: var(--system-blue); }
+.ios27-macro-val {
+  display: flex;
+  align-items: baseline;
+  gap: 4rpx;
+  font-variant-numeric: tabular-nums;
+}
+.ios27-macro-now {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: var(--label-primary);
+  letter-spacing: -0.3rpx;
+}
+.ios27-macro-target {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+}
+.ios27-macro-pct {
+  margin-left: 8rpx;
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ====== Advice Card ====== */
+.ios27-advice-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20rpx;
+  padding: 24rpx 28rpx;
+}
+.ios27-advice-icon {
+  flex: none;
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18rpx;
+  background: linear-gradient(135deg, var(--system-blue), var(--system-purple));
+  color: #FFFFFF;
+  font-size: 24rpx;
+  font-weight: 800;
+  letter-spacing: -0.3rpx;
+  box-shadow: 0 6rpx 16rpx rgba(47, 107, 79, 0.32);
+}
+.ios27-advice-content { flex: 1; min-width: 0; }
+.ios27-advice-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: var(--label-primary);
+  letter-spacing: -0.3rpx;
+}
+.ios27-advice-text {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  line-height: 1.5;
+  color: var(--label-secondary);
+}
+.ios27-advice-sources {
+  margin-top: 12rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ios27-advice-context {
+  margin-top: 12rpx;
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  line-height: 1.5;
+}
+.ios27-advice-actions {
+  margin-top: 12rpx;
+  padding-top: 10rpx;
+  border-top: 1rpx solid var(--separator-thin);
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+.ios27-advice-action {
+  font-size: 24rpx;
+  color: var(--label-secondary);
+  display: flex;
+  gap: 8rpx;
+  line-height: 1.45;
+}
+.ios27-advice-dot {
+  color: var(--system-blue);
+  font-weight: 700;
+}
+
+/* ====== Task Row ====== */
+.ios27-task-row {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  padding: 24rpx 28rpx;
+  background: var(--bg-elevated);
+  position: relative;
+  transition: background-color var(--duration-fast) var(--ease-ios);
+}
+.ios27-task-row:active { background: var(--fill-quaternary); }
+.ios27-task-row::after {
+  content: "";
+  position: absolute;
+  left: 28rpx;
+  right: 0;
+  bottom: 0;
+  height: 1rpx;
+  background: var(--separator-thin);
+}
+.ios27-task-row.is-last::after { display: none; }
+
+.ios27-task-check {
+  width: 40rpx;
+  height: 40rpx;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3rpx solid var(--label-tertiary);
+  border-radius: 50%;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 24rpx;
+  font-weight: 800;
+  transition: all var(--duration-mid) var(--ease-spring);
+  box-sizing: border-box;
+}
+.ios27-task-check.is-completed {
+  background: var(--system-green);
+  border-color: var(--system-green);
+}
+.ios27-task-main { flex: 1; min-width: 0; }
+.ios27-task-title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: var(--label-primary);
+  letter-spacing: -0.2rpx;
+}

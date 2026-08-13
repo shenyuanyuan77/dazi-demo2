@@ -1,0 +1,25 @@
+<view class="login-page" style="padding-top: {{statusBarHeight}}px;">
+  <view class="brand-mark">
+    <view class="brand-star star-main"></view>
+    <view class="brand-star star-small"></view>
+  </view>
+  <view class="login-title">登录你的健康账号</view>
+  <view class="login-copy">使用微信官方登录能力建立账号，并同步你主动选择的头像和昵称。</view>
+  <button class="avatar-picker" open-type="chooseAvatar" bind:chooseavatar="chooseAvatar">
+    <image wx:if="{{avatarUrl}}" src="{{avatarUrl}}" mode="aspectFill" />
+    <text wx:else>选择微信头像</text>
+  </button>
+  <input
+    class="nickname-input"
+    type="nickname"
+    value="{{nickname}}"
+    adjust-position="{{true}}"
+    cursor-spacing="32"
+    placeholder="填写微信昵称"
+    bindinput="inputNickname"
+  />
+  <button class="wechat-login smooth-corner optical-center" loading="{{loading}}" bindtap="login">
+    微信登录
+  </button>
+  <view class="privacy-note">头像和昵称仅用于账号展示和健康数据同步</view>
+</view>

@@ -1,0 +1,168 @@
+<!-- 我的 - iOS 27 redesign -->
+<view class="ios27-page" style="padding-top: {{safeTop}}px;">
+  <view class="ios27-large-title">我的</view>
+  <view class="ios27-subtitle">个人资料、身体数据与应用设置</view>
+
+  <!-- Profile Card -->
+  <view class="ios27-profile-card ios27-anim-slideup">
+    <view class="ios27-profile-row">
+      <view class="ios27-profile-avatar-wrap">
+        <view class="ios27-profile-avatar">
+          <block wx:if="{{loginUser && loginUser.avatar && !avatarFailed}}">
+            <image src="{{loginUser.avatar}}" mode="aspectFill" binderror="onAvatarError" />
+          </block>
+          <block wx:else>
+            <text>{{profileInitial}}</text>
+          </block>
+        </view>
+        <view class="ios27-profile-badge" wx:if="{{loginUser}}" aria-label="已登录">✓</view>
+      </view>
+      <view class="ios27-profile-info" bindtap="openProfileEditor">
+        <view class="ios27-profile-name">{{accountName}}</view>
+        <view class="ios27-profile-sub" wx:if="{{loginUser}}">
+          <text class="ios27-badge green">{{selectedGoal === 'fat_loss' ? '极限减脂' : (selectedGoal === 'muscle_gain' ? '增肌强化' : '匀称塑形')}}</text>
+          <text class="ios27-profile-action">编辑 ›</text>
+        </view>
+        <view class="ios27-profile-sub" wx:else>
+          <text class="ios27-profile-action">登录同步资料 ›</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 关键指标 Inset -->
+  <view class="ios27-inset ios27-anim-slideup" style="animation-delay:.06s">
+    <view class="ios27-metrics-grid">
+      <view
+        wx:for="{{primaryMetrics}}"
+        wx:key="field"
+        class="ios27-metric-tile"
+        data-field="{{item.field}}"
+        data-label="{{item.label}}"
+        data-value="{{item.value}}"
+        data-unit="{{item.unit}}"
+        bindtap="editMetric"
+      >
+        <view class="ios27-metric-value">
+          <text>{{item.value}}</text><text class="ios27-metric-unit">{{item.unit}}</text>
+        </view>
+        <view class="ios27-metric-label">{{item.label}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 体重趋势 -->
+  <view class="ios27-section-header">
+    <text>体重趋势</text>
+    <text class="ios27-section-action">近 30 天</text>
+  </view>
+  <view wx:if="{{!editingField}}" class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.12s">
+    <view class="ios27-chart-card">
+      <view class="ios27-chart-head">
+        <view>
+          <view class="ios27-chart-title">当前体重</view>
+          <view class="ios27-chart-sub">{{weightChart.labels[2].value}}kg · 较上次</view>
+        </view>
+      </view>
+      <view class="weight-chart-view">
+        <view class="chart-grid grid-top"></view>
+        <view class="chart-grid grid-middle"></view>
+        <view class="chart-grid grid-bottom"></view>
+        <text
+          wx:for="{{weightChart.labels}}"
+          wx:key="y"
+          class="chart-label"
+          style="top: {{item.y - 7}}px;"
+        >{{item.value}}</text>
+        <view
+          wx:for="{{weightChart.segments}}"
+          wx:key="index"
+          class="chart-segment"
+          style="left: {{item.x}}px; top: {{item.y}}px; width: {{item.length}}px; transform: rotate({{item.angle}}deg);"
+        ></view>
+        <view
+          wx:for="{{weightChart.points}}"
+          wx:key="index"
+          class="chart-point"
+          style="left: {{item.x - 5}}px; top: {{item.y - 5}}px;"
+        ></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 健身目标 - Segmented Control -->
+  <view class="ios27-section-header">
+    <text>健身目标</text>
+  </view>
+  <view class="ios27-segmented ios27-anim-slideup" style="animation-delay:.18s; margin-bottom: 32rpx;">
+    <view
+      wx:for="{{goalOptions}}"
+      wx:key="goalType"
+      class="ios27-segmented-item {{selectedGoal === item.goalType ? 'is-active' : ''}}"
+      data-goal="{{item.goalType}}"
+      bindtap="selectGoal"
+    >{{item.shortName || item.name}}</view>
+  </view>
+
+  <!-- 设置列表 Inset -->
+  <view class="ios27-section-header">
+    <text>更多</text>
+  </view>
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.24s">
+    <view class="ios27-list-row" bindtap="openBodyMetrics">
+      <view class="ios27-list-icon purple" aria-hidden="true">身</view>
+      <view class="ios27-list-main">
+        <view class="ios27-list-title">身体数据</view>
+        <view class="ios27-list-detail">体重、围度、成分详细记录</view>
+      </view>
+      <text class="ios27-list-chevron">›</text>
+    </view>
+    <view class="ios27-list-row" bindtap="openAppSettings">
+      <view class="ios27-list-icon gray" aria-hidden="true">设</view>
+      <view class="ios27-list-main">
+        <view class="ios27-list-title">应用设置</view>
+        <view class="ios27-list-detail">通知、振动、单位、隐私</view>
+      </view>
+      <text class="ios27-list-chevron">›</text>
+    </view>
+    <view class="ios27-list-row" bindtap="clearCache">
+      <view class="ios27-list-icon orange" aria-hidden="true">缓</view>
+      <view class="ios27-list-main">
+        <view class="ios27-list-title">清除缓存</view>
+        <view class="ios27-list-detail">删除饮食/训练本地数据</view>
+      </view>
+      <text class="ios27-list-chevron">›</text>
+    </view>
+    <view class="ios27-list-row" bindtap="showAbout">
+      <view class="ios27-list-icon blue" aria-hidden="true">关</view>
+      <view class="ios27-list-main">
+        <view class="ios27-list-title">关于我们</view>
+        <view class="ios27-list-detail">版本、安全与免责</view>
+      </view>
+      <text class="ios27-list-chevron">›</text>
+    </view>
+  </view>
+
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.30s">
+    <view class="ios27-list-row" bindtap="logout">
+      <view class="ios27-list-icon red" aria-hidden="true">退</view>
+      <view class="ios27-list-main">
+        <view class="ios27-list-title" style="color: var(--system-red);">退出登录</view>
+      </view>
+      <text class="ios27-list-chevron" style="color: var(--system-red);">›</text>
+    </view>
+  </view>
+
+  <!-- 输入编辑浮层 -->
+  <floating-input-panel
+    visible="{{!!editingField}}"
+    title="修改{{editingLabel}}"
+    value="{{editingValue}}"
+    unit="{{editingUnit}}"
+    input-type="number"
+    min="1"
+    max="10000"
+    bindcancel="closeEditor"
+    bindconfirm="confirmMetricEditor"
+  />
+</view>

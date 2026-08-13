@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "componentGenerics": {
+    "default": "proposal-card"
+  },
+  "usingComponents": {}
+}

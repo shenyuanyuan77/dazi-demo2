@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "projects/dazi/pages/home/index/home_index",
+    "projects/dazi/pages/auth/login/login",
+    "projects/dazi/pages/ai/chat/ai_chat",
+    "projects/dazi/pages/ai/history/ai_history",
+    "projects/dazi/pages/diet/index/diet_index",
+    "projects/dazi/pages/diet/food/food_editor",
+    "projects/dazi/pages/common/calendar/date_calendar",
+    "projects/dazi/pages/training/index/training_index",
+    "projects/dazi/pages/training/exercise/exercise_editor",
+    "projects/dazi/pages/my/index/my_index",
+    "projects/dazi/pages/my/body_metrics/body_metrics",
+    "projects/dazi/pages/my/profile/profile_edit",
+    "projects/dazi/pages/my/settings/settings",
+    "projects/dazi/pages/my/settings/detail/settings_detail",
+    "projects/dazi/pages/my/about/about"
+  ],
+  "window": {
+    "backgroundColor": "#F6F5F0",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "健身助手",
+    "navigationBarTextStyle": "black"
+  },
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#FFFFFF",
+    "color": "#8A8F98",
+    "selectedColor": "#2F6B4F",
+    "list": [
+      {
+        "pagePath": "projects/dazi/pages/home/index/home_index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "projects/dazi/pages/diet/index/diet_index",
+        "text": "饮食"
+      },
+      {
+        "pagePath": "projects/dazi/pages/ai/chat/ai_chat",
+        "text": "AI 教练"
+      },
+      {
+        "pagePath": "projects/dazi/pages/training/index/training_index",
+        "text": "训练"
+      },
+      {
+        "pagePath": "projects/dazi/pages/my/index/my_index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

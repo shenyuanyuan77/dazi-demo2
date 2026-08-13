@@ -1,0 +1,159 @@
+<!-- 训练 - 墨绿自然风 (design-reference-v2) -->
+<view class="ios27-page" style="padding-top: {{safeTop}}px;" bindtap="closeSwipes">
+  <view class="ios27-large-title">训练计划</view>
+  <view class="ios27-subtitle">{{dateLabel}} · {{weekdayLabel}}</view>
+
+  <!-- 计划头卡 (设计稿 v2: 计划名 + 进行中徽标 + 建议时长) -->
+  <view class="ios27-inset-grouped ios27-anim-slideup training-plan-card" style="margin-bottom: 20rpx;">
+    <view class="training-plan-head">
+      <view class="training-plan-icon">💪</view>
+      <view class="training-plan-main">
+        <view class="training-plan-name">{{goalStrategy.shortName || goalStrategy.name}}训练 · {{workoutSummary.muscles.length || 0}}个肌群</view>
+        <view class="training-plan-sub">建议时长 {{workoutSummary.targetDuration || 45}} 分钟 · {{exercises.length}} 个动作</view>
+      </view>
+      <view class="training-plan-badge {{workoutProgress >= 1 ? 'done' : 'ongoing'}}">
+        {{workoutProgress >= 1 ? '已完成' : '进行中'}}
+      </view>
+    </view>
+  </view>
+
+  <!-- 今日训练消耗 + 中央进度环 -->
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.06s; margin-bottom: 8rpx;">
+    <view class="ios27-workout-head">
+      <view class="ios27-workout-main">
+        <view class="ios27-workout-label">今日训练消耗</view>
+        <view class="ios27-workout-value">
+          <text class="ios27-workout-now">{{workoutSummary.totalCalories}}</text>
+          <text class="ios27-workout-unit"> kcal</text>
+        </view>
+      </view>
+      <view class="ios27-workout-ring-wrap" aria-hidden="true">
+        <svg viewBox="0 0 200 200" class="ios27-workout-ring-svg">
+          <circle cx="100" cy="100" r="80" class="ios27-ring-track" stroke-width="14" />
+          <circle
+            cx="100" cy="100" r="80"
+            class="ios27-ring-progress"
+            stroke-width="14"
+            stroke-dasharray="502.65"
+            stroke-dashoffset="{{502.65 * (1 - workoutProgress)}}"
+          />
+        </svg>
+      </view>
+      <view class="ios27-workout-stat">
+        <view class="ios27-workout-stat-val">{{workoutSummary.completedSets}} <text class="ios27-workout-stat-unit">/ {{workoutSummary.totalSets}} 组</text></view>
+        <view class="ios27-workout-stat-sub">已完成</view>
+      </view>
+    </view>
+    <view class="ios27-workout-stats">
+      <view class="ios27-workout-grid-cell">
+        <text class="ios27-workout-cell-val">{{workoutSummary.durationMinutes}}</text>
+        <text class="ios27-workout-cell-label">分钟</text>
+      </view>
+      <view class="ios27-workout-grid-cell">
+        <text class="ios27-workout-cell-val">{{workoutSummary.completedExercises}}</text>
+        <text class="ios27-workout-cell-label">个动作</text>
+      </view>
+      <view class="ios27-workout-grid-cell">
+        <text class="ios27-workout-cell-val">{{workoutSummary.muscles.length || 0}}</text>
+        <text class="ios27-workout-cell-label">肌群</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 动作列表 -->
+  <view class="ios27-section-header">
+    <text>动作列表</text>
+  </view>
+
+  <view class="ios27-exercise-list">
+    <view wx:for="{{exercises}}" wx:key="id"
+          class="ios27-exercise-group ios27-anim-slideup"
+          style="animation-delay: {{0.10 + index * 0.04}}s;">
+      <view class="ios27-exercise-head" data-id="{{item.id}}" bindtap="toggleExercise">
+        <view class="ios27-exercise-icon green" aria-hidden="true">🏋</view>
+        <view class="ios27-exercise-main">
+          <view class="ios27-exercise-name">{{item.name}}</view>
+          <view class="ios27-exercise-meta">
+            <text class="training-muscle-tag">{{item.muscle || '综合'}}</text>
+            <text class="training-meta-sep">·</text>
+            <text>{{item.completedSets}}/{{item.totalSets}} 组 · {{item.calories}} kcal</text>
+          </view>
+        </view>
+        <view class="ios27-rest-pill" wx:if="{{item.expanded}}" data-id="{{item.id}}" catchtap="openRestEditor">
+          休息 {{item.restSeconds || goalStrategy.restSeconds}}s
+        </view>
+        <text class="ios27-exercise-chevron">{{item.expanded ? '⌃' : '⌄'}}</text>
+      </view>
+
+      <view wx:if="{{item.expanded}}" class="ios27-exercise-sets">
+        <view class="ios27-set-head">
+          <text>组</text>
+          <text>重量(kg)</text>
+          <text>次数</text>
+          <text>完成</text>
+        </view>
+        <view
+          wx:for="{{item.sets}}"
+          wx:for-item="set"
+          wx:for-index="setIndex"
+          wx:key="id"
+          class="ios27-set-row {{set.completed ? 'is-done' : ''}}"
+          data-exercise="{{item.id}}"
+          data-set="{{set.id}}"
+          bindtap="openSetEditor"
+        >
+          <text class="ios27-set-idx">{{setIndex + 1}}</text>
+          <text class="ios27-set-val">{{set.weight || '--'}}</text>
+          <text class="ios27-set-val">{{set.reps || '--'}}</text>
+          <view class="ios27-set-check {{set.completed ? 'is-checked' : ''}}"
+                data-exercise="{{item.id}}" data-set="{{set.id}}" catchtap="toggleSet">
+            <text wx:if="{{set.completed}}">✓</text>
+          </view>
+        </view>
+        <view class="ios27-add-set" data-id="{{item.id}}" bindtap="addSet">+ 添加一组</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 添加训练动作 (设计稿 v2: 虚线占位) -->
+  <button class="training-add-dashed" bindtap="openExerciseEditor">
+    <text class="training-add-plus">＋</text>
+    <text>添加训练动作</text>
+  </button>
+
+  <!-- Rest Timer 液态玻璃浮层 -->
+  <view wx:if="{{restTimer.visible}}" class="ios27-rest-timer">
+    <view class="ios27-rest-icon" aria-hidden="true">{{restTimer.finished ? '✓' : '⏸'}}</view>
+    <view class="ios27-rest-main">
+      <view class="ios27-rest-title">{{restTimer.finished ? '组间休息' : '组间休息'}}</view>
+      <view class="ios27-rest-time">{{restTimer.display}}</view>
+    </view>
+    <view class="ios27-rest-actions">
+      <button class="ios27-rest-btn secondary"
+              wx:if="{{!restTimer.finished && restTimer.running}}" bindtap="pauseRestTimer">
+        暂停
+      </button>
+      <button class="ios27-rest-btn secondary"
+              wx:if="{{!restTimer.finished && !restTimer.running}}" bindtap="resumeRestTimer">
+        继续
+      </button>
+      <button class="ios27-rest-btn primary" bindtap="skipRestTimer">
+        {{restTimer.finished ? '关闭' : '跳过'}}
+      </button>
+    </view>
+  </view>
+
+  <view style="height: calc(140rpx + env(safe-area-inset-bottom));"></view>
+</view>
+
+<floating-input-panel
+  visible="{{editor.visible}}"
+  title="{{editor.title}}"
+  value="{{editor.value}}"
+  unit="{{editor.unit}}"
+  input-type="number"
+  min="{{editor.min}}"
+  max="{{editor.max}}"
+  bindcancel="closeEditor"
+  bindconfirm="confirmEditor"
+/>

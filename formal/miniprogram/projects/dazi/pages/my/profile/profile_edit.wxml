@@ -1,0 +1,59 @@
+<view class="subpage" style="padding-top: {{safeTop}}px;">
+  <view class="subnav">
+    <button class="back-button optical-center" bindtap="goBack">‹</button>
+    <view>
+      <view class="subnav-title">个人资料</view>
+      <view class="subnav-subtitle">修改后将同步用于健康建议</view>
+    </view>
+  </view>
+
+  <view class="form-card">
+    <button class="avatar-field" open-type="chooseAvatar" bind:chooseavatar="changeWechatAvatar">
+      <text>设置头像</text>
+      <view class="avatar-value">
+        <view class="avatar">
+          <image wx:if="{{loginUser && loginUser.avatar && !avatarFailed}}" src="{{loginUser.avatar}}" mode="aspectFill" binderror="onAvatarError" />
+          <text wx:else>{{profileInitial}}</text>
+        </view>
+        <text>›</text>
+      </view>
+    </button>
+    <view class="field" data-field="nickname" bindtap="openEditor"><text>昵称</text><text class="value">{{profile.nickname}} ›</text></view>
+  </view>
+
+  <view class="group-label">基础资料</view>
+  <view class="form-card">
+    <view class="field" data-field="gender" bindtap="openEditor"><text>性别</text><text class="value">{{profile.gender}} ›</text></view>
+    <view class="field" data-field="birthday" bindtap="openEditor"><text>生日</text><text class="value">{{profile.birthday || '未设置'}} ›</text></view>
+    <picker range="{{goalOptions}}" bindchange="onGoal">
+      <view class="field"><text>当前目标</text><text class="value">{{profile.goal === 'fat_loss' ? '极限减脂' : (profile.goal === 'muscle_gain' ? '增肌强化' : '匀称塑形')}} ›</text></view>
+    </picker>
+  </view>
+
+  <view class="group-label">身体目标</view>
+  <view class="form-card">
+    <view class="field" data-field="currentWeight" bindtap="openEditor"><text>当前体重</text><text class="value">{{profile.currentWeight}} kg ›</text></view>
+    <view class="field" data-field="targetWeight" bindtap="openEditor"><text>目标体重</text><text class="value">{{profile.targetWeight}} kg ›</text></view>
+    <view class="field" data-field="bodyFat" bindtap="openEditor"><text>体脂率</text><text class="value">{{profile.bodyFat}} % ›</text></view>
+    <view class="field" data-field="height" bindtap="openEditor"><text>身高</text><text class="value">{{profile.height}} cm ›</text></view>
+    <view class="field" bindtap="showCalorieExplanation"><text>每日目标热量</text><text class="value">{{energyAssessment.calorieTarget}} kcal ›</text></view>
+  </view>
+
+  <button
+    class="save-button optical-center"
+    bindtap="saveProfile"
+  >确定并保存</button>
+
+  <floating-input-panel
+    visible="{{editor.visible}}"
+    title="{{editor.title}}"
+    value="{{editor.value}}"
+    unit="{{editor.unit}}"
+    input-type="{{editor.inputType}}"
+    min="{{editor.min}}"
+    max="{{editor.max}}"
+    options="{{editor.options}}"
+    bindcancel="closeEditor"
+    bindconfirm="confirmEditor"
+  />
+</view>

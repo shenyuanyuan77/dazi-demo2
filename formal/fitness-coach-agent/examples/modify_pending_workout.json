@@ -1,0 +1,13 @@
+{
+  "previousProposal": {
+    "type": "workoutPlan",
+    "status": "pending"
+  },
+  "input": "我是说练腿计划做六组",
+  "expectedIntent": "modify_pending_proposal",
+  "expectedPatch": {
+    "focus": "legs",
+    "setCount": 6
+  },
+  "invalidExerciseName": "我是说练腿计划做六组"
+}

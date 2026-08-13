@@ -1,0 +1,11 @@
+.floating-mask { position: fixed; inset: 0; z-index: 10001; background: rgba(18, 24, 32, .46); }
+.floating-panel { position: fixed; left: 20rpx; right: 20rpx; z-index: 10002; max-height: calc(100vh - 32px); padding: 32rpx; padding-bottom: calc(30rpx + env(safe-area-inset-bottom)); background: var(--color-card); border: 1rpx solid var(--color-border); border-radius: 30rpx; box-shadow: 0 24rpx 70rpx rgba(22, 30, 42, .24); box-sizing: border-box; transition: bottom .16s ease; }
+.panel-title { font-size: 31rpx; font-weight: 750; }
+.panel-input { min-height: 86rpx; margin-top: 24rpx; padding: 0 22rpx; display: flex; align-items: center; background: var(--color-card-alt); border-radius: 20rpx; box-sizing: border-box; }
+.panel-input input, .panel-input picker { flex: 1; min-width: 0; height: 76rpx; font-size: 30rpx; line-height: 76rpx; }
+.picker-value { height: 76rpx; line-height: 76rpx; }
+.panel-unit { color: #737B86; font-size: 24rpx; }
+.panel-actions { margin-top: 26rpx; display: flex; gap: 16rpx; }
+.panel-actions button { flex: 1; height: 80rpx; margin: 0; display: flex; align-items: center; justify-content: center; color: #515963; background: #EEF0F3; border: 0; font-size: 25rpx; line-height: 1; }
+.panel-actions button::after { border: 0; }
+.panel-actions .primary { color: #FFFFFF; background: #2F6B4F; }

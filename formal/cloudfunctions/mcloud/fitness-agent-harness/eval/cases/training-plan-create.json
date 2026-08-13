@@ -1,0 +1,51 @@
+[
+  {
+    "id": "training-plan-create-001",
+    "name": "一周减脂训练计划先生成待确认计划",
+    "initialState": { "userProfile": { "goal": "减脂" }, "trainingPlans": [] },
+    "turns": [
+      {
+        "user": "帮我制定一周减脂训练计划",
+        "expect": {
+          "intent": "TRAINING_PLAN_CREATE",
+          "mustNotCallTools": ["training.plan.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+          "replyShouldContain": ["训练", "确认"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "training-plan-create-002",
+    "name": "增肌每周四天提取训练频率",
+    "initialState": { "userProfile": { "goal": "增肌" }, "trainingPlans": [] },
+    "turns": [
+      {
+        "user": "我想增肌，每周练四天，帮我安排",
+        "expect": {
+          "intent": "TRAINING_PLAN_CREATE",
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+          "slotsShouldContain": { "goal": "增肌", "daysPerWeek": 4 }
+        }
+      }
+    ]
+  },
+  {
+    "id": "training-plan-create-003",
+    "name": "器械条件进入训练计划 slots",
+    "initialState": { "userProfile": { "goal": "减脂" }, "trainingPlans": [] },
+    "turns": [
+      {
+        "user": "我只有哑铃和瑜伽垫，怎么练",
+        "expect": {
+          "intent": "TRAINING_PLAN_CREATE",
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+          "slotsShouldContain": { "equipment": ["哑铃", "瑜伽垫"] }
+        }
+      }
+    ]
+  }
+]

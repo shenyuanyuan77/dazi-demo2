@@ -1,0 +1,44 @@
+<view class="subpage" style="padding-top: {{statusBarHeight + 62}}px;">
+  <view class="subnav" style="top: {{statusBarHeight}}px;">
+    <button class="optical-center" bindtap="goBack">‹</button>
+    <text>{{title}}</text>
+    <view class="nav-space"></view>
+  </view>
+
+  <view wx:if="{{type === 'unit'}}" class="card smooth-corner">
+    <view class="option {{unit === '公制' ? 'selected' : ''}}" data-unit="公制" bindtap="selectUnit">
+      <view><text>公制</text><text class="desc">kg、cm、kcal</text></view><text>{{unit === '公制' ? '✓' : ''}}</text>
+    </view>
+    <view class="option {{unit === '英制' ? 'selected' : ''}}" data-unit="英制" bindtap="selectUnit">
+      <view><text>英制</text><text class="desc">lb、ft、kcal</text></view><text>{{unit === '英制' ? '✓' : ''}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{type === 'calorie'}}" class="card calorie-card smooth-corner">
+    <text class="hint">系统会根据性别、年龄、身高、体重、活动水平和目标动态计算。</text>
+    <view class="calorie-input" bindtap="openCalorieEditor"><text>{{calorieGoal}}</text><text>kcal ›</text></view>
+    <text class="hint">{{calorieGoalManual ? '当前为手动目标' : '当前为自动计算目标'}}</text>
+    <button wx:if="{{calorieGoalManual}}" class="auto-button" bindtap="useAutomaticCalories">恢复自动计算</button>
+  </view>
+
+  <view wx:if="{{type === 'privacy'}}">
+    <view class="card privacy-card smooth-corner">
+      <view class="card-title">数据说明</view>
+      <text>饮食、训练和身体数据仅保存在当前微信设备缓存中。AI 对话会通过已配置的云函数处理，用于生成健身建议。</text>
+    </view>
+    <button class="danger-button smooth-corner optical-center" bindtap="clearAllData">删除全部健身数据</button>
+  </view>
+
+  <button wx:if="{{type !== 'privacy'}}" class="save-button smooth-corner optical-center" bindtap="save">保存设置</button>
+  <floating-input-panel
+    visible="{{calorieEditorVisible}}"
+    title="设置每日热量目标"
+    value="{{calorieGoal}}"
+    unit="kcal"
+    input-type="number"
+    min="{{800}}"
+    max="{{6000}}"
+    bind:cancel="closeCalorieEditor"
+    bind:confirm="confirmCalorieEditor"
+  />
+</view>

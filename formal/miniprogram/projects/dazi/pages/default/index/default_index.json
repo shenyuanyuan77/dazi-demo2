@@ -1,0 +1,11 @@
+{
+  "navigationStyle": "custom",
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+    "floating-tabbar": "/components/floating-tabbar/floating-tabbar",
+    "glass-card": "/components/glass-card/glass-card",
+    "section-header": "/components/section-header/section-header",
+    "empty-state": "/components/empty-state/empty-state"
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "body-analysis-001",
+    "name": "115 斤必须换算为 57.5 kg",
+    "initialState": { "userProfile": { "goal": "减脂" }, "bodyMetrics": [] },
+    "turns": [
+      {
+        "user": "我 165，115 斤，帮我分析一下",
+        "expect": {
+          "intent": "BODY_ANALYSIS",
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+          "slotsShouldContain": { "heightCm": 165, "weightJin": 115, "weightKg": 57.5 },
+          "replyShouldContain": ["57.5", "确认"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "body-analysis-002",
+    "name": "体脂体重分析生成身体数据确认",
+    "initialState": { "userProfile": { "goal": "减脂" }, "bodyMetrics": [] },
+    "turns": [
+      {
+        "user": "我体脂 22%，体重 58 公斤，怎么减脂",
+        "expect": {
+          "intent": "BODY_ANALYSIS",
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+          "slotsShouldContain": { "bodyFatRate": 22, "weightKg": 58 },
+          "replyShouldContain": ["体脂", "22"]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,73 @@
+<view class="calendar-page" style="padding-top: {{statusBarHeight + 62}}px;">
+  <view class="subnav" style="top: {{statusBarHeight}}px;">
+    <button class="back-button optical-center" bindtap="goBack">‹</button>
+    <text>选择日期</text>
+    <button class="today-button smooth-corner optical-center" bindtap="backToday">今天</button>
+  </view>
+
+  <view class="calendar-card smooth-corner">
+    <view class="month-head">
+      <button class="month-button smooth-corner optical-center" data-delta="-1" bindtap="changeMonth">‹</button>
+      <text>{{title}}</text>
+      <button class="month-button smooth-corner optical-center" data-delta="1" bindtap="changeMonth">›</button>
+    </view>
+    <view class="weekdays">
+      <text wx:for="{{weekdays}}" wx:key="*this">{{item}}</text>
+    </view>
+    <view class="days-grid">
+      <view
+        wx:for="{{days}}"
+        wx:key="key"
+        class="calendar-day {{item.currentMonth ? '' : 'muted'}} {{item.selected ? 'selected' : ''}} {{item.today ? 'today' : ''}}"
+        data-date="{{item.key}}"
+        bindtap="selectDay"
+      >
+        <view class="day-surface smooth-corner optical-center">
+          <text>{{item.day}}</text>
+          <text wx:if="{{item.hasRecord}}" class="record-dot"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="day-detail smooth-corner">
+    <view class="detail-head">
+      <text>{{selectedDate}}</text>
+      <text>{{mode === 'diet' ? '饮食详情' : '训练详情'}}</text>
+    </view>
+    <block wx:if="{{mode === 'diet'}}">
+      <view class="macro-row">
+        <view><text>{{dietSummary.calories || 0}}</text><text>kcal</text></view>
+        <view><text>{{dietSummary.protein || 0}}g</text><text>蛋白质</text></view>
+        <view><text>{{dietSummary.carbs || 0}}g</text><text>碳水</text></view>
+        <view><text>{{dietSummary.fat || 0}}g</text><text>脂肪</text></view>
+      </view>
+      <view wx:if="{{dietSummary.meals && dietSummary.meals.length}}" class="detail-list">
+        <view wx:for="{{dietSummary.meals}}" wx:key="key" class="detail-section">
+          <view class="detail-section-title">{{item.name}}</view>
+          <view wx:for="{{item.items}}" wx:for-item="food" wx:key="id" class="detail-row">
+            <text>{{food.name}}</text><text>{{food.calories}} kcal</text>
+          </view>
+        </view>
+      </view>
+      <view wx:else class="empty-detail">当天暂无饮食记录</view>
+    </block>
+    <block wx:else>
+      <view wx:if="{{workoutStats}}" class="macro-row">
+        <view><text>{{workoutStats.totalCalories || 0}}</text><text>kcal</text></view>
+        <view><text>{{workoutStats.durationMinutes || 0}}</text><text>分钟</text></view>
+        <view><text>{{workoutStats.completedExercises || 0}}</text><text>完成动作</text></view>
+        <view><text>{{workoutStats.completedSets || 0}}</text><text>完成组</text></view>
+      </view>
+      <view wx:if="{{trainingSummary.length}}" class="detail-list">
+        <view wx:for="{{trainingSummary}}" wx:key="name" class="detail-row training-detail">
+          <view><text>{{item.name}}</text></view>
+          <text>{{item.completedSets}} / {{item.setCount}} 组</text>
+        </view>
+      </view>
+      <view wx:else class="empty-detail">当天暂无训练计划</view>
+    </block>
+  </view>
+
+  <button class="confirm-date smooth-corner optical-center" bindtap="confirmDate">使用此日期</button>
+</view>

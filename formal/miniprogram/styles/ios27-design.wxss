@@ -1,0 +1,529 @@
+/* ============================================================
+   iOS 27 Design System
+   专为微信小程序原生 WXSS 优化
+   参考 Apple iOS 26/27 Human Interface Guidelines (Liquid Glass)
+   ============================================================ */
+
+/* ===== 1. 色彩系统 - 墨绿自然风 palette (design-reference-v2) ===== */
+page {
+  /* 背景：暖米白 (设计稿 v2) */
+  --bg-system:        #F6F5F0;
+  --bg-secondary:     #FFFFFF;
+  --bg-elevated:      #FFFFFF;
+  --bg-tertiary:      #EFEEE8;
+
+  /* Label - iOS HIG 文本分级 */
+  --label-primary:    #1A1C1A;
+  --label-secondary:  rgba(45, 55, 48, 0.78);
+  --label-tertiary:   rgba(45, 55, 48, 0.55);
+  --label-quaternary: rgba(45, 55, 48, 0.32);
+
+  /* 填充（Fill）系统 */
+  --fill-primary:     rgba(110, 120, 112, 0.20);
+  --fill-secondary:   rgba(110, 120, 112, 0.16);
+  --fill-tertiary:    rgba(108, 118, 110, 0.12);
+  --fill-quaternary:  rgba(106, 116, 108, 0.08);
+
+  /* 品牌主色：深墨绿 (设计稿 v2) */
+  --brand-primary:    #2F6B4F;
+  --brand-primary-dark: #3E8A67;
+  --brand-primary-deep: #24523D;
+
+  /* iOS 系统色 — --system-blue 别名指向品牌绿, 全站组件类自动换肤 */
+  --system-blue:      #2F6B4F;
+  --system-blue-dark: #3E8A67;
+  --system-green:     #34C759;
+  --system-green-dark:#30D158;
+  --system-red:       #E0594A;
+  --system-red-dark:  #FF453A;
+  --system-orange:    #D98E22;
+  --system-orange-dark:#FF9F0A;
+  --system-yellow:    #FFCC00;
+  --system-purple:    #AF52DE;
+  --system-pink:      #FF2D55;
+  --system-indigo:    #5856D6;
+  --system-teal:      #5AC8FA;
+  --system-mint:      #00C7BE;
+
+  /* Tinted background 柔和语义背景 (绿主色) */
+  --tint-blue-bg:     rgba(47, 107, 79, 0.10);
+  --tint-blue-fg:     #2F6B4F;
+  --tint-green-bg:    rgba(47, 107, 79, 0.12);
+  --tint-green-fg:    #2F6B4F;
+  --tint-orange-bg:   rgba(217, 142, 34, 0.14);
+  --tint-orange-fg:   #A66A12;
+  --tint-red-bg:      rgba(224, 89, 74, 0.12);
+  --tint-red-fg:      #B3261E;
+  --tint-purple-bg:   rgba(175, 82, 222, 0.12);
+  --tint-purple-fg:   #6E2D9C;
+
+  /* Separator */
+  --separator:        rgba(60, 66, 60, 0.16);
+  --separator-thin:   rgba(60, 66, 60, 0.09);
+  --separator-opaque: #DDDCD4;
+
+  /* Liquid Glass - iOS 26 标志 */
+  --glass-ultra-thin: rgba(255, 255, 255, 0.55);
+  --glass-thin:       rgba(255, 255, 255, 0.70);
+  --glass-regular:    rgba(255, 255, 255, 0.82);
+  --glass-thick:      rgba(255, 255, 255, 0.92);
+  --glass-dark:       rgba(28, 28, 30, 0.78);
+  --glass-border:     rgba(255, 255, 255, 0.45);
+  --glass-stroke:     rgba(255, 255, 255, 0.18);
+
+  /* 阴影：iOS 27 使用大柔阴影 + 微小高光 */
+  --shadow-xs:    0 1rpx 2rpx rgba(0, 0, 0, 0.04);
+  --shadow-sm:    0 4rpx 16rpx rgba(0, 0, 0, 0.06);
+  --shadow-md:    0 12rpx 32rpx rgba(0, 0, 0, 0.08);
+  --shadow-lg:    0 24rpx 56rpx rgba(0, 0, 0, 0.12);
+  --shadow-xl:    0 32rpx 80rpx rgba(0, 0, 0, 0.18);
+  --shadow-glass: 0 8rpx 32rpx rgba(0, 0, 0, 0.08), 0 0 0 0.5rpx rgba(255, 255, 255, 0.6) inset;
+
+  /* iOS 27 Spring 动效 */
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-bouncy:   cubic-bezier(0.5, 1.5, 0.5, 1);
+  --ease-smooth:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-ios:      cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 200ms;
+  --duration-mid:  350ms;
+  --duration-slow: 500ms;
+}
+
+/* Dark mode (iOS 27 true dark) */
+@media (prefers-color-scheme: dark) {
+  page {
+    --bg-system:        #000000;
+    --bg-secondary:     #1C1C1E;
+    --bg-elevated:      #2C2C2E;
+    --bg-tertiary:      #2C2C2E;
+    --label-primary:    #FFFFFF;
+    --label-secondary:  rgba(235, 235, 245, 0.78);
+    --label-tertiary:   rgba(235, 235, 245, 0.55);
+    --label-quaternary: rgba(235, 235, 245, 0.32);
+    --fill-primary:     rgba(120, 120, 128, 0.36);
+    --fill-secondary:   rgba(120, 120, 128, 0.28);
+    --fill-tertiary:    rgba(118, 118, 128, 0.22);
+    --fill-quaternary:  rgba(116, 116, 128, 0.16);
+    --separator:        rgba(84, 84, 88, 0.45);
+    --separator-thin:   rgba(84, 84, 88, 0.30);
+    --separator-opaque: #38383A;
+    --tint-blue-bg:     rgba(62, 138, 103, 0.20);
+    --tint-green-bg:    rgba(62, 138, 103, 0.20);
+    --tint-orange-bg:   rgba(255, 159, 10, 0.20);
+    --tint-red-bg:      rgba(255, 69, 58, 0.18);
+    --tint-purple-bg:   rgba(191, 90, 242, 0.20);
+    --glass-ultra-thin: rgba(28, 28, 30, 0.55);
+    --glass-thin:       rgba(28, 28, 30, 0.70);
+    --glass-regular:    rgba(28, 28, 30, 0.85);
+    --glass-thick:      rgba(28, 28, 30, 0.95);
+    --glass-border:     rgba(255, 255, 255, 0.10);
+  }
+}
+
+/* ===== 2. 全局基础 ===== */
+page {
+  background: var(--bg-system);
+  color: var(--label-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+               "PingFang SC", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "tnum" 1, "ss01" 1;
+}
+
+/* ===== 3. 页面容器 ===== */
+.ios27-page {
+  min-height: 100vh;
+  padding-bottom: calc(180rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  background: var(--bg-system);
+}
+
+/* Large Title - iOS 27 默认大标题 */
+.ios27-large-title {
+  padding: 8rpx 32rpx 16rpx;
+  font-size: 72rpx;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -2rpx;
+  color: var(--label-primary);
+}
+.ios27-subtitle {
+  padding: 0 32rpx 24rpx;
+  font-size: 26rpx;
+  line-height: 1.35;
+  color: var(--label-secondary);
+  letter-spacing: 0;
+}
+
+/* Section Header - iOS 27 列表章节标题 */
+.ios27-section-header {
+  padding: 40rpx 32rpx 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 22rpx;
+  font-weight: 600;
+  letter-spacing: 2rpx;
+  color: var(--label-tertiary);
+}
+.ios27-section-action {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: var(--system-blue);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Inset Grouped Card - iOS 27 标志 */
+.ios27-inset {
+  margin: 0 32rpx;
+  background: var(--bg-elevated);
+  border-radius: 36rpx;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.ios27-inset-grouped {
+  margin: 0 32rpx 12rpx;
+  background: var(--bg-elevated);
+  border-radius: 28rpx;
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+}
+.ios27-inset + .ios27-inset,
+.ios27-inset-grouped + .ios27-inset-grouped {
+  margin-top: 24rpx;
+}
+
+/* ListRow - iOS 27 列表行 */
+.ios27-list-row {
+  display: flex;
+  align-items: center;
+  min-height: 96rpx;
+  padding: 16rpx 28rpx;
+  background: var(--bg-elevated);
+  position: relative;
+  transition: background-color var(--duration-fast) var(--ease-ios);
+}
+.ios27-list-row:active {
+  background: var(--fill-quaternary);
+}
+.ios27-list-row::after {
+  content: "";
+  position: absolute;
+  left: 28rpx;
+  right: 0;
+  bottom: 0;
+  height: 1rpx;
+  background: var(--separator-thin);
+}
+.ios27-list-row:last-child::after { display: none; }
+.ios27-list-row.is-first { border-top-left-radius: 28rpx; border-top-right-radius: 28rpx; }
+.ios27-list-row.is-last { border-bottom-left-radius: 28rpx; border-bottom-right-radius: 28rpx; }
+
+.ios27-list-icon {
+  width: 60rpx;
+  height: 60rpx;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14rpx;
+  margin-right: 24rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.ios27-list-icon.blue   { background: var(--tint-blue-bg);   color: var(--system-blue); }
+.ios27-list-icon.green  { background: var(--tint-green-bg);  color: var(--system-green); }
+.ios27-list-icon.orange { background: var(--tint-orange-bg); color: var(--system-orange); }
+.ios27-list-icon.red    { background: var(--tint-red-bg);    color: var(--system-red); }
+.ios27-list-icon.purple { background: var(--tint-purple-bg); color: var(--system-purple); }
+.ios27-list-icon.gray   { background: var(--fill-tertiary);  color: var(--label-secondary); }
+
+.ios27-list-main { flex: 1; min-width: 0; }
+.ios27-list-title { font-size: 30rpx; line-height: 1.3; color: var(--label-primary); font-weight: 500; }
+.ios27-list-detail { margin-top: 4rpx; font-size: 24rpx; line-height: 1.35; color: var(--label-tertiary); }
+.ios27-list-value { font-size: 28rpx; color: var(--label-secondary); }
+.ios27-list-chevron {
+  margin-left: 12rpx;
+  color: var(--label-tertiary);
+  font-size: 28rpx;
+  line-height: 1;
+  font-weight: 400;
+}
+
+/* ===== 4. Segmented Control - iOS 27 段控件 ===== */
+.ios27-segmented {
+  margin: 0 32rpx 24rpx;
+  display: flex;
+  background: var(--fill-tertiary);
+  border-radius: 18rpx;
+  padding: 6rpx;
+  gap: 4rpx;
+}
+.ios27-segmented-item {
+  flex: 1;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--label-primary);
+  border-radius: 14rpx;
+  transition: all var(--duration-fast) var(--ease-ios);
+}
+.ios27-segmented-item.is-active {
+  background: var(--bg-elevated);
+  color: var(--label-primary);
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.06), 0 1rpx 2rpx rgba(0, 0, 0, 0.04);
+  transform: translateY(-1rpx);
+}
+
+/* ===== 5. Buttons - iOS 27 按钮 ===== */
+.ios27-button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  margin: 0 32rpx 16rpx;
+  background: var(--system-blue);
+  color: #FFFFFF;
+  font-size: 30rpx;
+  font-weight: 600;
+  border-radius: 28rpx;
+  border: 0;
+  box-shadow: 0 6rpx 16rpx rgba(47, 107, 79, 0.28);
+  transition: transform var(--duration-fast) var(--ease-spring),
+              box-shadow var(--duration-fast) var(--ease-ios),
+              opacity var(--duration-fast) var(--ease-ios);
+}
+.ios27-button-primary:active {
+  transform: scale(0.97);
+  box-shadow: 0 2rpx 8rpx rgba(47, 107, 79, 0.18);
+  opacity: 0.92;
+}
+.ios27-button-primary::after { border: 0; }
+
+.ios27-button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72rpx;
+  margin: 0 32rpx 12rpx;
+  background: var(--fill-tertiary);
+  color: var(--system-blue);
+  font-size: 28rpx;
+  font-weight: 600;
+  border-radius: 24rpx;
+  border: 0;
+  transition: opacity var(--duration-fast) var(--ease-ios);
+}
+.ios27-button-secondary:active { opacity: 0.7; }
+.ios27-button-secondary::after { border: 0; }
+
+.ios27-button-tinted {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64rpx;
+  padding: 0 24rpx;
+  background: var(--tint-blue-bg);
+  color: var(--system-blue);
+  font-size: 26rpx;
+  font-weight: 600;
+  border-radius: 18rpx;
+  border: 0;
+  transition: opacity var(--duration-fast) var(--ease-ios);
+}
+.ios27-button-tinted:active { opacity: 0.7; }
+.ios27-button-tinted::after { border: 0; }
+
+.ios27-button-destructive {
+  background: var(--tint-red-bg);
+  color: var(--system-red);
+}
+
+/* ===== 6. Progress Ring (iOS Activity Ring 风格) ===== */
+.ios27-ring-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ios27-ring-track {
+  fill: none;
+  stroke: var(--fill-tertiary);
+}
+.ios27-ring-progress {
+  fill: none;
+  stroke: var(--system-blue);
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset var(--duration-slow) var(--ease-out);
+}
+.ios27-ring-progress.orange { stroke: var(--system-orange); }
+.ios27-ring-progress.green  { stroke: var(--system-green); }
+.ios27-ring-progress.red    { stroke: var(--system-red); }
+.ios27-ring-progress.purple { stroke: var(--system-purple); }
+
+.ios27-ring-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.ios27-ring-value {
+  font-size: 80rpx;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2rpx;
+  color: var(--label-primary);
+  font-variant-numeric: tabular-nums;
+}
+.ios27-ring-unit {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  font-weight: 500;
+  color: var(--label-tertiary);
+  letter-spacing: 1rpx;
+  text-transform: uppercase;
+}
+
+/* ===== 7. Liquid Glass 容器 ===== */
+.ios27-glass {
+  background: var(--glass-regular);
+  -webkit-backdrop-filter: blur(28rpx) saturate(180%);
+  backdrop-filter: blur(28rpx) saturate(180%);
+  border: 1rpx solid var(--glass-border);
+  box-shadow: var(--shadow-glass);
+}
+.ios27-glass-thin {
+  background: var(--glass-thin);
+  -webkit-backdrop-filter: blur(20rpx) saturate(160%);
+  backdrop-filter: blur(20rpx) saturate(160%);
+  border: 1rpx solid var(--glass-border);
+}
+.ios27-glass-fallback {
+  background: var(--bg-elevated);
+}
+
+/* ===== 8. 进度条 (Progress Bar) ===== */
+.ios27-progress {
+  height: 12rpx;
+  background: var(--fill-tertiary);
+  border-radius: 999rpx;
+  overflow: hidden;
+}
+.ios27-progress-fill {
+  height: 100%;
+  border-radius: 999rpx;
+  transition: width var(--duration-slow) var(--ease-out);
+}
+.ios27-progress-fill.blue   { background: var(--system-blue); }
+.ios27-progress-fill.green  { background: var(--system-green); }
+.ios27-progress-fill.orange { background: var(--system-orange); }
+.ios27-progress-fill.red    { background: var(--system-red); }
+.ios27-progress-fill.purple { background: var(--system-purple); }
+
+/* ===== 9. 标签徽章 ===== */
+.ios27-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6rpx 16rpx;
+  border-radius: 999rpx;
+  font-size: 22rpx;
+  font-weight: 600;
+  letter-spacing: 0.2rpx;
+}
+.ios27-badge.blue   { background: var(--tint-blue-bg);   color: var(--system-blue); }
+.ios27-badge.green  { background: var(--tint-green-bg);  color: var(--tint-green-fg); }
+.ios27-badge.orange { background: var(--tint-orange-bg); color: var(--tint-orange-fg); }
+.ios27-badge.red    { background: var(--tint-red-bg);    color: var(--tint-red-fg); }
+.ios27-badge.purple { background: var(--tint-purple-bg); color: var(--tint-purple-fg); }
+.ios27-badge.gray   { background: var(--fill-tertiary);  color: var(--label-secondary); }
+
+/* ===== 10. Quick Action Tiles ===== */
+.ios27-quick-grid {
+  margin: 0 32rpx;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16rpx;
+}
+.ios27-quick-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 152rpx;
+  padding: 16rpx 8rpx;
+  background: var(--bg-elevated);
+  border-radius: 24rpx;
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--duration-fast) var(--ease-spring);
+}
+.ios27-quick-tile:active { transform: scale(0.94); }
+.ios27-quick-tile-icon {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+}
+.ios27-quick-tile-label {
+  font-size: 22rpx;
+  color: var(--label-primary);
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ===== 11. Chat bubble (AI 教练) ===== */
+.ios27-bubble {
+  max-width: 84%;
+  padding: 22rpx 26rpx;
+  border-radius: 28rpx;
+  font-size: 28rpx;
+  line-height: 1.45;
+  word-break: break-word;
+}
+.ios27-bubble.user {
+  background: var(--system-blue);
+  color: #FFFFFF;
+  border-bottom-right-radius: 8rpx;
+  margin-left: auto;
+}
+.ios27-bubble.assistant {
+  background: var(--bg-elevated);
+  color: var(--label-primary);
+  border-bottom-left-radius: 8rpx;
+  margin-right: auto;
+  box-shadow: var(--shadow-xs);
+}
+.ios27-bubble-meta {
+  margin-top: 8rpx;
+  font-size: 20rpx;
+  color: var(--label-tertiary);
+}
+
+/* ===== 12. Animation utilities ===== */
+.ios27-anim-press { transition: transform var(--duration-fast) var(--ease-spring); }
+.ios27-anim-press:active { transform: scale(0.96); }
+.ios27-anim-fadein { animation: ios27-fadein var(--duration-slow) var(--ease-out) both; }
+.ios27-anim-slideup { animation: ios27-slideup var(--duration-slow) var(--ease-out) both; }
+@keyframes ios27-fadein { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ios27-slideup { from { opacity: 0; transform: translateY(16rpx); } to { opacity: 1; transform: translateY(0); } }
+
+/* ===== 13. 兼容降级 (no backdrop-filter) ===== */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .ios27-glass { background: var(--bg-elevated); }
+  .ios27-glass-thin { background: var(--bg-elevated); }
+}

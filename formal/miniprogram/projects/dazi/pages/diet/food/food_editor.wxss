@@ -1,0 +1,26 @@
+page { background: #F7F8FA; color: #17191D; }
+.subpage { min-height: 100vh; padding: 0 28rpx 180rpx; box-sizing: border-box; }
+.subnav { position: absolute; left: 28rpx; right: 28rpx; height: 104rpx; display: flex; align-items: center; justify-content: space-between; font-size: 34rpx; font-weight: 800; }
+.subnav button { width: 72rpx; margin: 0; padding: 0; color: #17191D; background: transparent; font-size: 52rpx; font-weight: 300; }
+.subnav button::after, .save-button::after { border: 0; }
+.nav-space { width: 72rpx; }
+.first-card { margin-top: 0 !important; }
+.search-card, .preset-card, .form-card { margin-top: 22rpx; padding: 26rpx; background: #fff; border: 1rpx solid #ECEFF3; }
+.search-card { height: 84rpx; padding-top: 0; padding-bottom: 0; display: flex; align-items: center; gap: 14rpx; box-sizing: border-box; }
+.search-icon { color: #8A9098; font-size: 34rpx; }
+.search-card input { flex: 1; font-size: 27rpx; }
+.card-title { margin-bottom: 22rpx; font-size: 28rpx; font-weight: 700; }
+.food-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14rpx; }
+.food-chip { padding: 20rpx; display: flex; flex-direction: column; gap: 6rpx; background: #F7F8FA; border: 2rpx solid transparent; }
+.food-chip text:first-child { font-size: 26rpx; font-weight: 600; }
+.food-chip text:last-child { color: #8A9098; font-size: 21rpx; }
+.food-chip.selected { color: #2F6B4F; background: #EEF5FF; border-color: #2F6B4F; }
+.field { height: 92rpx; display: flex; align-items: center; justify-content: space-between; border-top: 1rpx solid #EEF0F2; font-size: 26rpx; box-sizing: border-box; }
+.field input { width: 260rpx; height: 72rpx; line-height: 72rpx; text-align: right; font-size: 26rpx; }
+.field-value { display: flex; align-items: center; gap: 10rpx; color: #8A9098; }
+.field-value input { width: 160rpx; }
+.field-display { color: #7C828A; font-size: 24rpx; }
+.save-button { position: fixed; z-index: 50; left: 28rpx; right: 28rpx; bottom: calc(24rpx + env(safe-area-inset-bottom)); width: auto; height: 88rpx; margin: 0; color: #fff; background: #2F6B4F; box-shadow: 0 12rpx 34rpx rgba(47, 107, 79, .18); font-size: 28rpx; font-weight: 700; line-height: 1; }
+.ai-estimate { width: 100%; height: 70rpx; margin: 18rpx 0 0; color: #2F6B4F; background: #EEF5FF; border: 0; font-size: 24rpx; font-weight: 650; line-height: 1; }
+.ai-estimate::after { border: 0; }
+.estimate-model { margin-top: 14rpx; color: #8A9098; font-size: 20rpx; text-align: center; }

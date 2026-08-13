@@ -1,0 +1,68 @@
+<!-- components/clarify-form/index.wxml -->
+<!--
+  clarify-form:
+    clarify = { requestId, title, summary, missingFields: [{key,label,unit,required,inputType,options}], allowedActions }
+    events: submit(e), skip(e), cancel(e)
+-->
+<view class="clarify-card" role="form" aria-label="补充信息">
+  <view class="clarify-header">
+    <view class="clarify-badge">需要补充</view>
+    <view wx:if="{{clarify.title}}" class="clarify-title">{{clarify.title}}</view>
+    <view wx:if="{{clarify.summary}}" class="clarify-summary">{{clarify.summary}}</view>
+  </view>
+
+  <view class="clarify-body">
+    <view wx:for="{{clarify.missingFields}}" wx:key="key" class="clarify-field">
+      <view class="clarify-field-label">
+        {{item.label}}<text wx:if="{{item.required}}" class="clarify-required">*</text>
+      </view>
+
+      <!-- text / number input -->
+      <input
+        wx:if="{{!item.options || item.options.length === 0}}"
+        class="clarify-input"
+        type="{{item.inputType === 'number' ? 'number' : 'text'}}"
+        value="{{formData[item.key]}}"
+        data-key="{{item.key}}"
+        placeholder="请输入{{item.label}}"
+        placeholder-class="clarify-placeholder"
+        bindinput="onInput"
+        aria-label="{{item.label}}"
+      />
+
+      <!-- options -->
+      <view wx:else class="clarify-options">
+        <view
+          wx:for="{{item.options}}"
+          wx:key="*this"
+          wx:for-item="opt"
+          class="clarify-chip {{formData[item.key] === opt ? 'is-active' : ''}}"
+          data-key="{{item.key}}"
+          data-value="{{opt}}"
+          bindtap="onSelect"
+          aria-label="选择{{opt}}"
+        >{{opt}}</view>
+      </view>
+
+      <view wx:if="{{item.unit}}" class="clarify-unit">{{item.unit}}</view>
+    </view>
+  </view>
+
+  <view class="clarify-actions">
+    <button
+      wx:if="{{canSkip}}"
+      class="clarify-btn ghost"
+      bindtap="onSkip"
+      aria-label="跳过">跳过</button>
+    <button
+      wx:if="{{canCancel}}"
+      class="clarify-btn secondary"
+      bindtap="onCancel"
+      aria-label="取消">取消</button>
+    <button
+      class="clarify-btn primary"
+      bindtap="onSubmit"
+      aria-label="提交"
+    >提交</button>
+  </view>
+</view>

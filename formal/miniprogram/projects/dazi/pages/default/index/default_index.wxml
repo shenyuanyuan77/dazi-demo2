@@ -1,0 +1,133 @@
+﻿<!--
+  广场首页 — iOS 26 / Liquid Glass 风格重构
+  文件: default_index.wxml
+-->
+
+<block wx:if="{{!isLoad}}">
+  <view class="skeleton-page"><view class="skeleton skeleton-header"></view><view class="skeleton skeleton-banner"></view><view class="skeleton skeleton-card"></view></view>
+</block>
+
+<block wx:else>
+
+  <view class="glass-nav" style="padding-top: {{statusBarHeight}}px;">
+    <view class="glass-nav-inner">
+      <view class="nav-top flex-between">
+        <view class="nav-user" catchtap="url" data-url="../../my/index/my_index">
+          <view class="nav-avatar"><image src="{{userAvatar || '/projects/dazi/images/xr.png'}}" mode="aspectFill" class="avatar-img" /></view>
+          <view class="nav-text"><view class="nav-greeting">{{greeting}} 👋</view><view class="nav-username">{{userName || '健身搭子'}}</view></view>
+        </view>
+        <view class="nav-action" catchtap="goPublish" aria-role="button" aria-label="发布健身活动"><text class="nav-action-icon">＋</text></view>
+      </view>
+      <view class="nav-search"><view class="search-bar glass-light"><text class="search-icon">🔍</text><input class="search-input" placeholder="搜索健身活动、伙伴..." placeholder-class="search-placeholder" value="{{searchValue}}" adjust-position="{{true}}" cursor-spacing="32" bindinput="onSearchInput" bindconfirm="onSearch" confirm-type="search" /></view></view>
+      <scroll-view class="cate-scroll" scroll-x show-scrollbar="{{false}}" enable-flex>
+        <view class="cate-chip {{currentCate === index ? 'active' : ''}}" wx:for="{{cateMenus}}" wx:key="index" data-index="{{index}}" catchtap="onCateChange"><text>{{item.label}}</text></view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="page-content page-has-glass-nav" catchtouchend="onLoadMore">
+    <view class="content-top-spacer"></view>
+    <view
+      class="ai-plan-card {{aiExpanded ? 'expanded' : ''}} {{aiLoading ? 'disabled' : ''}}"
+      bindtap="toggleAiCard"
+      bindlongpress="showAiMenu"
+      aria-role="button"
+      aria-label="我的 AI 健身方案，{{aiExpanded ? '已展开' : '已收起'}}"
+    >
+      <view class="ai-card-head">
+        <view class="ai-card-heading">
+          <view class="ai-symbol">✦</view>
+          <view>
+            <view class="ai-card-title">我的 AI 健身方案</view>
+            <view class="ai-card-subtitle">{{aiLoading ? 'AI 正在生成中...' : '饮食测算与训练计划'}}</view>
+          </view>
+        </view>
+        <view class="ai-more" catchtap="showAiMenu" aria-role="button" aria-label="更多 AI 方案操作">•••</view>
+      </view>
+
+      <view wx:if="{{aiLoading}}" class="ai-loading">
+        <view class="activity-indicator"></view>
+        <text>AI 正在生成中...</text>
+      </view>
+
+      <view wx:elif="{{!aiResults.length}}" class="ai-empty">
+        <view class="ai-empty-symbol">✦</view>
+        <view class="ai-empty-copy">
+          <view class="ai-empty-title">获取专属饮食与训练方案</view>
+          <view class="ai-empty-desc">根据你的目标生成个性化建议</view>
+        </view>
+        <button class="ai-consult-button" catchtap="openAi">立即咨询</button>
+      </view>
+
+      <block wx:else>
+        <view class="segmented-control" catchtap="stopPropagation">
+          <view class="segmented-item {{activeAiTab === 'diet' ? 'active' : ''}}" catchtap="switchAiTab" data-tab="diet">饮食测算</view>
+          <view class="segmented-item {{activeAiTab === 'training' ? 'active' : ''}}" catchtap="switchAiTab" data-tab="training">训练计划</view>
+        </view>
+        <scroll-view scroll-x class="ai-results-scroll" show-scrollbar="{{false}}">
+          <view class="ai-results-row">
+            <view class="ai-result-card" wx:for="{{aiDisplayResults}}" wx:for-item="result" wx:key="AI_RESULT_ID">
+              <view class="ai-result-title">{{result.AI_RESULT_TITLE || (activeAiTab === 'diet' ? '最新饮食测算' : '最新训练计划')}}</view>
+              <view wx:if="{{activeAiTab === 'diet'}}" class="ai-diet-data">
+                <view class="ai-calories"><text>{{result.AI_RESULT_PAYLOAD.calories || '--'}}</text> kcal</view>
+                <view class="ai-macros">
+                  <text>蛋白质 {{result.AI_RESULT_PAYLOAD.protein || '--'}}g</text>
+                  <text>碳水 {{result.AI_RESULT_PAYLOAD.carbs || '--'}}g</text>
+                  <text>脂肪 {{result.AI_RESULT_PAYLOAD.fat || '--'}}g</text>
+                </view>
+              </view>
+              <view wx:else class="ai-training-preview">{{result.AI_RESULT_PAYLOAD.days && result.AI_RESULT_PAYLOAD.days[0] ? result.AI_RESULT_PAYLOAD.days[0].name : '个性训练安排'}}</view>
+              <view class="ai-result-summary {{aiExpanded ? '' : 'clamped'}}">{{result.AI_RESULT_SUMMARY}}</view>
+            </view>
+          </view>
+        </scroll-view>
+        <button wx:if="{{aiExpanded}}" class="ai-follow-button" catchtap="openCurrentAi">继续追问</button>
+      </block>
+    </view>
+
+    <view class="activity-section">
+      <view class="section-header flex-between"><view class="section-title-wrap"><text class="section-title">推荐活动</text><text class="section-subtitle">{{dataList.total || 0}} 个活动</text></view></view>
+      <view wx:if="{{dataList.list && dataList.list.length}}" class="activity-list">
+        <view class="activity-card glass-card" wx:for="{{dataList.list}}" wx:for-item="item" wx:key="_id" catchtap="goActivityDetail" data-id="{{item._id}}">
+          <view class="card-cover-wrap">
+            <image src="{{item.ACTIVITY_OBJ && item.ACTIVITY_OBJ.cover || ''}}" mode="aspectFill" class="card-cover" lazy-load />
+            <view class="card-cate-badge">{{item.ACTIVITY_CATE_NAME || ''}}</view>
+            <view class="card-date-badge">{{item.ACTIVITY_START_DAY || ''}}</view>
+            <view class="card-join-badge"><text class="join-count">{{item.ACTIVITY_JOIN_CNT || 0}}</text><text class="join-label">人报名</text></view>
+          </view>
+          <view class="card-body">
+            <view class="card-title text-ellipsis-2">{{item.ACTIVITY_TITLE}}</view>
+            <view class="card-meta">
+              <view class="card-publisher flex-row gap-sm"><image class="publisher-avatar" src="{{item.user && item.user.USER_PIC || ''}}" mode="aspectFill" lazy-load /><text class="publisher-name">{{item.user && item.user.USER_NAME || '平台发布'}}</text></view>
+              <view class="card-location flex-row gap-xs"><text class="location-icon">📍</text><text class="location-text text-ellipsis">{{item.ACTIVITY_ADDRESS || '待定'}}</text></view>
+              <view class="card-time flex-row gap-xs" wx:if="{{item.ACTIVITY_START_TIME}}"><text class="time-icon">🕐</text><text class="time-text">{{item.ACTIVITY_START_TIME}}</text></view>
+            </view>
+          </view>
+        </view>
+        <view class="load-more">
+          <view wx:if="{{loadingMore}}" class="loading-spinner"><view class="spinner"></view><text>加载中...</text></view>
+          <view wx:elif="{{!hasMore && dataList.list.length > 0}}" class="no-more"><view class="no-more-line"></view><text>没有更多了</text><view class="no-more-line"></view></view>
+        </view>
+      </view>
+      <empty-state icon="🏋️" title="暂无推荐活动" desc="去发布第一个活动，找到你的运动搭子" btnText="发布活动" showBtn="{{true}}" bind:action="goPublish" wx:else />
+    </view>
+
+    <view class="bottom-safe-spacer"></view>
+  </view>
+
+  <view
+    wx:if="{{aiEntryMode === 'float' || aiEntryMode === 'both'}}"
+    class="float-ai-entry"
+    style="top: {{aiFabTop}}px;"
+    catchtap="openAiFromFab"
+    bindtouchstart="onAiFabTouchStart"
+    bindtouchmove="onAiFabTouchMove"
+    bindtouchend="onAiFabTouchEnd"
+    aria-role="button"
+    aria-label="AI 健身助手，点击进入对话"
+  >
+    <text class="float-ai-icon">◌</text>
+    <view wx:if="{{aiUnread}}" class="ai-unread-dot"></view>
+  </view>
+
+</block>

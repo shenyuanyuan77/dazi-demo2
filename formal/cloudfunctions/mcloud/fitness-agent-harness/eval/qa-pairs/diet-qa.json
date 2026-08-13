@@ -1,0 +1,177 @@
+[
+  {
+    "id": "qa-diet-001",
+    "category": "diet_record",
+    "question": "早餐吃了一碗牛肉面，帮我记一下",
+    "expectedAnswer": "识别为饮食记录，生成牛肉面待确认写入，不直接保存。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "DIET_RECORD",
+      "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["牛肉面", "确认"],
+      "mustNotCallTools": ["training.log.create"],
+      "traceMustInclude": ["input.received", "intent.recognized", "pending_write.created", "turn.finalized"]
+    }
+  },
+  {
+    "id": "qa-diet-002",
+    "category": "diet_record",
+    "question": "刚才喝了一杯奶茶",
+    "expectedAnswer": "识别为加餐饮食记录，要求用户确认后再写入。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "DIET_RECORD",
+      "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+      "slotsShouldContain": { "meal": "snack" },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["奶茶", "确认"]
+    }
+  },
+  {
+    "id": "qa-diet-003",
+    "category": "diet_record",
+    "question": "午餐有米饭、鸡胸肉和青菜，记录一下",
+    "expectedAnswer": "识别三种食物并生成饮食 pendingWrite。",
+    "initialState": { "userProfile": { "goal": "增肌" } },
+    "expect": {
+      "intent": "DIET_RECORD",
+      "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["米饭", "鸡胸肉", "青菜"],
+      "mustNotCallTools": ["training.plan.create", "training.log.create"]
+    }
+  },
+  {
+    "id": "qa-diet-004",
+    "category": "diet_record_image",
+    "question": "这张图里的食物帮我识别并记录",
+    "images": ["image://meal"],
+    "expectedAnswer": "图片饮食记录必须调用视觉工具并生成待确认记录。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "DIET_RECORD",
+      "mustCallTools": ["vision.food.recognize"],
+      "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["识别", "确认"]
+    }
+  },
+  {
+    "id": "qa-diet-005",
+    "category": "diet_read_only",
+    "question": "我刚吃了鸡蛋，不用记录，只分析热量",
+    "expectedAnswer": "尊重只分析要求，不生成写入项。",
+    "initialState": { "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1600 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["不会写入记录"],
+      "answerMustNotContain": ["是否确认写入", "已记录"]
+    }
+  },
+  {
+    "id": "qa-diet-006",
+    "category": "diet_read_only_image",
+    "question": "只分析这张图的热量，不要记录",
+    "images": ["image://meal"],
+    "expectedAnswer": "图片只分析时仍调用视觉工具，但不生成 pendingWrite。",
+    "initialState": { "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1600 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustCallTools": ["vision.food.recognize"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["不会写入记录"]
+    }
+  },
+  {
+    "id": "qa-diet-007",
+    "category": "diet_suggestion",
+    "question": "我今天还能吃多少热量",
+    "expectedAnswer": "读取画像、饮食和训练上下文后给剩余热量估算。",
+    "initialState": {
+      "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1600 },
+      "dietLogs": [{ "date": "2026-07-03", "items": [{ "name": "米饭", "calories": 300 }] }],
+      "trainingLogs": []
+    },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustCallTools": ["user.profile.get", "diet.log.query", "training.log.query", "diet.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["剩余"]
+    }
+  },
+  {
+    "id": "qa-diet-008",
+    "category": "diet_suggestion",
+    "question": "我减脂期晚饭吃什么",
+    "expectedAnswer": "给饮食建议，不保存任何记录。",
+    "initialState": { "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1700 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustCallTools": ["diet.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustNotContain": ["已保存", "已记录"]
+    }
+  },
+  {
+    "id": "qa-diet-009",
+    "category": "diet_suggestion",
+    "question": "我今天吃了这些，还需要补蛋白吗",
+    "expectedAnswer": "围绕蛋白质补充建议作答。",
+    "initialState": { "userProfile": { "goal": "增肌", "dailyCalorieTarget": 2200 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustCallTools": ["diet.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "answerMustContain": ["蛋白"]
+    }
+  },
+  {
+    "id": "qa-diet-010",
+    "category": "diet_suggestion",
+    "question": "生成一个高蛋白饮食建议",
+    "expectedAnswer": "识别为饮食建议，不伪造成已写入记录。",
+    "initialState": { "userProfile": { "goal": "增肌", "dailyCalorieTarget": 2200 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustNotContain": ["已记录", "已保存"]
+    }
+  },
+  {
+    "id": "qa-diet-011",
+    "category": "diet_suggestion",
+    "question": "减脂期外卖怎么选",
+    "expectedAnswer": "识别为饮食建议，不进入旅游、购物或泛问答。",
+    "initialState": { "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1600 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustNotContain": ["景点", "路线"]
+    }
+  },
+  {
+    "id": "qa-diet-012",
+    "category": "diet_suggestion",
+    "question": "控糖晚餐有什么建议",
+    "expectedAnswer": "识别为饮食建议，不调用写工具。",
+    "initialState": { "userProfile": { "goal": "控糖", "dailyCalorieTarget": 1700 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "mustNotCallTools": ["diet.log.create"]
+    }
+  }
+]

@@ -1,0 +1,75 @@
+<view class="subpage" style="padding-top: {{statusBarHeight + 62}}px;">
+  <view class="subnav" style="top: {{statusBarHeight}}px;">
+    <button class="optical-center" bindtap="goBack">‹</button>
+    <text>添加{{mealName}}</text>
+    <view class="nav-space"></view>
+  </view>
+
+  <view class="form-card smooth-corner first-card">
+    <view class="card-title">记录信息</view>
+    <view class="field" data-field="customName" bindtap="openEditor">
+      <text>食物名称</text>
+      <text class="field-display">{{customName || '点击输入'}} ›</text>
+    </view>
+    <view class="field" data-field="customCalories" bindtap="openEditor">
+      <text>单份热量</text>
+      <text class="field-display">{{customCalories || 0}} kcal ›</text>
+    </view>
+    <view class="field" data-field="amount" bindtap="openEditor">
+      <text>份数</text>
+      <text class="field-display">{{amount}} 份 ›</text>
+    </view>
+    <button class="ai-estimate smooth-corner optical-center" loading="{{estimating}}" disabled="{{estimating}}" bindtap="estimateWithAi">
+      {{estimating ? 'AI 正在估算' : '使用 AI 估算热量'}}
+    </button>
+    <view wx:if="{{estimatedModel}}" class="estimate-model">MiMo-V2-Flash 实时估算</view>
+  </view>
+
+  <view class="search-card smooth-corner">
+    <text class="search-icon">⌕</text>
+    <input
+      value="{{searchValue}}"
+      placeholder="例如：200g 打抛饭"
+      confirm-type="search"
+      adjust-position="{{true}}"
+      bindinput="onSearch"
+      bindconfirm="estimateWithAi"
+      cursor-spacing="32"
+    />
+  </view>
+
+  <view wx:for="{{filteredPresets}}" wx:key="category" class="preset-card smooth-corner">
+    <view class="card-title">{{item.category}}</view>
+    <view class="food-grid">
+      <view
+        wx:for="{{item.foods}}"
+        wx:for-item="food"
+        wx:key="name"
+        class="food-chip smooth-corner {{customName === food.name ? 'selected' : ''}}"
+        data-name="{{food.name}}"
+        data-calories="{{food.calories}}"
+        bindtap="selectFood"
+      >
+        <text>{{food.name}}</text>
+        <text>{{food.calories}} kcal</text>
+      </view>
+    </view>
+  </view>
+
+  <button
+    class="save-button smooth-corner optical-center"
+    bindtap="saveFood"
+  >确定并保存到{{mealName}}</button>
+
+  <floating-input-panel
+    visible="{{editor.visible}}"
+    title="{{editor.title}}"
+    value="{{editor.value}}"
+    unit="{{editor.unit}}"
+    input-type="{{editor.inputType}}"
+    min="{{editor.min}}"
+    max="{{editor.max}}"
+    bindcancel="closeEditor"
+    bindconfirm="confirmEditor"
+  />
+</view>

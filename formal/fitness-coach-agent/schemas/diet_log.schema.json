@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Diet Log Payload",
+  "type": "object",
+  "required": ["items"],
+  "properties": {
+    "date": { "type": "string" },
+    "meal": { "enum": ["", "breakfast", "lunch", "dinner", "snack"] },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "calories"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "amount": { "type": ["number", "string"] },
+          "unit": { "type": "string" },
+          "calories": { "type": "number", "minimum": 0 },
+          "protein": { "type": "number", "minimum": 0 },
+          "carbs": { "type": "number", "minimum": 0 },
+          "fat": { "type": "number", "minimum": 0 },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    }
+  }
+}

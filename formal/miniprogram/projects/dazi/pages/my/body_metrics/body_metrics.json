@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "floating-input-panel": "/components/floating-input-panel/index"
+  }
+}

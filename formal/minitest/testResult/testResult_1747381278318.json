@@ -1,0 +1,905 @@
+{
+  "startTime": 1747381278318,
+  "endTime": 1747381395550,
+  "numTotalTests": 1,
+  "numTodoTests": 0,
+  "testResults": [
+    {
+      "replayResults": [
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 0,
+          "status": "processing",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 1,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "switchTab",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 2,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 3,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 4,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 5,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "input",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 6,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 7,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 8,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 9,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "hidePickerView",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 10,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "change",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 11,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 12,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 13,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 14,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 15,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 16,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "hidePickerView",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 17,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 18,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 19,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 20,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "change",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 21,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 22,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 23,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 24,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 25,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "hidePickerView",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 26,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "change",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 27,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 28,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 29,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 30,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "hidePickerView",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 31,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "change",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 32,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "scroll",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 33,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 34,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 35,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 36,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "columnchange",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 37,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "hidePickerView",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 38,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 39,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 40,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 41,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "change",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 42,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "input",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 43,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "scroll",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 44,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 45,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 46,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 47,
+          "replayResult": "passed",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 48,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 49,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 50,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 51,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 52,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 53,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 54,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "input",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 55,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 56,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 57,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 58,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 59,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 60,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 61,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 62,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "scroll",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 63,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 64,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 65,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 66,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "switchTab",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 67,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 68,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 69,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 70,
+          "replayResult": "failed",
+          "message": "[pageframe] can not get node of selector: view.join.bg-project.text-black",
+          "status": "processing",
+          "commandName": "touchstart",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 71,
+          "replayResult": "failed",
+          "message": "[pageframe] can not get node of selector: view.join.bg-project.text-black",
+          "status": "processing",
+          "commandName": "touchend",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 72,
+          "replayResult": "failed",
+          "message": "[pageframe] can not get node of selector: view.join.bg-project.text-black",
+          "status": "processing",
+          "commandName": "tap",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 73,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity/detail/activity_detail not equal to projects/dazi/pages/activity/join/activity_join",
+          "status": "processing",
+          "commandName": "touchstart",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 74,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity/detail/activity_detail not equal to projects/dazi/pages/activity/join/activity_join",
+          "status": "processing",
+          "commandName": "touchend",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 75,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity/detail/activity_detail not equal to projects/dazi/pages/activity/join/activity_join",
+          "status": "processing",
+          "commandName": "tap",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 76,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity/detail/activity_detail not equal to projects/dazi/pages/activity/join/activity_join",
+          "status": "processing",
+          "commandName": "touchstart",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 77,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity/detail/activity_detail not equal to projects/dazi/pages/activity/join/activity_join",
+          "status": "processing",
+          "commandName": "touchend",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 78,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity/detail/activity_detail not equal to projects/dazi/pages/activity/join/activity_join",
+          "status": "processing",
+          "commandName": "tap",
+          "received": "<page>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}<view class=\"main\"><view class=\"top\"><view class=\"cover shadow\"><view class=\"mark shadow-project\">骑行</view><image class=\"loading\" lazy-load=\"\" mode=\"widthFix\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/image_4165155.jpg\" role=\"img\" style=\"height: 186.345px;\"></image></view><view class=\"inner\"><view class=\"title\">222</view><view class=\"info\"><view class=\"line\"><text class=\"left\"><text class=\"icon-people margin-right-xxs\"></text>发起人：<text class=\"icon-people margin-right-xxs\"></text>发起人：</text><view class=\"right\"><view class=\"author text-blue\"><image class=\"loading\" lazy-load=\"\" mode=\"aspectFill\" src=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/user/20250131/8864222.jpeg\" role=\"img\"></image><text>11</text><text class=\"icon-male text-blue margin-left-xxs\"></text></view></view></view><view class=\"line\"><text class=\"left\"><text class=\"icon-time margin-right-xxs\"></text>时间：<text class=\"icon-time margin-right-xxs\"></text>时间：</text><text class=\"right\">05月17日 16:00 周六～05月18日 18:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-stop margin-right-xxs\"></text>报名截止：<text class=\"icon-stop margin-right-xxs\"></text>报名截止：</text><text class=\"right\">2025-05-16 16:00</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-new margin-right-xxs\"></text>状态：<text class=\"icon-new margin-right-xxs\"></text>状态：</text><text class=\"right\">报名中</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-friend margin-right-xxs\"></text>报名：<text class=\"icon-friend margin-right-xxs\"></text>报名：</text><text class=\"right\">1<text class=\"num\">/</text>501<text class=\"num\">/</text>50</text></view><view class=\"line\"><text class=\"left\"><text class=\"icon-similar margin-right-xxs\"></text>审核规则：<text class=\"icon-similar margin-right-xxs\"></text>审核规则：</text><text class=\"right\">报名后无需审核</text></view><view class=\"line\"><text class=\"icon-roundclose margin-right-xxs\"></text><text class=\"left\">取消规则：</text><text class=\"right\">报名随时可取消</text></view></view></view><view class=\"inner margin-top\" style=\"padding-bottom:10;\"><view class=\"info\" data-address=\"22\" data-geo=\"[object Object]\"><view class=\"desc\" style=\"line-height: 1.8;\"><text class=\"icon-location margin-right-xs text-yellow\"></text>活动地点：22 <text class=\"icon-right text-grey\"></text></view></view></view></view><view class=\"bottom\"><view class=\"menu\"><view class=\"item cur\" data-cur=\"flow\">活动详情</view><view class=\"item\" data-cur=\"users\">报名名单<text class=\"num\">(1)</text></view></view><view class=\"inner\"><view class=\"detail article-box\"><view class=\"article\"><view class=\"content\"><text user-select=\"\">22</text></view></view></view></view></view></view><view style=\"height:104px\"></view><cmpt-detail is=\"cmpts/biz/detail/detail_cmpt\">﻿<view style=\"height:104px\"></view><view class=\"cmpt-fixed-home-btn detail-cmpt--cmpt-fixed-home-btn\" style=\"bottom: calc(constant(safe-area-inset-bottom) + 93px);bottom: calc(env(safe-area-inset-bottom) + 93px)\"><text class=\"icon-home detail-cmpt--icon-home\"></text><text style=\"font-size:11px;\">首页</text></view><view class=\"cmpt-biz-detail-mode2 detail-cmpt--cmpt-biz-detail-mode2 safe-bottom detail-cmpt--safe-bottom\"><view class=\"has-tag detail-cmpt--has-tag\">已报名</view><view class=\"inner detail-cmpt--inner\"><button class=\"share detail-cmpt--share clearbtn detail-cmpt--clearbtn\" role=\"button\" aria-disabled=\"false\"><text class=\"icon-forward detail-cmpt--icon-forward\"></text><text class=\"text-s detail-cmpt--text-s\">分享</text></button><view class=\"fav detail-cmpt--fav\"><text class=\"icon-favor detail-cmpt--icon-favor\"></text><text class=\"text-s detail-cmpt--text-s\">收藏</text></view><view class=\"slot-inner detail-cmpt--slot-inner\"><view class=\"bottom-line\"><view class=\"join comment margin-right\" data-url=\"../../comment/list/comment_list?id=d77d384f6826e931005eb8a76063dbb4\">评论</view><view class=\"join bg-grey light\">取消报名</view></view></view></view></view><cmpt-poster is=\"cmpts/public/poster/poster_cmpt\"><view class=\"main-poster poster-cmpt--main-poster modal poster-cmpt--modal bottom-modal poster-cmpt--bottom-modal\" style=\"z-index: 9999999999;\"><view class=\"dialog poster-cmpt--dialog\"><view class=\"poster-share poster-cmpt--poster-share\"><button class=\"item poster-cmpt--item item-share poster-cmpt--item-share clearbtn poster-cmpt--clearbtn\" data-img=\"\" open-type=\"share\" role=\"button\" aria-disabled=\"false\"><view class=\"pic poster-cmpt--pic\"><image src=\"images/wechat.png\" role=\"img\"></image></view><text>转发给朋友</text></button><view class=\"item poster-cmpt--item\" style=\"padding-top:6px\"><view class=\"pic poster-cmpt--pic\"><image class=\"friend poster-cmpt--friend\" src=\"images/friend.png\" role=\"img\"></image></view><text>生成海报</text></view></view><view class=\"line poster-cmpt--line\"><view>关闭</view></view></view></view></cmpt-poster></cmpt-detail></page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 79,
+          "replayResult": "failed",
+          "message": "confirmModal failed",
+          "status": "processing",
+          "commandName": "confirmModal",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 80,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 81,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "switchTab",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 82,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 83,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 84,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 85,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 86,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 87,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 88,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 89,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 90,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 91,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 92,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 93,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 94,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 95,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 96,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 97,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchstart",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 98,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "touchend",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 99,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "tap",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 100,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity_client/my_list/activity_my_list not equal to projects/dazi/pages/activity_client/scan/activity_scan",
+          "status": "processing",
+          "commandName": "touchstart",
+          "received": "<page><cmpt-comm-list is=\"cmpts/public/list/comm_list_cmpt\"><view class=\"box-list list-cmpt--box-list\" style=\"height:(100vh);margin-top:0px;\"><scroll-view class=\"box-list-scroll list-cmpt--box-list-scroll\" refresher-enabled=\"\" scroll-top=\"0\" scroll-y=\"\" enable-back-to-top=\"\"><view class=\"text-pic-list-box padding-project\"><view class=\"item card-project shadow-project\"><view class=\"status bg-yellow\">报名中</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">222</view><view class=\"data\">活动时间：2025-05-17 16:00～2025-05-18 18:00</view><view class=\"data\">报名截止：2025-05-16 16:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=d77d384f6826e931005eb8a76063dbb4\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\" data-title=\"222\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/qr.png\" data-title=\"222\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test66</view><view class=\"data\">活动时间：2025-05-16 16:00～2025-05-17 15:00</view><view class=\"data\">报名截止：2025-05-16 15:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=486be3ad68259c77004704dc1fd7a98c\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\" data-title=\"test66\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/486be3ad68259c77004704dc1fd7a98c/qr.png\" data-title=\"test66\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">33333</view><view class=\"data\">活动时间：2025-05-15 13:05～2025-05-16 13:00</view><view class=\"data\">报名截止：2025-05-15 11:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=6c670e5d68255f9c003e96ea5a90e5a5\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\" data-title=\"33333\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/6c670e5d68255f9c003e96ea5a90e5a5/qr.png\" data-title=\"33333\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test3</view><view class=\"data\">活动时间：2025-05-11 17:15～2025-05-12 16:15</view><view class=\"data\">报名截止：2025-05-11 17:15</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=a6ec304868205cc902d1f7c57d58eef8\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\" data-title=\"test3\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/a6ec304868205cc902d1f7c57d58eef8/qr.png\" data-title=\"test3\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">66</view><view class=\"data\">活动时间：2025-05-08 17:00～2025-05-09 16:00</view><view class=\"data\">报名截止：2025-05-08 16:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=1b9686ec681c629b02a1a6b53bd03af7\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\" data-title=\"66\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/1b9686ec681c629b02a1a6b53bd03af7/qr.png\" data-title=\"66\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">33</view><view class=\"data\">活动时间：2025-05-07 15:05～2025-05-07 15:10</view><view class=\"data\">报名截止：2025-05-07 15:05</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=e23fc3b2681b058a028af7a223e7ab3d\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\" data-title=\"33\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/e23fc3b2681b058a028af7a223e7ab3d/qr.png\" data-title=\"33\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test1</view><view class=\"data\">活动时间：2025-02-16 16:00～2025-02-16 23:00</view><view class=\"data\">报名截止：2025-02-16 19:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=21e42ccb67b19edf0360f0fb339d2c7a\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\" data-title=\"test1\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/21e42ccb67b19edf0360f0fb339d2c7a/qr.png\" data-title=\"test1\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">22</view><view class=\"data\">活动时间：2025-02-01 20:00～2025-02-02 20:00</view><view class=\"data\">报名截止：2025-01-31 22:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=4885635e679cbcf701fa5ad13def2c63\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\" data-title=\"22\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/4885635e679cbcf701fa5ad13def2c63/qr.png\" data-title=\"22\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">11</view><view class=\"data\">活动时间：2025-02-01 19:00～2025-02-01 20:00</view><view class=\"data\">报名截止：2025-01-31 22:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>报名截止前可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=f5835fa6679cbc96056f1fd95f4baa63\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\" data-title=\"11\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/f5835fa6679cbc96056f1fd95f4baa63/qr.png\" data-title=\"11\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view style=\"height:104px;\"></view></view></scroll-view></view><view class=\"pulldown-mask list-cmpt--pulldown-mask\" hidden=\"\"></view></cmpt-comm-list>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}</page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 101,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity_client/my_list/activity_my_list not equal to projects/dazi/pages/activity_client/scan/activity_scan",
+          "status": "processing",
+          "commandName": "touchend",
+          "received": "<page><cmpt-comm-list is=\"cmpts/public/list/comm_list_cmpt\"><view class=\"box-list list-cmpt--box-list\" style=\"height:(100vh);margin-top:0px;\"><scroll-view class=\"box-list-scroll list-cmpt--box-list-scroll\" refresher-enabled=\"\" scroll-top=\"0\" scroll-y=\"\" enable-back-to-top=\"\"><view class=\"text-pic-list-box padding-project\"><view class=\"item card-project shadow-project\"><view class=\"status bg-yellow\">报名中</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">222</view><view class=\"data\">活动时间：2025-05-17 16:00～2025-05-18 18:00</view><view class=\"data\">报名截止：2025-05-16 16:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=d77d384f6826e931005eb8a76063dbb4\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\" data-title=\"222\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/qr.png\" data-title=\"222\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test66</view><view class=\"data\">活动时间：2025-05-16 16:00～2025-05-17 15:00</view><view class=\"data\">报名截止：2025-05-16 15:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=486be3ad68259c77004704dc1fd7a98c\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\" data-title=\"test66\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/486be3ad68259c77004704dc1fd7a98c/qr.png\" data-title=\"test66\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">33333</view><view class=\"data\">活动时间：2025-05-15 13:05～2025-05-16 13:00</view><view class=\"data\">报名截止：2025-05-15 11:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=6c670e5d68255f9c003e96ea5a90e5a5\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\" data-title=\"33333\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/6c670e5d68255f9c003e96ea5a90e5a5/qr.png\" data-title=\"33333\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test3</view><view class=\"data\">活动时间：2025-05-11 17:15～2025-05-12 16:15</view><view class=\"data\">报名截止：2025-05-11 17:15</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=a6ec304868205cc902d1f7c57d58eef8\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\" data-title=\"test3\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/a6ec304868205cc902d1f7c57d58eef8/qr.png\" data-title=\"test3\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">66</view><view class=\"data\">活动时间：2025-05-08 17:00～2025-05-09 16:00</view><view class=\"data\">报名截止：2025-05-08 16:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=1b9686ec681c629b02a1a6b53bd03af7\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\" data-title=\"66\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/1b9686ec681c629b02a1a6b53bd03af7/qr.png\" data-title=\"66\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">33</view><view class=\"data\">活动时间：2025-05-07 15:05～2025-05-07 15:10</view><view class=\"data\">报名截止：2025-05-07 15:05</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=e23fc3b2681b058a028af7a223e7ab3d\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\" data-title=\"33\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/e23fc3b2681b058a028af7a223e7ab3d/qr.png\" data-title=\"33\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test1</view><view class=\"data\">活动时间：2025-02-16 16:00～2025-02-16 23:00</view><view class=\"data\">报名截止：2025-02-16 19:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=21e42ccb67b19edf0360f0fb339d2c7a\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\" data-title=\"test1\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/21e42ccb67b19edf0360f0fb339d2c7a/qr.png\" data-title=\"test1\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">22</view><view class=\"data\">活动时间：2025-02-01 20:00～2025-02-02 20:00</view><view class=\"data\">报名截止：2025-01-31 22:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=4885635e679cbcf701fa5ad13def2c63\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\" data-title=\"22\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/4885635e679cbcf701fa5ad13def2c63/qr.png\" data-title=\"22\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">11</view><view class=\"data\">活动时间：2025-02-01 19:00～2025-02-01 20:00</view><view class=\"data\">报名截止：2025-01-31 22:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>报名截止前可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=f5835fa6679cbc96056f1fd95f4baa63\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\" data-title=\"11\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/f5835fa6679cbc96056f1fd95f4baa63/qr.png\" data-title=\"11\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view style=\"height:104px;\"></view></view></scroll-view></view><view class=\"pulldown-mask list-cmpt--pulldown-mask\" hidden=\"\"></view></cmpt-comm-list>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}</page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 102,
+          "replayResult": "failed",
+          "message": "[pageframe] path error: projects/dazi/pages/activity_client/my_list/activity_my_list not equal to projects/dazi/pages/activity_client/scan/activity_scan",
+          "status": "processing",
+          "commandName": "tap",
+          "received": "<page><cmpt-comm-list is=\"cmpts/public/list/comm_list_cmpt\"><view class=\"box-list list-cmpt--box-list\" style=\"height:(100vh);margin-top:0px;\"><scroll-view class=\"box-list-scroll list-cmpt--box-list-scroll\" refresher-enabled=\"\" scroll-top=\"0\" scroll-y=\"\" enable-back-to-top=\"\"><view class=\"text-pic-list-box padding-project\"><view class=\"item card-project shadow-project\"><view class=\"status bg-yellow\">报名中</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">222</view><view class=\"data\">活动时间：2025-05-17 16:00～2025-05-18 18:00</view><view class=\"data\">报名截止：2025-05-16 16:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=d77d384f6826e931005eb8a76063dbb4\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\" data-title=\"222\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"d77d384f6826e931005eb8a76063dbb4\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/d77d384f6826e931005eb8a76063dbb4/qr.png\" data-title=\"222\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test66</view><view class=\"data\">活动时间：2025-05-16 16:00～2025-05-17 15:00</view><view class=\"data\">报名截止：2025-05-16 15:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=486be3ad68259c77004704dc1fd7a98c\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\" data-title=\"test66\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"486be3ad68259c77004704dc1fd7a98c\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/486be3ad68259c77004704dc1fd7a98c/qr.png\" data-title=\"test66\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">33333</view><view class=\"data\">活动时间：2025-05-15 13:05～2025-05-16 13:00</view><view class=\"data\">报名截止：2025-05-15 11:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=6c670e5d68255f9c003e96ea5a90e5a5\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\" data-title=\"33333\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"6c670e5d68255f9c003e96ea5a90e5a5\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/6c670e5d68255f9c003e96ea5a90e5a5/qr.png\" data-title=\"33333\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test3</view><view class=\"data\">活动时间：2025-05-11 17:15～2025-05-12 16:15</view><view class=\"data\">报名截止：2025-05-11 17:15</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=a6ec304868205cc902d1f7c57d58eef8\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\" data-title=\"test3\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"a6ec304868205cc902d1f7c57d58eef8\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/a6ec304868205cc902d1f7c57d58eef8/qr.png\" data-title=\"test3\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">66</view><view class=\"data\">活动时间：2025-05-08 17:00～2025-05-09 16:00</view><view class=\"data\">报名截止：2025-05-08 16:00</view><view class=\"data\">人数限定：1<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=1b9686ec681c629b02a1a6b53bd03af7\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\" data-title=\"66\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"1b9686ec681c629b02a1a6b53bd03af7\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/1b9686ec681c629b02a1a6b53bd03af7/qr.png\" data-title=\"66\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">33</view><view class=\"data\">活动时间：2025-05-07 15:05～2025-05-07 15:10</view><view class=\"data\">报名截止：2025-05-07 15:05</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=e23fc3b2681b058a028af7a223e7ab3d\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\" data-title=\"33\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"e23fc3b2681b058a028af7a223e7ab3d\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/e23fc3b2681b058a028af7a223e7ab3d/qr.png\" data-title=\"33\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动结束</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">test1</view><view class=\"data\">活动时间：2025-02-16 16:00～2025-02-16 23:00</view><view class=\"data\">报名截止：2025-02-16 19:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=21e42ccb67b19edf0360f0fb339d2c7a\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\" data-title=\"test1\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"21e42ccb67b19edf0360f0fb339d2c7a\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/21e42ccb67b19edf0360f0fb339d2c7a/qr.png\" data-title=\"test1\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">22</view><view class=\"data\">活动时间：2025-02-01 20:00～2025-02-02 20:00</view><view class=\"data\">报名截止：2025-01-31 22:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后无需审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>随时可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=4885635e679cbcf701fa5ad13def2c63\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\" data-title=\"22\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"4885635e679cbcf701fa5ad13def2c63\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/4885635e679cbcf701fa5ad13def2c63/qr.png\" data-title=\"22\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view class=\"item card-project shadow-project\"><view class=\"status\">活动停止</view><view class=\"title content-cut-two\" data-url=\"../detail/activity_detail?id=\">11</view><view class=\"data\">活动时间：2025-02-01 19:00～2025-02-01 20:00</view><view class=\"data\">报名截止：2025-01-31 22:00</view><view class=\"data\">人数限定：0<text class=\"margin-left-xxs margin-right-xxs\">/</text>50人 <text class=\"margin-left text-grey\">(仅指报名成功+待审人数)</text></view><view class=\"data\">审核设定：\t\t\t\t\t<text>报名后需要审核</text></view><view class=\"data\">参数设定：\t\t\t\t\t<text>报名截止前可取消</text></view><view class=\"data\"></view><view class=\"data data-button\"><view data-url=\"../edit/activity_edit?id=f5835fa6679cbc96056f1fd95f4baa63\"><text class=\"icon-edit\"></text>编辑</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\" data-title=\"11\"><text class=\"icon-form\"></text>名单与核销</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\"><text class=\"icon-similar\"></text>状态</view><view data-id=\"f5835fa6679cbc96056f1fd95f4baa63\" data-qr=\"cloud://fit-1gbv59u53ba5a718.6669-fit-1gbv59u53ba5a718-1337231904/dazi/activity/f5835fa6679cbc96056f1fd95f4baa63/qr.png\" data-title=\"11\"><text class=\"icon-moreandroid\"></text>更多</view></view></view><view style=\"height:104px;\"></view></view></scroll-view></view><view class=\"pulldown-mask list-cmpt--pulldown-mask\" hidden=\"\"></view></cmpt-comm-list>.luna-dom-highlighter{position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;pointer-events:none;font-size:13px}.luna-dom-highlighter-fill{position:absolute;top:0;right:0;bottom:0;left:0}.luna-dom-highlighter-platform-linux{font-family:Roboto,Ubuntu,Arial,sans-serif}.luna-dom-highlighter-platform-mac{color:#303942;font-family:'.SFNSDisplay-Regular','Helvetica Neue','Lucida Grande',sans-serif}.luna-dom-highlighter-platform-windows{font-family:'Segoe UI',Tahoma,sans-serif}.luna-dom-highlighter-px{color:gray}#luna-dom-highlighter-element-title{position:absolute;z-index:10}.luna-dom-highlighter-tooltip-content{position:absolute;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:#fff;padding:5px 8px;border:1px solid #fff;border-radius:3px;box-sizing:border-box;min-width:100px;max-width:min(300px,100% - 4px);z-index:2;background-clip:padding-box;will-change:transform;text-rendering:optimizeLegibility;pointer-events:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}.luna-dom-highlighter-tooltip-content .luna-dom-highlighter-tooltip-arrow{background:#fff;width:15px;height:8px;position:absolute}.luna-dom-highlighter-element-info-section{margin-top:12px;margin-bottom:6px}.luna-dom-highlighter-section-name{color:#333;font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.05em;line-height:12px}.luna-dom-highlighter-element-info{display:flex;flex-direction:column}.luna-dom-highlighter-element-info-header{display:flex;align-items:center}.luna-dom-highlighter-element-info-body{display:flex;flex-direction:column;padding-top:2px;margin-top:2px}.luna-dom-highlighter-element-info-row{display:flex;line-height:19px}.luna-dom-highlighter-separator-container{display:flex;align-items:center;flex:auto;margin-left:7px}.luna-dom-highlighter-separator{border-top:1px solid #ddd;width:100%}.luna-dom-highlighter-element-info-name{flex-shrink:0;color:#666}.luna-dom-highlighter-element-info-gap{flex:auto}.luna-dom-highlighter-element-info-value-color{display:flex;color:#303942;margin-left:10px;align-items:baseline}.luna-dom-highlighter-a11y-icon{width:16px;height:16px;background-repeat:no-repeat;display:inline-block}.luna-dom-highlighter-element-info-value-contrast{display:flex;align-items:center;text-align:right;color:#303942;margin-left:10px}.luna-dom-highlighter-element-info-value-contrast .luna-dom-highlighter-a11y-icon{margin-left:8px}.luna-dom-highlighter-element-info-value-icon{display:flex;align-items:center}.luna-dom-highlighter-element-info-value-text{text-align:right;color:#303942;margin-left:10px;align-items:baseline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.luna-dom-highlighter-color-swatch{display:flex;margin-right:2px;width:10px;height:10px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAAGUlEQVQYV2M4gwH+YwCGIasIUwhT25BVBADtzYNYrHvv4gAAAABJRU5ErkJggg==);line-height:10px}.luna-dom-highlighter-color-swatch-inner{flex:auto;border:1px solid #808002}.luna-dom-highlighter-element-layout-type{margin-right:10px;width:16px;height:16px}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-grid{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-layout-type.luna-dom-highlighter-flex{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-element-description{flex:1 1;font-weight:700;word-wrap:break-word;word-break:break-all}.luna-dom-highlighter-dimensions{color:#737373;text-align:right;margin-left:10px}.luna-dom-highlighter-material-node-width{margin-right:2px}.luna-dom-highlighter-material-node-height{margin-left:2px}.luna-dom-highlighter-material-tag-name{color:#881280}.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id{color:#1a1aa6}.luna-dom-highlighter-contrast-text{width:16px;height:16px;text-align:center;line-height:16px;margin-right:8px;border:1px solid #000;padding:0 1px}.luna-dom-highlighter-a11y-icon-not-ok{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-warning{background-image:url('data:image/svg+xml,')}.luna-dom-highlighter-a11y-icon-ok{background-image:url('data:image/svg+xml,')}@media (forced-colors:active){:root,body{background-color:transparent;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content{border-color:Highlight;background-color:canvas;color:text;forced-color-adjust:none}.luna-dom-highlighter-tooltip-content::after{background-color:Highlight}.luna-dom-highlighter-color-swatch-inner,.luna-dom-highlighter-contrast-text,.luna-dom-highlighter-separator{border-color:Highlight}.luna-dom-highlighter-section-name{color:Highlight}.luna-dom-highlighter-dimensions,.luna-dom-highlighter-element-info-name,.luna-dom-highlighter-element-info-value-color,.luna-dom-highlighter-element-info-value-contrast,.luna-dom-highlighter-element-info-value-icon,.luna-dom-highlighter-element-info-value-text,.luna-dom-highlighter-material-class-name,.luna-dom-highlighter-material-node-id,.luna-dom-highlighter-material-tag-name{color:canvastext}}.luna-dom-highlighter{z-index:2147483647;}</page>",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 103,
+          "replayResult": "failed",
+          "message": "confirmModal failed",
+          "status": "processing",
+          "commandName": "confirmModal",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 104,
+          "status": "processing",
+          "replayResult": "passed",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 105,
+          "replayResult": "failed",
+          "message": "navigateLeft failed",
+          "status": "processing",
+          "commandName": "navigateLeft",
+          "command": null
+        },
+        {
+          "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c",
+          "commandIndex": 106,
+          "status": "processing",
+          "command": null
+        }
+      ],
+      "replayResult": "failed",
+      "startTime": 1747381278320,
+      "endTime": 1747381395541,
+      "casePath": "",
+      "caseName": "minitest-1",
+      "caseId": "a63da0f6-8b9f-4ee3-afa3-5c529047bf5c"
+    }
+  ],
+  "success": false,
+  "numPassedTests": 0,
+  "numFailedTests": 1,
+  "env": {
+    "wxapplibVersion": "2.30.2",
+    "simulatorType": "wechat",
+    "devtoolsVersion": "1.06.2412040",
+    "openid": "o6zAJs6D6kTqCH5wBY9yef-mO9HQ",
+    "device": "iPhone 12/13 (Pro)"
+  }
+}

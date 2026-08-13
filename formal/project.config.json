@@ -1,0 +1,109 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"lazyloadPlaceholderEnable": false,
+		"useMultiFrameRuntime": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"userConfirmedUseIsolateContext": true,
+		"userConfirmedBundleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true,
+		"disableUseStrict": false,
+		"minifyWXML": true,
+		"showES6CompileOption": false,
+		"useCompilerPlugins": false,
+		"ignoreUploadUnusedFiles": true,
+		"useStaticServer": true,
+		"compileWorklet": false,
+		"localPlugins": false,
+		"condition": false,
+		"swc": false,
+		"disableSWC": true
+	},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+	"compileType": "miniprogram",
+	"srcMiniprogramRoot": "miniprogram/",
+	"editorSetting": {
+		"tabIndent": "tab",
+		"tabSize": 4
+	},
+	"description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+	"condition": {},
+	"appid": "wxe4b182b532050be6",
+	"packOptions": {
+		"ignore": [
+			{
+				"type": "folder",
+				"value": "miniprogram/tests"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/pages/test1"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/about"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/activity"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/activity_client"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/admin"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/comment"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/default"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/news"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/search"
+			},
+			{
+				"type": "folder",
+				"value": "miniprogram/projects/dazi/pages/tpls"
+			}
+		],
+		"include": []
+	},
+	"libVersion": "2.30.2"
+}

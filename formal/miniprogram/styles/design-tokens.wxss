@@ -1,0 +1,745 @@
+/* ============================================================
+   DESIGN TOKENS — 液态玻璃设计语言
+   iOS 26 / Liquid Glass 风格全局变量与工具类
+   用于微信小程序原生 WXSS
+   ============================================================ */
+
+/* ======== 1. 色彩系统 ======== */
+
+/* 主色 — 降低饱和度的活力橙 */
+page {
+  /* ======== 墨绿自然风 (design-reference-v2) 扩展 token ======== */
+  --color-tabbar-bg:        rgba(250, 249, 245, 0.96);
+  --color-tabbar-bg-active: rgba(47, 107, 79, 0.10);
+  --color-ios-divider:      rgba(60, 66, 60, 0.16);
+  --color-ios-divider-thin: rgba(60, 66, 60, 0.09);
+  --color-glass-tint:       rgba(255, 255, 255, 0.55);
+  --color-glass-stroke:     rgba(255, 255, 255, 0.35);
+  --color-success-strong:   #2E7D32;
+  --color-warning-strong:   #B45309;
+  --color-danger-strong:    #B3261E;
+
+  --color-primary:      #2F6B4F;
+  --color-primary-light:#4C8F6E;
+  --color-primary-bg:   #E8F0EB;
+  --color-primary-dark: #24523D;
+  --color-success:      #4CAF7D;
+  --color-success-bg:   #E9F7EF;
+  --color-warning:      #D98E22;
+  --color-warning-bg:   #FBF2E3;
+  --color-danger:       #E0594A;
+  --color-danger-bg:    #FDEBE9;
+  --color-info:         #2F6B4F;
+  --color-info-bg:      #E8F0EB;
+  --color-bg:           #F6F5F0;
+  --color-bg-alt:       #EFEEE8;
+  --color-card:         #FFFFFF;
+  --color-card-alt:     #F6F5F0;
+  --color-border:       #DDDCD4;
+  --color-divider:      #DDDCD4;
+  --color-text-primary: #1A1C1A;
+  --color-text-secondary:#3C433C;
+  --color-text-tertiary:#8E938E;
+  --color-text-inverse: #FFFFFF;
+  --color-text-placeholder:#AEB2AE;
+  --ios-blue:           #2F6B4F;
+  --ios-green:          #34C759;
+  --ios-red:            #E0594A;
+  --ios-indigo:         #5856D6;
+  --ios-gray-5:         #EFEEE8;
+  --ios-gray-6:         #F6F5F0;
+  --ios-secondary-bg:   #FFFFFF;
+  --glass-white:        rgba(255,255,255,0.72);
+  --glass-white-heavy:  rgba(255,255,255,0.88);
+  --glass-dark:         rgba(26,29,33,0.72);
+  --glass-dark-heavy:   rgba(26,29,33,0.88);
+  --glass-bg:           rgba(255,255,255,0.65);
+  --glass-border:       rgba(255,255,255,0.25);
+  --glass-shadow:       0 8rpx 32rpx rgba(0,0,0,0.06);
+  --cate-cycling:       #5B8DEF;
+  --cate-running:       #2F6B4F;
+  --cate-hiking:        #4CAF7D;
+  --cate-yoga:          #B881D8;
+  --cate-strength:      #5856D6;
+  --cate-swimming:      #4DC9D6;
+  --cate-pilates:       #D881A8;
+  --cate-boxing:        #E0594A;
+  --cate-ball:          #64D2FF;
+  --cate-any:           #8E939C;
+
+  /* ======== 2. 字号层级 ======== */
+  --font-xs:            20rpx;
+  --font-sm:            22rpx;
+  --font-base:          26rpx;
+  --font-md:            28rpx;
+  --font-lg:            32rpx;
+  --font-xl:            36rpx;
+  --font-2xl:           42rpx;
+  --font-3xl:           48rpx;
+  --font-number:        52rpx;
+  /* iOS Dynamic Type 扩展 */
+  --font-caption:       24rpx;
+  --font-callout:       30rpx;
+  --font-subhead:       34rpx;
+  --font-headline:      36rpx;
+  --font-title-3:       44rpx;
+  --font-title-2:       52rpx;
+  --font-title-1:       60rpx;
+  --font-large-title:   68rpx;
+
+  /* ======== 3. 间距系统 ======== */
+  --space-2xs:          4rpx;
+  --space-xs:           8rpx;
+  --space-sm:           12rpx;
+  --space-md:           16rpx;
+  --space-lg:           20rpx;
+  --space-xl:           24rpx;
+  --space-2xl:          32rpx;
+  --space-3xl:          40rpx;
+  --space-4xl:          48rpx;
+
+  /* ======== 4. 圆角规范 ======== */
+  --radius-sm:          12rpx;
+  --radius-md:          18rpx;
+  --radius-lg:          24rpx;
+  --radius-xl:          30rpx;
+  --radius-2xl:         36rpx;
+  --radius-3xl:         44rpx;
+  --radius-full:        999rpx;
+  --radius-card:        32rpx;
+  --radius-ui:          24rpx;
+
+  /* ======== 5. 阴影规范 ======== */
+  --shadow-none:        none;
+  --shadow-xs:          0 2rpx 8rpx rgba(0,0,0,0.04);
+  --shadow-sm:          0 4rpx 16rpx rgba(0,0,0,0.05);
+  --shadow-md:          0 4rpx 12rpx rgba(0,0,0,0.08);
+  --shadow-lg:          0 16rpx 48rpx rgba(0,0,0,0.08);
+  --shadow-xl:          0 24rpx 64rpx rgba(0,0,0,0.10);
+  --shadow-glass:       0 8rpx 32rpx rgba(0,0,0,0.05), 0 0 0 1rpx rgba(255,255,255,0.1) inset;
+
+  /* ======== 6. 过渡动效 ======== */
+  --ease-spring:        cubic-bezier(0.34,1.56,0.64,1);
+  --ease-smooth:        cubic-bezier(0.22,1,0.36,1);
+  --ease-inout:         cubic-bezier(0.65,0,0.35,1);
+  --duration-fast:      200ms;
+  --duration-normal:    350ms;
+  --duration-slow:      500ms;
+}
+
+/* ======== 7. 毛玻璃工具类 ======== */
+
+.glass-light {
+  background: var(--glass-white);
+  -webkit-backdrop-filter: blur(24rpx) saturate(180%);
+  backdrop-filter: blur(24rpx) saturate(180%);
+  border: 1rpx solid var(--glass-border);
+}
+
+.glass-dark {
+  background: var(--glass-dark);
+  -webkit-backdrop-filter: blur(24rpx) saturate(150%);
+  backdrop-filter: blur(24rpx) saturate(150%);
+  border: 1rpx solid rgba(255,255,255,0.08);
+}
+
+.glass-primary {
+  background: rgba(47, 107, 79, 0.12);
+  -webkit-backdrop-filter: blur(20rpx) saturate(160%);
+  backdrop-filter: blur(20rpx) saturate(160%);
+  border: 1rpx solid rgba(47, 107, 79, 0.18);
+}
+
+.glass-fallback {
+  background: rgba(255,255,255,0.92);
+}
+.glass-dark-fallback {
+  background: rgba(26,29,33,0.92);
+}
+
+/* ======== 8. 页面容器 ======== */
+.page-container {
+  min-height: 100vh;
+  padding-bottom: calc(180rpx + env(safe-area-inset-bottom));
+  background: var(--color-bg);
+}
+
+.page-container-no-tab {
+  min-height: 100vh;
+  padding-bottom: calc(40rpx + env(safe-area-inset-bottom));
+  background: var(--color-bg);
+}
+
+.safe-area-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.safe-area-top {
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+}
+
+.status-bar-placeholder {
+  height: var(--status-bar-height, 44px);
+  background: transparent;
+}
+
+/* ======== 9. 骨架屏 ======== */
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-bg-alt) 25%, var(--color-card) 50%, var(--color-bg-alt) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ======== 10. 布局工具类 ======== */
+
+.flex-row { display: flex; flex-direction: row; align-items: center; }
+.flex-between { display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
+.flex-center { display: flex; flex-direction: row; align-items: center; justify-content: center; }
+.flex-col { display: flex; flex-direction: column; }
+.flex-1 { flex: 1; }
+.text-ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.text-ellipsis-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.gap-xs { gap: var(--space-xs); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+.ph-lg { padding-left: var(--space-lg); padding-right: var(--space-lg); }
+
+/* ======== 11. 玻璃卡片基类 ======== */
+
+.glass-card {
+  background: var(--color-card);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.glass-card-elevated {
+  background: rgba(255,255,255,0.88);
+  -webkit-backdrop-filter: blur(20rpx) saturate(150%);
+  backdrop-filter: blur(20rpx) saturate(150%);
+  border: 1rpx solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-glass);
+}
+
+.glass-card:active,
+.glass-card-elevated:active {
+  transform: scale(0.98);
+  transition: transform var(--duration-fast) var(--ease-smooth);
+}
+
+/* ======== 12. 按钮体系 ======== */
+
+/* 主按钮 — 渐变填充 */
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  padding: 0 48rpx;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  border-radius: var(--radius-full);
+  font-size: var(--font-base);
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 8rpx 24rpx rgba(47, 107, 79, 0.22);
+  border: none;
+  transition: all var(--duration-fast) var(--ease-smooth);
+}
+.btn-primary:active {
+  transform: scale(0.96);
+  box-shadow: 0 4rpx 12rpx rgba(47, 107, 79, 0.16);
+}
+
+/* 次按钮 — 描边 */
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  padding: 0 48rpx;
+  background: transparent;
+  border: 2rpx solid var(--color-primary);
+  border-radius: var(--radius-full);
+  font-size: var(--font-base);
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: all var(--duration-fast) var(--ease-smooth);
+}
+.btn-secondary:active {
+  background: var(--color-primary-bg);
+}
+
+/* 玻璃按钮 */
+.btn-glass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72rpx;
+  padding: 0 36rpx;
+  background: rgba(255,255,255,0.7);
+  -webkit-backdrop-filter: blur(16rpx);
+  backdrop-filter: blur(16rpx);
+  border: 1rpx solid rgba(255,255,255,0.4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-xs);
+}
+.btn-glass:active {
+  background: rgba(255,255,255,0.9);
+  transform: scale(0.96);
+}
+
+/* 按钮尺寸变体 */
+.btn-sm { height: 56rpx; padding: 0 28rpx; font-size: var(--font-xs); border-radius: var(--radius-lg); }
+.btn-lg { height: 96rpx; padding: 0 56rpx; font-size: var(--font-md); }
+
+/* 危险按钮 */
+.btn-danger {
+  background: var(--color-danger);
+  box-shadow: 0 8rpx 24rpx rgba(224,89,74,0.3);
+}
+
+/* 禁用态 */
+.btn-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* ======== 13. 表单体系 ======== */
+
+.form-card {
+  background: var(--color-card);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-xs);
+}
+
+.form-card-header {
+  padding: 24rpx 28rpx 12rpx;
+  font-size: var(--font-sm);
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1rpx;
+}
+
+.form-group {
+  padding: 0 28rpx;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28rpx 0;
+  border-bottom: 1rpx solid var(--color-divider);
+  min-height: 84rpx;
+}
+
+.form-field:last-child {
+  border-bottom: none;
+}
+
+.form-field-label {
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+  margin-right: 24rpx;
+}
+
+.form-field-value {
+  flex: 1;
+  font-size: var(--font-base);
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+.form-field-placeholder {
+  color: var(--color-text-placeholder);
+}
+
+.form-field-arrow {
+  color: var(--color-text-tertiary);
+  margin-left: 8rpx;
+  flex-shrink: 0;
+}
+
+/* 输入框 */
+.form-input {
+  flex: 1;
+  text-align: right;
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
+  min-height: 60rpx;
+}
+
+.form-textarea {
+  width: 100%;
+  height: 180rpx;
+  padding: 20rpx;
+  font-size: var(--font-base);
+  color: var(--color-text-primary);
+  background: var(--color-card-alt);
+  border-radius: var(--radius-lg);
+  border: 1rpx solid var(--color-border);
+}
+
+/* ======== 14. 状态徽章 ======== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4rpx 16rpx;
+  border-radius: var(--radius-full);
+  font-size: var(--font-xs);
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.badge-primary {
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+}
+
+.badge-success {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.badge-warning {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+}
+
+.badge-danger {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+.badge-info {
+  background: var(--color-info-bg);
+  color: var(--color-info);
+}
+
+.badge-outline {
+  background: transparent;
+  border: 1rpx solid currentColor;
+}
+
+/* ======== 15. 分区标题 ======== */
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx 4rpx 20rpx;
+}
+
+.section-title {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.section-subtitle {
+  font-size: var(--font-xs);
+  color: var(--color-text-tertiary);
+  margin-left: 12rpx;
+}
+
+.section-action {
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* ======== 16. 空状态 ======== */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80rpx 40rpx;
+}
+
+.empty-icon {
+  font-size: 96rpx;
+  margin-bottom: 24rpx;
+  opacity: 0.6;
+}
+
+.empty-title {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 12rpx;
+}
+
+.empty-desc {
+  font-size: var(--font-base);
+  color: var(--color-text-tertiary);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 32rpx;
+}
+
+/* ======== 17. 加载更多 ======== */
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx 0 40rpx;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  font-size: var(--font-sm);
+  color: var(--color-text-tertiary);
+}
+
+.spinner {
+  width: 28rpx;
+  height: 28rpx;
+  border: 3rpx solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.no-more {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  font-size: var(--font-xs);
+  color: var(--color-text-tertiary);
+}
+
+.no-more-line {
+  width: 60rpx;
+  height: 1rpx;
+  background: var(--color-border);
+}
+
+/* ======== 18. 玻璃导航条 ======== */
+
+.glass-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.85);
+  -webkit-backdrop-filter: blur(30rpx) saturate(200%);
+  backdrop-filter: blur(30rpx) saturate(200%);
+  border-bottom: 1rpx solid rgba(0,0,0,0.03);
+}
+
+.glass-nav-inner {
+  padding: 0 24rpx;
+}
+
+/* ======== 19. 分段控制器 ======== */
+
+.segmented-control {
+  display: flex;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-full);
+  padding: 4rpx;
+  gap: 4rpx;
+}
+
+.segmented-item {
+  flex: 1;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: all var(--duration-fast) var(--ease-smooth);
+}
+
+.segmented-item.active {
+  background: var(--color-card);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  box-shadow: var(--shadow-xs);
+}
+
+/* ======== 20. 数据仪表卡片 ======== */
+
+.stat-card-row {
+  display: flex;
+  gap: var(--space-md);
+  padding: 0 4rpx;
+}
+
+.stat-card {
+  flex: 1;
+  background: var(--color-card);
+  border-radius: var(--radius-xl);
+  padding: 24rpx 20rpx;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-card-value {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.stat-card-label {
+  font-size: var(--font-xs);
+  color: var(--color-text-tertiary);
+  margin-top: 8rpx;
+}
+
+.stat-card-icon {
+  font-size: 36rpx;
+  margin-bottom: 8rpx;
+}
+
+/* ======== 21. 标签筛选栏 ======== */
+
+.filter-scroll {
+  width: 100%;
+  white-space: nowrap;
+  padding: 4rpx 0 8rpx;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 28rpx;
+  margin-right: 16rpx;
+  background: rgba(0,0,0,0.03);
+  border-radius: var(--radius-full);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: all var(--duration-fast) var(--ease-smooth);
+  border: 1rpx solid transparent;
+}
+
+.filter-chip.active {
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+  font-weight: 600;
+  border-color: rgba(47, 107, 79, 0.2);
+}
+
+.filter-chip:active {
+  transform: scale(0.94);
+}
+
+/* ======== 22. 深色模式变量预留 ======== */
+
+.dark-mode {
+  --color-bg:           #000000;
+  --color-bg-alt:       #1C1C1E;
+  --color-card:         #1C1C1E;
+  --color-card-alt:     #2C2C2E;
+  --color-border:       #38383A;
+  --color-divider:      #38383A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary:#EBEBF5;
+  --color-text-tertiary:#8E8E93;
+  --ios-gray-5:         #2C2C2E;
+  --ios-gray-6:         #1C1C1E;
+  --ios-secondary-bg:   #1C1C1E;
+  --glass-white:        rgba(30,32,37,0.75);
+  --glass-white-heavy:  rgba(30,32,37,0.9);
+  --glass-bg:           rgba(30,32,37,0.7);
+  --glass-border:       rgba(255,255,255,0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  page {
+    --color-bg:           #000000;
+    --color-bg-alt:       #1C1C1E;
+    --color-card:         #1C1C1E;
+    --color-card-alt:     #2C2C2E;
+    --color-border:       #38383A;
+    --color-divider:      #38383A;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary:#EBEBF5;
+    --color-text-tertiary:#8E8E93;
+    --color-text-placeholder:#636366;
+    --ios-gray-5:         #2C2C2E;
+    --ios-gray-6:         #1C1C1E;
+    --ios-secondary-bg:   #1C1C1E;
+    --glass-white:        rgba(30,32,37,0.78);
+    --glass-white-heavy:  rgba(30,32,37,0.92);
+    --glass-bg:           rgba(30,32,37,0.74);
+    --glass-border:       rgba(255,255,255,0.08);
+    --shadow-xs:          0 2rpx 8rpx rgba(0,0,0,0.22);
+    --shadow-sm:          0 4rpx 16rpx rgba(0,0,0,0.26);
+    --shadow-md:          0 8rpx 24rpx rgba(0,0,0,0.3);
+  }
+}
+
+/* ======== 23. 兼容降级 ======== */
+
+/* 不支持 backdrop-filter 的降级 */
+@supports not ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .glass-light {
+    background: rgba(255,255,255,0.95) !important;
+  }
+  .glass-dark {
+    background: rgba(26,29,33,0.95) !important;
+  }
+  .glass-primary {
+    background: rgba(47, 107, 79, 0.12) !important;
+  }
+  .glass-nav {
+    background: rgba(255,255,255,0.97) !important;
+  }
+  .glass-card-elevated {
+    background: rgba(255,255,255,0.97) !important;
+  }
+}

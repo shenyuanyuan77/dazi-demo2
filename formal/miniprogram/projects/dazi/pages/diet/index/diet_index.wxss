@@ -1,0 +1,440 @@
+/* 饮食 - iOS 27 (对齐设计稿) */
+
+page { background: var(--bg-system); color: var(--label-primary); }
+
+/* ====== Date Row ====== */
+.ios27-date-row {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 28rpx;
+  background: var(--bg-elevated);
+  position: relative;
+  transition: background-color var(--duration-fast) var(--ease-ios);
+}
+.ios27-date-row:active { background: var(--fill-quaternary); }
+.ios27-date-icon {
+  width: 56rpx;
+  height: 56rpx;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  margin-right: 20rpx;
+}
+.ios27-date-main { flex: 1; min-width: 0; }
+.ios27-date-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: var(--label-primary);
+  letter-spacing: -0.3rpx;
+}
+.ios27-date-sub {
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+}
+
+/* ====== Nutrition Head ====== */
+.ios27-nutrition-head {
+  padding: 26rpx 28rpx 8rpx;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.ios27-nutrition-label {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1rpx;
+}
+.ios27-nutrition-value {
+  margin-top: 6rpx;
+  display: flex;
+  align-items: baseline;
+  gap: 4rpx;
+  font-variant-numeric: tabular-nums;
+}
+.ios27-nutrition-now {
+  font-size: 56rpx;
+  font-weight: 800;
+  color: var(--label-primary);
+  letter-spacing: -1rpx;
+  line-height: 1;
+}
+.ios27-nutrition-target {
+  font-size: 24rpx;
+  color: var(--label-tertiary);
+  font-weight: 500;
+}
+
+/* ====== Meal Group ====== */
+.ios27-meal-group {
+  margin: 0 32rpx 16rpx;
+  background: var(--bg-elevated);
+  border-radius: 28rpx;
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  border: 1rpx solid transparent;
+  transition: background var(--duration-mid) var(--ease-ios),
+              border-color var(--duration-mid) var(--ease-ios);
+}
+.ios27-meal-group.warning {
+  background: rgba(255, 149, 0, 0.06);
+  border-color: rgba(255, 149, 0, 0.20);
+}
+.ios27-meal-group.danger {
+  background: rgba(255, 59, 48, 0.06);
+  border-color: rgba(255, 59, 48, 0.20);
+}
+
+.ios27-meal-head {
+  display: flex;
+  align-items: center;
+  padding: 22rpx 28rpx;
+  gap: 18rpx;
+  position: relative;
+}
+.ios27-meal-head::after {
+  content: "";
+  position: absolute;
+  left: 28rpx;
+  right: 0;
+  bottom: 0;
+  height: 1rpx;
+  background: var(--separator-thin);
+}
+.ios27-meal-icon {
+  width: 56rpx;
+  height: 56rpx;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16rpx;
+  font-size: 26rpx;
+  font-weight: 700;
+  background: var(--tint-blue-bg);
+  color: var(--system-blue);
+}
+.ios27-meal-icon.lunch     { background: var(--tint-orange-bg); color: var(--system-orange); }
+.ios27-meal-icon.dinner    { background: var(--tint-purple-bg); color: var(--system-purple); }
+.ios27-meal-icon.snack     { background: var(--tint-red-bg); color: var(--system-red); }
+.ios27-meal-main { flex: 1; min-width: 0; }
+.ios27-meal-title {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--label-primary);
+  letter-spacing: -0.2rpx;
+}
+.ios27-meal-status-badge {
+  padding: 3rpx 12rpx;
+  border-radius: 999rpx;
+  font-size: 20rpx;
+  font-weight: 600;
+}
+.ios27-meal-status-badge.warning {
+  background: var(--tint-orange-bg);
+  color: var(--tint-orange-fg);
+}
+.ios27-meal-status-badge.danger {
+  background: var(--tint-red-bg);
+  color: var(--tint-red-fg);
+}
+.ios27-meal-sub {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+}
+.ios27-meal-chevron {
+  font-size: 32rpx;
+  color: var(--label-tertiary);
+  line-height: 1;
+  font-weight: 300;
+}
+
+.ios27-meal-macros {
+  margin: 0 28rpx 4rpx;
+  padding: 16rpx 0;
+  display: flex;
+  gap: 24rpx;
+  border-top: 1rpx solid var(--separator-thin);
+  font-variant-numeric: tabular-nums;
+}
+.ios27-meal-macros > view {
+  display: flex;
+  align-items: baseline;
+  gap: 2rpx;
+}
+
+.ios27-meal-items {
+  padding: 0 28rpx 8rpx;
+}
+
+/* ====== Food Row (swipe) ====== */
+.ios27-swipe-row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+.ios27-food-row {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  padding: 16rpx 4rpx;
+  background: transparent;
+  transition: transform var(--duration-mid) var(--ease-spring);
+  border-bottom: 1rpx solid var(--separator-thin);
+}
+.ios27-meal-group.warning .ios27-food-row,
+.ios27-meal-group.danger .ios27-food-row {
+  background: transparent;
+}
+.ios27-food-row:last-child { border-bottom: 0; }
+
+.ios27-food-icon {
+  flex: none;
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  background: var(--bg-system);
+  border-radius: 14rpx;
+}
+.ios27-food-info { flex: 1; min-width: 0; }
+.ios27-food-name {
+  font-size: 28rpx;
+  color: var(--label-primary);
+  font-weight: 500;
+}
+.ios27-food-amount {
+  margin-top: 2rpx;
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+}
+.ios27-food-kcal {
+  flex: none;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: var(--label-primary);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.3rpx;
+}
+.ios27-food-kcal-unit {
+  font-size: 20rpx;
+  font-weight: 500;
+  color: var(--label-tertiary);
+  margin-left: 2rpx;
+}
+
+.ios27-swipe-delete {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 160rpx;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background: var(--system-red);
+  border: 0;
+  font-size: 26rpx;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-fast) var(--ease-ios);
+}
+.ios27-swipe-row.open .ios27-swipe-delete { opacity: 1; pointer-events: auto; }
+.ios27-swipe-delete::after { border: 0; }
+
+.ios27-meal-empty {
+  padding: 8rpx 28rpx 24rpx;
+  font-size: 24rpx;
+  color: var(--label-tertiary);
+  text-align: center;
+}
+
+/* ====== Meal Advice ====== */
+.ios27-meal-advice {
+  margin: 8rpx 28rpx 24rpx;
+  padding: 16rpx 22rpx;
+  display: flex;
+  align-items: flex-start;
+  gap: 14rpx;
+  background: var(--tint-blue-bg);
+  border-radius: 18rpx;
+}
+.ios27-advice-pill {
+  flex: none;
+  padding: 4rpx 12rpx;
+  background: var(--system-blue);
+  color: #FFFFFF;
+  font-size: 18rpx;
+  font-weight: 800;
+  border-radius: 8rpx;
+  letter-spacing: 0.5rpx;
+}
+.ios27-advice-text {
+  flex: 1;
+  font-size: 24rpx;
+  line-height: 1.5;
+  color: var(--system-blue);
+}
+
+/* ====== Macro pills ====== */
+.ios27-macro-now { font-size: 30rpx; font-weight: 700; color: var(--label-primary); letter-spacing: -0.3rpx; }
+
+/* ============================================================
+   墨绿自然风 v2 — 饮食页专属
+   ============================================================ */
+
+/* 周日期选择条 */
+.diet-week-strip {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  padding: 12rpx 24rpx 20rpx;
+}
+.diet-week-pill {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 14rpx 0;
+  border-radius: 20rpx;
+  background: var(--bg-secondary);
+  box-shadow: var(--shadow-xs);
+  transition: all var(--duration-fast) var(--ease-smooth);
+}
+.diet-week-pill.active {
+  background: var(--brand-primary);
+  box-shadow: 0 6rpx 20rpx rgba(47, 107, 79, 0.28);
+  transform: translateY(-2rpx);
+}
+.diet-week-name {
+  font-size: 20rpx;
+  color: var(--label-tertiary);
+  line-height: 1;
+  margin-bottom: 6rpx;
+}
+.diet-week-pill.active .diet-week-name { color: rgba(255,255,255,0.85); }
+.diet-week-num {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: var(--label-primary);
+  line-height: 1;
+}
+.diet-week-pill.active .diet-week-num { color: #fff; }
+.diet-week-cal {
+  flex-shrink: 0;
+  width: 72rpx;
+  height: 72rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--tint-blue-bg);
+  margin-left: 4rpx;
+}
+.diet-week-cal-icon { font-size: 32rpx; }
+
+/* 三大营养素行 (今日已摄入卡内) */
+.diet-macro-row {
+  display: flex;
+  align-items: center;
+  margin-top: 22rpx;
+  padding-top: 22rpx;
+  border-top: 1rpx solid var(--separator-thin);
+}
+.diet-macro-cell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+.diet-macro-icon {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 16rpx;
+  background: var(--tint-green-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26rpx;
+}
+.diet-macro-divider {
+  width: 1rpx;
+  height: 56rpx;
+  background: var(--separator-thin);
+}
+.diet-macro-info { flex: 1; min-width: 0; }
+.diet-macro-label {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  line-height: 1.2;
+}
+.diet-macro-value {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  margin-top: 2rpx;
+}
+.diet-macro-now {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+/* 底部: 今日还可摄入 + 饮食分析 */
+.diet-remaining-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 24rpx 24rpx 0;
+  padding: 28rpx 32rpx;
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-primary-dark) 100%);
+  border-radius: 28rpx;
+  box-shadow: 0 12rpx 32rpx rgba(47, 107, 79, 0.22);
+}
+.diet-remaining-label {
+  font-size: 24rpx;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.2;
+}
+.diet-remaining-value {
+  font-size: 24rpx;
+  color: rgba(255,255,255,0.9);
+  margin-top: 4rpx;
+}
+.diet-remaining-num {
+  font-size: 48rpx;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -1rpx;
+}
+.diet-analysis-btn {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--brand-primary);
+  background: #fff;
+  padding: 18rpx 32rpx;
+  border-radius: 999rpx;
+  line-height: 1;
+  box-shadow: 0 4rpx 16rpx rgba(0,0,0,0.12);
+}
+.diet-analysis-btn::after { border: none; }
+.ios27-macro-target { font-size: 22rpx; color: var(--label-tertiary); margin-left: 2rpx; }

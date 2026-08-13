@@ -1,0 +1,193 @@
+/* components/proposal-card/index.wxss */
+.proposal-card {
+  background: var(--color-card);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  margin: var(--space-md) 0;
+  border: 0.5rpx solid var(--color-ios-divider-thin);
+  transition: opacity var(--duration-normal) var(--ease-smooth);
+}
+
+.proposal-card.is-cancelled {
+  opacity: 0.55;
+}
+
+.proposal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+}
+
+.proposal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.proposal-type {
+  display: inline-flex;
+  align-items: center;
+  padding: 4rpx 14rpx;
+  border-radius: var(--radius-full);
+  font-size: var(--font-xs);
+  font-weight: 600;
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+}
+
+.proposal-source {
+  font-size: var(--font-xs);
+  color: var(--color-text-tertiary);
+  border: 0.5rpx solid var(--color-ios-divider-thin);
+  border-radius: var(--radius-sm);
+  padding: 2rpx 10rpx;
+}
+
+.proposal-status {
+  font-size: var(--font-xs);
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.proposal-status.is-confirmed {
+  color: var(--color-success-strong);
+}
+
+.proposal-summary {
+  font-size: var(--font-md);
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+}
+
+/* dietLog */
+.diet-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.meal-tag {
+  background: var(--color-bg-alt);
+  padding: 2rpx 12rpx;
+  border-radius: var(--radius-full);
+  font-size: var(--font-xs);
+}
+
+.diet-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+  border-bottom: 0.5rpx solid var(--color-ios-divider-thin);
+  font-size: var(--font-md);
+}
+
+.diet-row:last-of-type { border-bottom: 0; }
+
+.diet-name { flex: 1; min-width: 0; }
+.diet-amount { color: var(--color-text-tertiary); margin: 0 var(--space-md); }
+.diet-kcal { color: var(--color-primary); font-weight: 600; }
+
+.diet-total {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 0.5rpx solid var(--color-ios-divider-thin);
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  text-align: right;
+}
+
+/* workoutPlan */
+.workout-exercise {
+  padding: var(--space-sm) 0;
+  border-bottom: 0.5rpx solid var(--color-ios-divider-thin);
+}
+
+.workout-exercise:last-of-type { border-bottom: 0; }
+
+.workout-name {
+  font-size: var(--font-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 4rpx;
+}
+
+.workout-sub {
+  font-size: var(--font-sm);
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--space-xs);
+}
+
+.workout-sets {
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.workout-set {
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+/* profilePatch */
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+  border-bottom: 0.5rpx solid var(--color-ios-divider-thin);
+  font-size: var(--font-md);
+}
+
+.profile-row:last-of-type { border-bottom: 0; }
+
+.profile-label { color: var(--color-text-secondary); }
+.profile-value { color: var(--color-text-primary); font-weight: 500; }
+
+/* actions */
+.proposal-actions {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.proposal-btn {
+  flex: 1;
+  min-height: 88rpx;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-md);
+  font-weight: 600;
+  border: 0;
+}
+
+.proposal-btn.primary {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.proposal-btn.secondary {
+  background: var(--color-bg-alt);
+  color: var(--color-text-primary);
+}
+
+.proposal-btn::after { border: 0; }
+
+@media (prefers-color-scheme: dark) {
+  .proposal-card {
+    background: var(--color-card);
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .proposal-type {
+    background: rgba(62, 138, 103, 0.18);
+    color: #3E8A67;
+  }
+}

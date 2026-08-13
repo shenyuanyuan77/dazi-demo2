@@ -1,0 +1,418 @@
+<view class="page ai-page tab-page-safe" style="padding-top: {{safeTop}}px;">
+  <view class="page-toolbar ai-toolbar">
+    <view class="toolbar-copy">
+      <view class="page-title">{{coach.name}}</view>
+      <view class="page-subtitle">饮食、训练和身体变化，都能在这里轻松记录</view>
+    </view>
+    <view class="toolbar-actions">
+      <button class="nav-icon-button optical-center" bindtap="startNewConversation" aria-label="新对话">
+        <image class="toolbar-icon-image" src="/images/ui-icons/new-message.png" mode="aspectFit" />
+      </button>
+      <button class="nav-icon-button optical-center" bindtap="openHistory" aria-label="历史对话">
+        <image class="toolbar-icon-image" src="/images/ui-icons/history.png" mode="aspectFit" />
+      </button>
+    </view>
+  </view>
+
+  <scroll-view
+    class="message-list"
+    style="top: {{messageListTop}}px; bottom: {{messageListBottom}}px;"
+    scroll-y
+    enhanced
+    show-scrollbar="{{false}}"
+    scroll-top="{{scrollTop}}"
+    scroll-into-view="{{scrollIntoView}}"
+    scroll-with-animation="{{scrollWithAnimation}}"
+  >
+    <view class="message-stack {{messages.length || sending || requestError ? 'chatting' : 'empty'}} {{conversationSettled ? 'settled' : ''}}">
+    <view wx:if="{{false}}" class="coach-overview fitness-card smooth-corner" bindtap="openCoachSettings">
+      <view class="overview-title">今天想先做什么？</view>
+      <view class="overview-content">{{proactiveGreeting}}</view>
+      <view class="overview-grid">
+        <view class="overview-metric smooth-corner">
+          <text class="metric-label">今天可以记</text>
+          <text class="metric-value">饮食、训练、身体变化</text>
+        </view>
+        <view class="overview-metric smooth-corner">
+          <text class="metric-label">保存前</text>
+          <text class="metric-value">我会先让你看一眼</text>
+        </view>
+      </view>
+    </view>
+
+    <view wx:if="{{!messages.length && !sending}}" class="launch-panel fitness-card smooth-corner">
+      <view class="launch-title">从这里开始</view>
+      <view class="launch-copy">拍照、描述或补充身体变化，我会先帮你整理，再由你决定要不要保存。</view>
+      <view class="launch-summary">
+        <view class="launch-summary-item smooth-corner">
+          <text class="launch-summary-label">今天可以记</text>
+          <text class="launch-summary-value">饮食、训练、身体变化</text>
+        </view>
+        <view class="launch-summary-item smooth-corner">
+          <text class="launch-summary-label">保存前</text>
+          <text class="launch-summary-value">我会先让你看一眼</text>
+        </view>
+      </view>
+      <view class="launch-grid">
+        <button class="launch-action smooth-corner" data-text="拍照记饮食" bindtap="useQuickQuestion">
+          <text class="launch-action-title">拍照记饮食</text>
+          <text class="launch-action-desc">拍一张餐食照片，帮你估算这一顿</text>
+        </button>
+        <button class="launch-action smooth-corner" data-text="记录身体变化" bindtap="useQuickQuestion">
+          <text class="launch-action-title">记录身体变化</text>
+          <text class="launch-action-desc">体重、体脂和围度都可以补充</text>
+        </button>
+        <button class="launch-action smooth-corner" data-text="生成今日饮食建议" bindtap="useQuickQuestion">
+          <text class="launch-action-title">生成今日饮食建议</text>
+          <text class="launch-action-desc">想吃得更清爽、饱腹或高蛋白都可以</text>
+        </button>
+        <button class="launch-action smooth-corner" data-text="安排居家训练" bindtap="useQuickQuestion">
+          <text class="launch-action-title">安排居家训练</text>
+          <text class="launch-action-desc">按今天状态给你一个能马上开始的计划</text>
+        </button>
+      </view>
+    </view>
+
+    <view
+      wx:for="{{messages}}"
+      wx:key="index"
+      class="message {{item.AI_MESSAGE_ROLE}}"
+      data-index="{{index}}"
+      bindlongpress="showMessageMenu"
+    >
+      <view wx:if="{{item.AI_MESSAGE_ROLE === 'assistant'}}" class="coach-avatar {{coach.avatar ? 'has-image' : 'sparkle-avatar'}}" bindtap="openCoachSettings">
+        <image wx:if="{{coach.avatar}}" src="{{coach.avatar}}" mode="aspectFill" />
+        <view wx:else class="sparkle-mark">
+          <view class="sparkle-mark-main"></view>
+          <view class="sparkle-mark-small"></view>
+        </view>
+      </view>
+
+      <view class="message-main">
+        <view class="message-bubble smooth-corner">
+          <view
+            wx:if="{{item.AI_MESSAGE_PAYLOAD && item.AI_MESSAGE_PAYLOAD.images && item.AI_MESSAGE_PAYLOAD.images.length}}"
+            class="message-images"
+          >
+            <image
+              wx:for="{{item.AI_MESSAGE_PAYLOAD.images}}"
+              wx:for-item="imageUrl"
+              wx:for-index="imageIndex"
+              wx:key="*this"
+              class="message-image smooth-corner"
+              src="{{imageUrl}}"
+              mode="aspectFill"
+              data-message="{{index}}"
+              data-index="{{imageIndex}}"
+              bindtap="previewMessageImage"
+            />
+          </view>
+
+          <view wx:if="{{item.AI_MESSAGE_CONTENT}}" class="message-content">{{item.AI_MESSAGE_CONTENT}}</view>
+
+          <view
+            wx:if="{{item.AI_MESSAGE_PAYLOAD && item.AI_MESSAGE_PAYLOAD.safety && item.AI_MESSAGE_PAYLOAD.safety.message}}"
+            class="safety-box smooth-corner"
+          >
+            <view class="safety-title">安全提醒</view>
+            <view>{{item.AI_MESSAGE_PAYLOAD.safety.message}}</view>
+          </view>
+
+          <view
+            wx:if="{{item.AI_MESSAGE_TYPE === 'diet' && item.AI_MESSAGE_PAYLOAD && item.AI_MESSAGE_PAYLOAD.calories}}"
+            class="data-panel smooth-corner"
+          >
+            <view class="panel-title">饮食估算</view>
+            <view class="data-strong">{{item.AI_MESSAGE_PAYLOAD.calories}} kcal</view>
+            <view class="data-row"><text>蛋白质</text><text>{{item.AI_MESSAGE_PAYLOAD.protein}}g</text></view>
+            <view class="data-row"><text>碳水</text><text>{{item.AI_MESSAGE_PAYLOAD.carbs}}g</text></view>
+            <view class="data-row"><text>脂肪</text><text>{{item.AI_MESSAGE_PAYLOAD.fat}}g</text></view>
+          </view>
+
+          <view
+            wx:if="{{item.AI_MESSAGE_TYPE === 'training' && item.AI_MESSAGE_PAYLOAD && item.AI_MESSAGE_PAYLOAD.days}}"
+            class="data-panel smooth-corner"
+          >
+            <view class="panel-title">训练安排</view>
+            <view wx:for="{{item.AI_MESSAGE_PAYLOAD.days}}" wx:for-item="day" wx:key="name" class="plan-day">
+              <view class="plan-name">{{day.name}}</view>
+              <view wx:for="{{day.actions}}" wx:for-item="action" wx:key="*this" class="plan-action">{{action}}</view>
+            </view>
+          </view>
+
+          <view
+            wx:if="{{item.AI_MESSAGE_ROLE === 'assistant' && item.AI_MESSAGE_PAYLOAD && item.AI_MESSAGE_PAYLOAD.proposals && item.AI_MESSAGE_PAYLOAD.proposals.length}}"
+            class="proposal-list"
+          >
+            <view
+              wx:for="{{item.AI_MESSAGE_PAYLOAD.proposals}}"
+              wx:for-item="proposal"
+              wx:for-index="proposalIndex"
+              wx:key="id"
+              class="proposal-card smooth-corner"
+            >
+              <view class="proposal-header">
+                <view>
+                  <view class="proposal-title">
+                    {{proposal.type === 'dietLog' ? '准备保存到饮食记录' : (proposal.type === 'workoutPlan' ? '准备保存到训练计划' : '准备更新身体数据')}}
+                  </view>
+                  <view class="proposal-summary">{{proposal.summary || '可写入对应页面'}}</view>
+                </view>
+                <view class="proposal-badge">{{proposal.status === 'pending' ? '待确认' : (proposal.status === 'writing' ? '写入中' : (proposal.status === 'success' ? '已写入' : '已取消'))}}</view>
+              </view>
+
+              <view wx:if="{{proposal.status === 'pending'}}" class="proposal-fields">
+                <view wx:if="{{proposal.type === 'dietLog'}}" class="proposal-food-list">
+                  <view
+                    wx:for="{{proposal.payload.items}}"
+                    wx:for-item="food"
+                    wx:for-index="foodIndex"
+                    wx:key="name"
+                    class="proposal-food smooth-corner"
+                  >
+                    <view class="proposal-food-main">
+                      <view
+                        class="proposal-edit-value"
+                        data-index="{{index}}"
+                        data-proposal="{{proposalIndex}}"
+                        data-food="{{foodIndex}}"
+                        data-field="name"
+                        bindtap="openProposalEditor"
+                      >{{food.name}}</view>
+                      <text>{{food.calories}} kcal · 碳{{food.carbs}}g · 蛋{{food.protein}}g · 脂{{food.fat}}g</text>
+                    </view>
+                    <view class="proposal-food-edit">
+                      <view
+                        class="proposal-edit-chip"
+                        data-index="{{index}}"
+                        data-proposal="{{proposalIndex}}"
+                        data-food="{{foodIndex}}"
+                        data-field="amount"
+                        bindtap="openProposalEditor"
+                      >{{food.amount}}</view>
+                      <text>{{food.unit}}</text>
+                      <view
+                        class="proposal-edit-chip"
+                        data-index="{{index}}"
+                        data-proposal="{{proposalIndex}}"
+                        data-food="{{foodIndex}}"
+                        data-field="calories"
+                        bindtap="openProposalEditor"
+                      >{{food.calories}}</view>
+                      <text>kcal</text>
+                      <button
+                        data-index="{{index}}"
+                        data-proposal="{{proposalIndex}}"
+                        data-food="{{foodIndex}}"
+                        bindtap="removeProposalFood"
+                      >删除</button>
+                    </view>
+                  </view>
+                </view>
+
+                <picker
+                  wx:if="{{proposal.type === 'dietLog' || proposal.type === 'workoutPlan'}}"
+                  mode="date"
+                  value="{{proposal.uiDate}}"
+                  data-index="{{index}}"
+                  data-proposal="{{proposalIndex}}"
+                  bindchange="onProposalDateChange"
+                >
+                  <view class="proposal-field smooth-corner">
+                    <text>日期</text><text>{{proposal.uiDate}}</text>
+                  </view>
+                </picker>
+
+                <picker
+                  wx:if="{{proposal.type === 'dietLog'}}"
+                  mode="selector"
+                  range="{{mealOptions}}"
+                  value="{{proposal.uiMealPickerIndex}}"
+                  data-index="{{index}}"
+                  data-proposal="{{proposalIndex}}"
+                  bindchange="onProposalMealChange"
+                >
+                  <view class="proposal-field smooth-corner">
+                    <text>餐次</text><text>{{proposal.uiMealLabel}}</text>
+                  </view>
+                </picker>
+
+                <picker
+                  wx:if="{{proposal.type === 'workoutPlan' && proposal.payload.operation !== 'delete'}}"
+                  mode="selector"
+                  range="{{workoutWriteOptions}}"
+                  value="{{proposal.uiWriteModeIndex}}"
+                  data-index="{{index}}"
+                  data-proposal="{{proposalIndex}}"
+                  bindchange="onWorkoutWriteModeChange"
+                >
+                  <view class="proposal-field smooth-corner">
+                    <text>保存到</text><text>{{proposal.uiWriteModeLabel}}</text>
+                  </view>
+                </picker>
+
+                <view wx:if="{{proposal.type === 'workoutPlan'}}" class="proposal-exercise-list">
+                  <view wx:for="{{proposal.payload.exercises}}" wx:for-item="exercise" wx:key="name" class="proposal-exercise">
+                    <text>{{exercise.name}}</text>
+                    <text>{{exercise.sets.length}} 组</text>
+                  </view>
+                </view>
+
+                <view wx:if="{{proposal.type === 'profilePatch'}}" class="proposal-body-list">
+                  <view wx:for="{{proposal.uiBodyFields}}" wx:key="key" class="proposal-field smooth-corner">
+                    <text>{{item.label}}</text>
+                    <view class="proposal-body-input">
+                      <view
+                        class="proposal-edit-chip"
+                        data-index="{{index}}"
+                        data-proposal="{{proposalIndex}}"
+                        data-field="{{item.key}}"
+                        bindtap="openProposalEditor"
+                      >{{proposal.payload.profilePatch[item.key]}}</view>
+                      <text>{{item.unit}}</text>
+                    </view>
+                  </view>
+                </view>
+
+                <view wx:if="{{proposal.writeError}}" class="proposal-error">{{proposal.writeError}}</view>
+                <view class="proposal-question">这些信息看起来没问题的话，就可以保存了。</view>
+                <view class="proposal-actions">
+                  <button
+                    class="proposal-no smooth-corner optical-center"
+                    data-index="{{index}}"
+                    data-proposal="{{proposalIndex}}"
+                    bindtap="rejectProposal"
+                  >先不保存</button>
+                  <button
+                    class="proposal-yes smooth-corner optical-center"
+                    data-index="{{index}}"
+                    data-proposal="{{proposalIndex}}"
+                    bindtap="acceptProposal"
+                  >保存这条</button>
+                </view>
+              </view>
+
+              <view wx:elif="{{proposal.status === 'writing'}}" class="proposal-state writing">正在保存，请稍等…</view>
+              <view wx:elif="{{proposal.status === 'success'}}" class="proposal-state confirmed">已保存，并完成核对</view>
+              <view wx:elif="{{proposal.status === 'failed'}}" class="proposal-state failed">
+                <text>{{proposal.writeError || '这次没有保存成功，请再试一次'}}</text>
+                <button
+                  data-index="{{index}}"
+                  data-proposal="{{proposalIndex}}"
+                  bindtap="retryProposal"
+                >再试一次</button>
+              </view>
+              <view wx:else class="proposal-state">这条内容暂时没有保存</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view wx:if="{{item.AI_MESSAGE_ROLE === 'user'}}" class="user-avatar"><text>我</text></view>
+    </view>
+
+    <view wx:if="{{sending}}" class="message assistant">
+      <view class="coach-avatar {{coach.avatar ? 'has-image' : 'sparkle-avatar'}}">
+        <image wx:if="{{coach.avatar}}" src="{{coach.avatar}}" mode="aspectFill" />
+        <view wx:else class="sparkle-mark">
+          <view class="sparkle-mark-main"></view>
+          <view class="sparkle-mark-small"></view>
+        </view>
+      </view>
+      <view class="thinking-card smooth-corner">
+        <view class="thinking-label">{{thinkingText}}</view>
+        <view class="typing"><text></text><text></text><text></text></view>
+      </view>
+    </view>
+
+    <view wx:if="{{requestError}}" class="retry">
+      <text>{{requestError}}</text><text class="retry-action" bindtap="retryLastMessage">重试</text>
+    </view>
+
+    <view id="bottom-anchor" class="message-bottom"></view>
+    </view>
+  </scroll-view>
+
+  <view wx:if="{{showImageSourceMenu}}" class="source-menu-backdrop" catchtap="closeImageSourceMenu"></view>
+
+  <view
+    class="composer-wrap smooth-corner {{keyboardHeight ? 'keyboard' : ''}}"
+    style="bottom: {{keyboardHeight ? keyboardHeight + 8 : composerRestBottom}}px;"
+  >
+    <view wx:if="{{showImageSourceMenu}}" class="source-menu smooth-corner">
+      <view class="source-menu-title">添加图片</view>
+      <button class="source-option smooth-corner" data-source="camera" bindtap="chooseImageSource">
+        <view class="source-icon camera-icon"></view>
+        <view class="source-copy">
+          <text>拍照</text>
+          <text>直接拍餐食、设备或身体数据截图</text>
+        </view>
+      </button>
+      <button class="source-option smooth-corner" data-source="album" bindtap="chooseImageSource">
+        <view class="source-icon album-icon"></view>
+        <view class="source-copy">
+          <text>从相册选择</text>
+          <text>最多选择 3 张图片</text>
+        </view>
+      </button>
+    </view>
+
+    <!-- 快捷 pill 行 (设计稿 v2) -->
+    <scroll-view wx:if="{{!selectedImages.length && !showImageSourceMenu}}" class="quick-pills" scroll-x show-scrollbar="{{false}}">
+      <view class="quick-pill" data-q="帮我复盘今天的饮食和训练" catchtap="onQuickPill">📊 今日复盘</view>
+      <view class="quick-pill" data-q="给我安排一个本周训练计划" catchtap="onQuickPill">💪 训练建议</view>
+      <view class="quick-pill" data-q="减脂期我该怎么吃" catchtap="onQuickPill">🥗 饮食建议</view>
+      <view class="quick-pill" data-q="分析一下我的身体数据趋势" catchtap="onQuickPill">📈 身体分析</view>
+    </scroll-view>
+
+
+    <view wx:if="{{selectedImages.length}}" class="attachment-strip">
+      <view wx:for="{{selectedImages}}" wx:key="path" class="attachment">
+        <image
+          class="attachment-image smooth-corner"
+          src="{{item.path}}"
+          mode="aspectFill"
+          data-index="{{index}}"
+          bindtap="previewSelectedImage"
+        />
+        <view class="attachment-remove optical-center" data-index="{{index}}" bindtap="removeSelectedImage">×</view>
+      </view>
+    </view>
+
+    <view class="composer">
+      <button class="tool-button smooth-corner optical-center" bindtap="toggleImageSourceMenu" aria-label="上传图片">
+        <view class="plus-icon"></view>
+      </button>
+      <input
+        class="composer-input"
+        value="{{inputValue}}"
+        type="text"
+        maxlength="1000"
+        placeholder="{{uploading ? '图片上传中...' : '问点什么...'}}"
+        placeholder-class="composer-placeholder"
+        confirm-type="send"
+        bindinput="onInput"
+        bindfocus="onComposerFocus"
+        bindblur="onComposerBlur"
+        bindconfirm="sendMessage"
+        bindkeyboardheightchange="onComposerKeyboardHeightChange"
+        adjust-position="{{false}}"
+        cursor-spacing="32"
+      />
+      <button
+        class="send-button smooth-corner optical-center {{(!inputValue && !selectedImages.length) || sending ? 'is-round' : ''}}"
+        disabled="{{(!inputValue && !selectedImages.length) || sending || presenting}}"
+        bindtap="sendMessage"
+        >发送</button>
+    </view>
+  </view>
+
+  <floating-input-panel
+    visible="{{proposalEditor.visible}}"
+    title="{{proposalEditor.title}}"
+    value="{{proposalEditor.value}}"
+    input-type="{{proposalEditor.inputType}}"
+    bind:cancel="closeProposalEditor"
+    bind:confirm="confirmProposalEditor"
+  />
+</view>

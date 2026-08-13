@@ -1,0 +1,60 @@
+<!-- components/proposal-card/index.wxml -->
+<!--
+  proposal-card:
+    proposal = { id, type: 'dietLog'|'workoutPlan'|'profilePatch', status: 'pending'|'cancelled'|'confirmed',
+                 summary, source, payload: { ... } }
+    events: confirm(e), cancel(e), edit(e)
+-->
+<view class="proposal-card {{proposal.status === 'cancelled' ? 'is-cancelled' : ''}}" role="region" aria-label="AI 建议卡片">
+  <view class="proposal-header">
+    <view class="proposal-badge">
+      <text class="proposal-type">{{typeLabel}}</text>
+      <text wx:if="{{proposal.source}}" class="proposal-source">{{proposal.source}}</text>
+    </view>
+    <view class="proposal-status {{proposal.status === 'confirmed' ? 'is-confirmed' : ''}}">
+      {{statusLabel}}
+    </view>
+  </view>
+
+  <view wx:if="{{proposal.summary}}" class="proposal-summary">{{proposal.summary}}</view>
+
+  <!-- dietLog -->
+  <view wx:if="{{proposal.type === 'dietLog'}}" class="proposal-body">
+    <view class="diet-meta">
+      <text wx:if="{{proposal.payload.date}}">{{proposal.payload.date}}</text>
+      <text wx:if="{{proposal.payload.meal}}" class="meal-tag">{{mealLabel}}</text>
+    </view>
+    <view wx:for="{{proposal.payload.items}}" wx:key="name" class="diet-row">
+      <text class="diet-name">{{item.name}}</text>
+      <text class="diet-amount">{{item.amount}}{{item.unit || 'g'}}</text>
+      <text class="diet-kcal">{{item.calories}} kcal</text>
+    </view>
+    <view wx:if="{{totalCalories}}" class="diet-total">合计 {{totalCalories}} kcal · P{{totalProtein}}g / C{{totalCarb}}g / F{{totalFat}}g</view>
+  </view>
+
+  <!-- workoutPlan -->
+  <view wx:elif="{{proposal.type === 'workoutPlan'}}" class="proposal-body">
+    <view wx:for="{{proposal.payload.exercises}}" wx:key="name" wx:for-item="ex" class="workout-exercise">
+      <view class="workout-name">{{ex.name}}</view>
+      <view wx:if="{{ex.subtitle}}" class="workout-sub">{{ex.subtitle}}</view>
+      <view class="workout-sets">
+        <text wx:for="{{ex.sets}}" wx:key="setIndex" wx:for-item="set" class="workout-set">
+          第{{set.setIndex}}组 · {{set.weight || '自重'}}{{set.weight ? 'kg' : ''}} × {{set.reps}} · 间歇 {{set.restSeconds || 60}}s
+        </text>
+      </view>
+    </view>
+  </view>
+
+  <!-- profilePatch -->
+  <view wx:elif="{{proposal.type === 'profilePatch'}}" class="proposal-body">
+    <view wx:for="{{profileFields}}" wx:key="key" class="profile-row">
+      <text class="profile-label">{{item.label}}</text>
+      <text class="profile-value">{{item.value}}{{item.unit || ''}}</text>
+    </view>
+  </view>
+
+  <view wx:if="{{proposal.status === 'pending'}}" class="proposal-actions">
+    <button class="proposal-btn secondary" bindtap="onCancel" aria-label="拒绝建议">拒绝</button>
+    <button class="proposal-btn primary" bindtap="onConfirm" aria-label="接受建议">接受并保存</button>
+  </view>
+</view>

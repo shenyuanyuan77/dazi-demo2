@@ -1,0 +1,56 @@
+<view class="page history-page" style="padding-top: {{safeTop}}px;">
+  <view class="page-toolbar history-toolbar">
+    <button class="back-button optical-center" bindtap="goBack" aria-label="返回">‹</button>
+    <view class="toolbar-copy">
+      <view class="page-title">历史对话</view>
+      <view class="page-subtitle">继续查看饮食、训练和身体变化记录</view>
+    </view>
+    <button class="new-button smooth-corner optical-center" bindtap="newConversation">新对话</button>
+  </view>
+
+  <view class="search-card smooth-corner">
+    <text class="search-icon">⌕</text>
+    <input
+      value="{{searchValue}}"
+      placeholder="搜索历史对话"
+      placeholder-class="search-placeholder"
+      adjust-position="{{true}}"
+      cursor-spacing="32"
+      bindinput="onSearch"
+    />
+  </view>
+
+  <view wx:if="{{loading}}" class="state-card smooth-corner">正在加载...</view>
+  <view wx:elif="{{error}}" class="state-card smooth-corner">
+    <text>{{error}}</text>
+    <button class="state-action smooth-corner optical-center" bindtap="loadSessions">重新加载</button>
+  </view>
+  <view wx:elif="{{!displaySessions.length}}" class="state-card smooth-corner">
+    <view class="empty-title">{{searchValue ? '没有匹配的对话' : '还没有历史对话'}}</view>
+    <text>{{searchValue ? '换一个关键词试试。' : '开始和 AI 教练聊聊你的目标。'}}</text>
+  </view>
+
+  <scroll-view wx:else class="session-scroll" scroll-y enhanced show-scrollbar="{{false}}">
+    <view class="session-list">
+      <view
+        wx:for="{{displaySessions}}"
+        wx:key="AI_SESSION_ID"
+        class="session-card smooth-corner"
+        data-id="{{item.AI_SESSION_ID}}"
+        bindtap="openSession"
+        bindlongpress="manageSession"
+      >
+        <view class="session-icon smooth-corner optical-center">AI</view>
+        <view class="session-copy">
+          <view class="session-title">{{item.AI_SESSION_TITLE || '健身咨询'}}</view>
+          <view class="session-type">{{item.AI_SESSION_TYPE === 'diet' ? '饮食建议' : (item.AI_SESSION_TYPE === 'training' ? '训练建议' : '一般咨询')}}</view>
+        </view>
+        <view class="session-meta">
+          <text>{{item.displayTime}}</text>
+          <text class="chevron">›</text>
+        </view>
+      </view>
+      <view class="list-bottom"></view>
+    </view>
+  </scroll-view>
+</view>

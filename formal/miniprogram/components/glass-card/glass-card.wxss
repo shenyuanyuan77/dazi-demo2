@@ -1,0 +1,14 @@
+@import "../../styles/design-tokens.wxss";
+.glass-card-wrap {
+  background: var(--color-card);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.glass-card-elevated {
+  background: rgba(255,255,255,0.88);
+  -webkit-backdrop-filter: blur(20rpx) saturate(150%);
+  backdrop-filter: blur(20rpx) saturate(150%);
+  border: 1rpx solid rgba(255,255,255,0.3);
+  box-shadow: var(--shadow-glass);
+}

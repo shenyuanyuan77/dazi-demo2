@@ -1,0 +1,10 @@
+{
+  "name": "fitness-coach-agent-refactored",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Refactored fitness coach agent prompts, schemas, validators and services for WeChat mini program.",
+  "main": "services/intent_router.js",
+  "scripts": {
+    "check": "node -e \"require('./services/intent_router.js'); require('./services/proposal_builder.js'); require('./services/proposal_patch.js'); require('./services/response_formatter.js'); require('./validators/validate_proposal.js'); console.log('ok')\""
+  }
+}

@@ -1,0 +1,26 @@
+<view class="tabbar-shell {{hidden ? 'tabbar-hidden' : ''}}">
+  <view class="tabbar smooth-tabbar">
+    <view
+      wx:for="{{list}}"
+      wx:key="path"
+      class="tab-item {{current === item.index ? 'active' : ''}}"
+      data-index="{{item.index}}"
+      data-path="{{item.path}}"
+      catchtap="onTabTap"
+    >
+      <view class="tab-content {{current === item.index ? 'active-content' : ''}}">
+        <view wx:if="{{item.icon === 'sparkle'}}" class="tab-icon sparkle-tab-icon">
+          <view class="sparkle-tab-main"></view>
+          <view class="sparkle-tab-small"></view>
+        </view>
+        <image
+          wx:else
+          class="tab-icon-image"
+          src="{{current === item.index ? item.activeIconPath : item.iconPath}}"
+          mode="aspectFit"
+        />
+        <text class="tab-label">{{item.label}}</text>
+      </view>
+    </view>
+  </view>
+</view>

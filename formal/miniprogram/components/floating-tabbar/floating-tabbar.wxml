@@ -1,0 +1,26 @@
+<view class="tabbar-shell">
+  <view class="tabbar smooth-tabbar">
+    <view
+      wx:for="{{list}}"
+      wx:key="path"
+      class="tab-item {{current === item.index ? 'active' : ''}}"
+      data-index="{{item.index}}"
+      data-path="{{item.path}}"
+      catchtap="onTabTap"
+    >
+      <view class="tab-content">
+        <view wx:if="{{item.icon === 'sparkle'}}" class="tab-icon sparkle-tab-icon">
+          <view class="sparkle-tab-main"></view>
+          <view class="sparkle-tab-small"></view>
+        </view>
+        <view wx:else class="tab-icon icon-{{item.icon}}">
+          <view class="icon-line line-a"></view>
+          <view class="icon-line line-b"></view>
+          <view class="icon-line line-c"></view>
+        </view>
+        <text class="tab-label">{{item.label}}</text>
+      </view>
+      <view wx:if="{{current === item.index}}" class="active-mark"></view>
+    </view>
+  </view>
+</view>

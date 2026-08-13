@@ -1,0 +1,169 @@
+[
+  {
+    "id": "qa-training-001",
+    "category": "training_record",
+    "question": "今天卧推四组，每组八次，帮我记录",
+    "expectedAnswer": "生成卧推训练记录 pendingWrite，不调用饮食工具。",
+    "initialState": { "userProfile": { "goal": "增肌" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["卧推", "4", "8", "确认"],
+      "mustNotCallTools": ["diet.log.create"]
+    }
+  },
+  {
+    "id": "qa-training-002",
+    "category": "training_record",
+    "question": "深蹲 60 公斤做了 5 组，每组 5 次",
+    "expectedAnswer": "解析深蹲重量、组数、次数，先确认。",
+    "initialState": { "userProfile": { "goal": "增肌" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "slotsShouldContain": { "items.0.exerciseName": "深蹲", "items.0.weightKg": 60, "items.0.sets": 5, "items.0.reps": 5 },
+      "answerMustContain": ["深蹲", "60", "5"]
+    }
+  },
+  {
+    "id": "qa-training-003",
+    "category": "training_record",
+    "question": "今天跑步 30 分钟",
+    "expectedAnswer": "识别有氧训练时长，生成待确认训练记录。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "跑步", "items.0.durationMin": 30 },
+      "answerMustContain": ["跑步", "30", "确认"]
+    }
+  },
+  {
+    "id": "qa-training-004",
+    "category": "training_record",
+    "question": "跑了 5 公里，帮我记一下",
+    "expectedAnswer": "识别为跑步距离记录，不识别成饮食。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "跑步", "items.0.distanceKm": 5 },
+      "answerMustContain": ["跑步", "5", "公里"]
+    }
+  },
+  {
+    "id": "qa-training-005",
+    "category": "training_record",
+    "question": "跳绳 1000 个",
+    "expectedAnswer": "识别跳绳训练记录并要求确认。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "跳绳", "items.0.reps": 1000 }
+    }
+  },
+  {
+    "id": "qa-training-006",
+    "category": "training_record",
+    "question": "游泳 40 分钟",
+    "expectedAnswer": "识别游泳时长并生成训练记录确认。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "游泳", "items.0.durationMin": 40 }
+    }
+  },
+  {
+    "id": "qa-training-007",
+    "category": "training_record",
+    "question": "骑行 12 公里",
+    "expectedAnswer": "识别骑行距离并要求确认。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "骑行", "items.0.distanceKm": 12 },
+      "answerMustContain": ["骑行", "12", "公里"]
+    }
+  },
+  {
+    "id": "qa-training-008",
+    "category": "training_plan_create",
+    "question": "帮我制定一周减脂训练计划",
+    "expectedAnswer": "生成训练计划草稿，不直接写入。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_PLAN_CREATE",
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["训练计划", "确认"]
+    }
+  },
+  {
+    "id": "qa-training-009",
+    "category": "training_plan_create",
+    "question": "我想增肌，每周练四天，帮我安排",
+    "expectedAnswer": "提取增肌目标和每周四天训练频率。",
+    "initialState": { "userProfile": { "goal": "增肌" } },
+    "expect": {
+      "intent": "TRAINING_PLAN_CREATE",
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "goal": "增肌", "daysPerWeek": 4 }
+    }
+  },
+  {
+    "id": "qa-training-010",
+    "category": "training_plan_create",
+    "question": "我只有哑铃和瑜伽垫，怎么练",
+    "expectedAnswer": "根据器械条件生成训练计划草稿。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_PLAN_CREATE",
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "equipment": ["哑铃", "瑜伽垫"] }
+    }
+  },
+  {
+    "id": "qa-training-011",
+    "category": "training_plan_update",
+    "question": "把明天的腿部训练改成胸背",
+    "expectedAnswer": "查询训练计划并生成修改草稿，确认后写入。",
+    "initialState": { "userProfile": { "goal": "增肌" }, "trainingPlans": [{ "date": "2026-07-04", "name": "腿部训练" }] },
+    "expect": {
+      "intent": "TRAINING_PLAN_UPDATE",
+      "mustCallTools": ["training.plan.get"],
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["修改", "确认"]
+    }
+  },
+  {
+    "id": "qa-training-012",
+    "category": "training_plan_update",
+    "question": "把周三训练量减半",
+    "expectedAnswer": "识别减量操作并生成训练计划修改草稿。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_PLAN_UPDATE",
+      "mustCallTools": ["training.plan.get"],
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "operation": "reduce_volume" }
+    }
+  }
+]

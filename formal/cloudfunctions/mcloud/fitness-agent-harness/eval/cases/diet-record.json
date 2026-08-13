@@ -1,0 +1,87 @@
+[
+  {
+    "id": "diet-record-001",
+    "name": "早餐牛肉面先生成待确认饮食记录",
+    "initialState": {
+      "userProfile": { "heightCm": 165, "weightKg": 57.5, "goal": "减脂" },
+      "dietLogs": [],
+      "trainingLogs": []
+    },
+    "turns": [
+      {
+        "user": "早餐吃了一碗牛肉面，帮我记一下",
+        "expect": {
+          "intent": "DIET_RECORD",
+          "mustNotCallTools": ["diet.log.create", "training.log.create"],
+          "mustNotWriteDb": true,
+          "dbShouldChange": false,
+          "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+          "replyShouldContain": ["牛肉面", "确认"]
+        }
+      },
+      {
+        "user": "确认",
+        "expect": {
+          "intent": "CONFIRM_WRITE",
+          "mustCallTools": ["diet.log.create"],
+          "dbShouldChange": true,
+          "replyShouldContain": ["已记录"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "diet-record-002",
+    "name": "奶茶记录识别为加餐饮食",
+    "initialState": { "userProfile": { "goal": "减脂" }, "dietLogs": [], "trainingLogs": [] },
+    "turns": [
+      {
+        "user": "刚才喝了一杯奶茶",
+        "expect": {
+          "intent": "DIET_RECORD",
+          "mustNotCallTools": ["training.log.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+          "slotsShouldContain": { "meal": "snack" },
+          "replyShouldContain": ["奶茶", "确认"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "diet-record-003",
+    "name": "午餐多食物记录不串训练工具",
+    "initialState": { "userProfile": { "goal": "增肌" }, "dietLogs": [], "trainingLogs": [] },
+    "turns": [
+      {
+        "user": "午餐有米饭、鸡胸肉和青菜，记录一下",
+        "expect": {
+          "intent": "DIET_RECORD",
+          "mustNotCallTools": ["training.log.create", "training.plan.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+          "replyShouldContain": ["米饭", "鸡胸肉", "青菜"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "diet-record-004",
+    "name": "图片饮食记录必须调用视觉工具",
+    "initialState": { "userProfile": { "goal": "减脂" }, "dietLogs": [], "trainingLogs": [] },
+    "turns": [
+      {
+        "user": "这张图里的食物帮我识别并记录",
+        "images": ["image://food"],
+        "expect": {
+          "intent": "DIET_RECORD",
+          "mustCallTools": ["vision.food.recognize"],
+          "mustNotCallTools": ["training.log.create"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+          "replyShouldContain": ["识别", "确认"]
+        }
+      }
+    ]
+  }
+]

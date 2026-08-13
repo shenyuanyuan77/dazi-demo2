@@ -1,0 +1,28 @@
+<view class="subpage" style="padding-top: {{statusBarHeight + 62}}px;">
+  <view class="subnav" style="top: {{statusBarHeight}}px;">
+    <button class="optical-center" bindtap="goBack">‹</button>
+    <text>关于我们</text>
+    <view class="nav-space"></view>
+  </view>
+
+  <view class="brand-card smooth-corner">
+    <view class="brand-mark smooth-corner optical-center">AI</view>
+    <view class="brand-title">AI 健身教练</view>
+    <view class="brand-sub">少一点干扰，多一点行动</view>
+    <view class="version">版本 {{version}}</view>
+  </view>
+
+  <view class="card smooth-corner">
+    <view class="card-title">产品说明</view>
+    <text>聚焦 AI 对话、饮食记录、训练计划和身体数据四件事。所有界面遵循极简原则，不包含社区、广场或社交推荐。</text>
+  </view>
+
+  <view class="card warning smooth-corner">
+    <view class="card-title">健康提示</view>
+    <text>AI 提供的训练和饮食内容仅供一般参考，不能替代医生、营养师或康复师的专业诊断。出现疼痛、眩晕或其他不适时请停止训练并及时就医。</text>
+  </view>
+
+  <view class="card contact smooth-corner" bindtap="copyContact">
+    <text>联系与反馈</text><text>复制联系方式 ›</text>
+  </view>
+</view>

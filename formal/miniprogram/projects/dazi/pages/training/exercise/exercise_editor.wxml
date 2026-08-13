@@ -1,0 +1,46 @@
+<view class="subpage" style="padding-top: {{statusBarHeight + 62}}px;">
+  <view class="subnav" style="top: {{statusBarHeight}}px;">
+    <button class="optical-center" bindtap="goBack">‹</button>
+    <text>添加训练动作</text>
+    <view class="nav-space"></view>
+  </view>
+
+  <view class="card smooth-corner">
+    <view class="card-title">常用动作</view>
+    <view class="preset-grid">
+      <view
+        wx:for="{{presets}}"
+        wx:key="name"
+        class="preset smooth-corner {{name === item.name ? 'selected' : ''}}"
+        data-name="{{item.name}}"
+        data-subtitle="{{item.subtitle}}"
+        bindtap="selectPreset"
+      >
+        <text>{{item.name}}</text>
+        <text>{{item.subtitle}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="card smooth-corner">
+    <view class="card-title">动作信息</view>
+    <view class="field"><text>动作名称</text><input value="{{name}}" placeholder="必填" adjust-position="{{false}}" cursor-spacing="32" bindkeyboardheightchange="onKeyboardHeightChange" bindinput="onName" /></view>
+    <view class="field"><text>英文或备注</text><input value="{{subtitle}}" placeholder="选填" adjust-position="{{false}}" cursor-spacing="32" bindkeyboardheightchange="onKeyboardHeightChange" bindinput="onSubtitle" /></view>
+    <view class="field">
+      <text>组数</text>
+      <view class="stepper">
+        <button class="smooth-corner optical-center" data-delta="-1" bindtap="changeSetCount">−</button>
+        <text>{{setCount}}</text>
+        <button class="smooth-corner optical-center" data-delta="1" bindtap="changeSetCount">+</button>
+      </view>
+    </view>
+    <view class="field"><text>默认重量</text><view><input value="{{weight}}" type="digit" placeholder="0" adjust-position="{{false}}" cursor-spacing="32" bindkeyboardheightchange="onKeyboardHeightChange" bindinput="onWeight" /><text>kg</text></view></view>
+    <view class="field"><text>默认次数</text><view><input value="{{reps}}" type="number" placeholder="10" adjust-position="{{false}}" cursor-spacing="32" bindkeyboardheightchange="onKeyboardHeightChange" bindinput="onReps" /><text>reps</text></view></view>
+  </view>
+
+  <button
+    class="save-button smooth-corner optical-center"
+    style="bottom: {{keyboardHeight ? keyboardHeight + 12 : 24}}px;"
+    bindtap="saveExercise"
+  >确定并添加到训练</button>
+</view>

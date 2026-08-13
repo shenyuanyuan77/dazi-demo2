@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "floating-input-panel": "/components/floating-input-panel/index",
+    "user-profile-header": "/components/user-profile-header/index"
+  }
+}

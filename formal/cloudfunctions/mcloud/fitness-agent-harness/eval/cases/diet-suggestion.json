@@ -1,0 +1,54 @@
+[
+  {
+    "id": "diet-suggestion-001",
+    "name": "剩余热量读取画像饮食训练上下文",
+    "initialState": {
+      "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1600 },
+      "dietLogs": [{ "date": "2026-07-03", "meal": "lunch", "items": [{ "name": "米饭", "calories": 260, "protein": 5 }] }],
+      "trainingLogs": [{ "date": "2026-07-03", "items": [{ "exerciseName": "跑步", "durationMin": 30 }] }]
+    },
+    "turns": [
+      {
+        "user": "我今天还能吃多少热量",
+        "expect": {
+          "intent": "DIET_SUGGESTION",
+          "mustCallTools": ["user.profile.get", "diet.log.query", "training.log.query", "diet.analyze"],
+          "mustNotWriteDb": true,
+          "replyShouldContain": ["剩余"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "diet-suggestion-002",
+    "name": "减脂期晚饭建议不写入",
+    "initialState": { "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1700 }, "dietLogs": [], "trainingLogs": [] },
+    "turns": [
+      {
+        "user": "我减脂期晚饭吃什么",
+        "expect": {
+          "intent": "DIET_SUGGESTION",
+          "mustCallTools": ["diet.analyze"],
+          "mustNotWriteDb": true,
+          "replyShouldNotContain": ["已记录", "已保存"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "diet-suggestion-003",
+    "name": "补蛋白建议走饮食分析",
+    "initialState": { "userProfile": { "goal": "增肌", "dailyCalorieTarget": 2200 }, "dietLogs": [], "trainingLogs": [] },
+    "turns": [
+      {
+        "user": "我今天吃了这些，还需要补蛋白吗",
+        "expect": {
+          "intent": "DIET_SUGGESTION",
+          "mustCallTools": ["diet.log.query", "diet.analyze"],
+          "mustNotWriteDb": true,
+          "replyShouldContain": ["蛋白"]
+        }
+      }
+    ]
+  }
+]

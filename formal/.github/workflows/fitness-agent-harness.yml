@@ -1,0 +1,48 @@
+name: Fitness Agent Harness Gate
+
+on:
+  pull_request:
+    paths:
+      - "cloudfunctions/mcloud/fitness-agent-harness/**"
+      - "cloudfunctions/mcloud/project/dazi/service/ai_service.js"
+      - "cloudfunctions/mcloud/package.json"
+      - ".github/workflows/fitness-agent-harness.yml"
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "cloudfunctions/mcloud/fitness-agent-harness/**"
+      - "cloudfunctions/mcloud/project/dazi/service/ai_service.js"
+      - "cloudfunctions/mcloud/package.json"
+      - ".github/workflows/fitness-agent-harness.yml"
+  workflow_dispatch:
+
+jobs:
+  harness-gate:
+    name: Harness operational gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run harness gate
+        run: node cloudfunctions/mcloud/fitness-agent-harness/eval/operational_gate.js
+
+      - name: Upload harness reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fitness-agent-harness-reports
+          path: |
+            cloudfunctions/mcloud/fitness-agent-harness/eval/last-report.json
+            cloudfunctions/mcloud/fitness-agent-harness/eval/last-qa-report.json
+            cloudfunctions/mcloud/fitness-agent-harness/eval/last-operational-gate.json
+          if-no-files-found: ignore

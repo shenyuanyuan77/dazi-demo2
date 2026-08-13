@@ -1,0 +1,3433 @@
+{
+  "meta": {
+    "caseId": "9bec745e-7a82-4bf6-b776-f45609b21935",
+    "caseName": "minitest-1-副本",
+    "remarks": "",
+    "version": "0.0.1",
+    "startTime": 1747380476261,
+    "endTime": 1747380586920,
+    "appid": "wxe4b182b532050be6",
+    "casePath": "",
+    "caseType": "normal",
+    "commonParams": [
+      {
+        "key": "1747380586940",
+        "name": "",
+        "value": ""
+      }
+    ]
+  },
+  "env": {
+    "wxapplibVersion": "2.30.2",
+    "devtoolsVersion": "1.06.2412040",
+    "openid": "o6zAJs6D6kTqCH5wBY9yef-mO9HQ",
+    "entry": {
+      "path": "projects/dazi/pages/default/index/default_index",
+      "query": "",
+      "scene": 1001
+    },
+    "mock": [
+      "none"
+    ],
+    "maxWaitFor": 10000,
+    "ignoreSelectors": [],
+    "mockAPIs": [],
+    "cleanCache": [
+      "none"
+    ],
+    "groupTouch": false,
+    "replaySetting": {
+      "screenshot": "none"
+    },
+    "simulatorType": "wechat",
+    "device": "iPhone 12/13 (Pro)",
+    "recordAPIs": [
+      "chooseMedia"
+    ]
+  },
+  "commands": [
+    {
+      "layer": "tool",
+      "commandType": "operate",
+      "command": "startRecord",
+      "waitfor": 0,
+      "timeStamp": 1747380476261,
+      "desc": ""
+    },
+    {
+      "timeStamp": 10993,
+      "waitfor": 10000,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "找搭子",
+      "data": {
+        "url": "projects/dazi/pages/activity_client/add/activity_add"
+      }
+    },
+    {
+      "tagName": "input",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[2]/input",
+      "childName": "input",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "简短的标题",
+      "eventData": {
+        "detail": {}
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[2]/input"
+      ],
+      "timeStamp": 13593,
+      "waitfor": 2600,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "input",
+      "command": "touchend",
+      "target": "/view/view[1]/view[2]/input",
+      "childName": "input",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "简短的标题",
+      "eventData": {
+        "detail": {}
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[2]/input"
+      ],
+      "timeStamp": 13594,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "input",
+      "command": "tap",
+      "target": "/view/view[1]/view[2]/input",
+      "childName": "input",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "简短的标题",
+      "eventData": {
+        "detail": {
+          "x": 74,
+          "y": 92.39999389648438
+        }
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[2]/input"
+      ],
+      "timeStamp": 13594,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "input",
+      "command": "input",
+      "target": "/view/view[1]/view[2]/input",
+      "value": "222",
+      "childName": "input",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "",
+      "eventData": {},
+      "targetCandidates": [
+        "/view/view[1]/view[2]/input"
+      ],
+      "timeStamp": 16535,
+      "waitfor": 2941,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[3]/cmpt-picker/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 312.925048828125,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 312.925048828125,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 408.8000183105469,
+            "screenY": 330.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 312.925048828125,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 312.925048828125,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 408.8000183105469,
+            "screenY": 330.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[3]/cmpt-picker/picker/view"
+      ],
+      "timeStamp": 17309,
+      "waitfor": 774,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[1]/view[3]/cmpt-picker/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 313.666748046875,
+            "clientY": 145.5999755859375,
+            "pageX": 313.666748046875,
+            "pageY": 145.5999755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 409.6000061035156,
+            "screenY": 330.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[3]/cmpt-picker/picker/view"
+      ],
+      "timeStamp": 17399,
+      "waitfor": 90,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[1]/view[3]/cmpt-picker/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "x": 313.666748046875,
+          "y": 145.5999755859375
+        },
+        "changedTouches": [
+          {
+            "clientX": 312.925048828125,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 312.925048828125,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 408.8000183105469,
+            "screenY": 330.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 312.925048828125,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 312.925048828125,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 408.8000183105469,
+            "screenY": 330.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[3]/cmpt-picker/picker/view"
+      ],
+      "timeStamp": 17399,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 18988,
+      "waitfor": 1589,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "hidePickerView",
+      "data": {
+        "value": "0"
+      },
+      "target": "/view/view[1]/view[3]/cmpt-picker/picker"
+    },
+    {
+      "tagName": "picker",
+      "command": "change",
+      "target": "/view/view[1]/view[3]/cmpt-picker/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "value": "0"
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[3]/cmpt-picker/picker"
+      ],
+      "timeStamp": 19991,
+      "waitfor": 1003,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 325.7250061035156,
+            "clientY": 247.0625,
+            "force": 1,
+            "pageX": 325.7250061035156,
+            "pageY": 247.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 418.3999938964844,
+            "screenY": 406.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 325.7250061035156,
+            "clientY": 247.0625,
+            "force": 1,
+            "pageX": 325.7250061035156,
+            "pageY": 247.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 418.3999938964844,
+            "screenY": 406.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[5]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 20035,
+      "waitfor": 44,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 325.7250061035156,
+            "clientY": 247.0625,
+            "pageX": 325.7250061035156,
+            "pageY": 247.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 418.3999938964844,
+            "screenY": 406.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[5]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 20100,
+      "waitfor": 65,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "x": 325.7250061035156,
+          "y": 247.0625
+        },
+        "changedTouches": [
+          {
+            "clientX": 325.7250061035156,
+            "clientY": 247.0625,
+            "force": 1,
+            "pageX": 325.7250061035156,
+            "pageY": 247.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 418.3999938964844,
+            "screenY": 406.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 325.7250061035156,
+            "clientY": 247.0625,
+            "force": 1,
+            "pageX": 325.7250061035156,
+            "pageY": 247.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 418.3999938964844,
+            "screenY": 406.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[5]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 20100,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "column": 3,
+          "value": 16
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[5]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 22705,
+      "waitfor": 2605,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "column": 2,
+          "value": 16
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[5]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 23679,
+      "waitfor": 974,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 24174,
+      "waitfor": 495,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "hidePickerView",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 321.4625244140625,
+            "clientY": 296.125,
+            "force": 1,
+            "pageX": 321.4625244140625,
+            "pageY": 296.125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 415.20001220703125,
+            "screenY": 443.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 321.4625244140625,
+            "clientY": 296.125,
+            "force": 1,
+            "pageX": 321.4625244140625,
+            "pageY": 296.125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 415.20001220703125,
+            "screenY": 443.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 24997,
+      "waitfor": 823,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 321.4625244140625,
+            "clientY": 296.125,
+            "pageX": 321.4625244140625,
+            "pageY": 296.125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 415.20001220703125,
+            "screenY": 443.20001220703125
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 25073,
+      "waitfor": 76,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "x": 321.4625244140625,
+          "y": 296.125
+        },
+        "changedTouches": [
+          {
+            "clientX": 321.4625244140625,
+            "clientY": 296.125,
+            "force": 1,
+            "pageX": 321.4625244140625,
+            "pageY": 296.125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 415.20001220703125,
+            "screenY": 443.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 321.4625244140625,
+            "clientY": 296.125,
+            "force": 1,
+            "pageX": 321.4625244140625,
+            "pageY": 296.125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 415.20001220703125,
+            "screenY": 443.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 25073,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "change",
+      "target": "/view/view[1]/view[5]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "value": [
+            0,
+            4,
+            16,
+            16,
+            0
+          ]
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[5]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 25176,
+      "waitfor": 103,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "column": 2,
+          "value": 16
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 26304,
+      "waitfor": 1128,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "column": 3,
+          "value": 16
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 27012,
+      "waitfor": 708,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "column": 3,
+          "value": 18
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 27536,
+      "waitfor": 524,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "column": 2,
+          "value": 17
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 28546,
+      "waitfor": 1010,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 28899,
+      "waitfor": 353,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "hidePickerView",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker"
+    },
+    {
+      "tagName": "picker",
+      "command": "change",
+      "target": "/view/view[1]/view[6]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "value": [
+            0,
+            4,
+            17,
+            18,
+            0
+          ]
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[6]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 29901,
+      "waitfor": 1002,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 309.7250061035156,
+            "clientY": 345.20001220703125,
+            "force": 1,
+            "pageX": 309.7250061035156,
+            "pageY": 345.20001220703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 406.3999938964844,
+            "screenY": 480
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 309.7250061035156,
+            "clientY": 345.20001220703125,
+            "force": 1,
+            "pageX": 309.7250061035156,
+            "pageY": 345.20001220703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 406.3999938964844,
+            "screenY": 480
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 30156,
+      "waitfor": 255,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 309.7250061035156,
+            "clientY": 345.20001220703125,
+            "pageX": 309.7250061035156,
+            "pageY": 345.20001220703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 406.3999938964844,
+            "screenY": 480
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 30225,
+      "waitfor": 69,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "x": 309.7250061035156,
+          "y": 345.20001220703125
+        },
+        "changedTouches": [
+          {
+            "clientX": 309.7250061035156,
+            "clientY": 345.20001220703125,
+            "force": 1,
+            "pageX": 309.7250061035156,
+            "pageY": 345.20001220703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 406.3999938964844,
+            "screenY": 480
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 309.7250061035156,
+            "clientY": 345.20001220703125,
+            "force": 1,
+            "pageX": 309.7250061035156,
+            "pageY": 345.20001220703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 406.3999938964844,
+            "screenY": 480
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 30225,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 31339,
+      "waitfor": 1114,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "hidePickerView",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker"
+    },
+    {
+      "tagName": "picker",
+      "command": "change",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请选择",
+      "eventData": {
+        "detail": {
+          "value": [
+            0,
+            4,
+            15,
+            15,
+            0
+          ]
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 32340,
+      "waitfor": 1001,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 133.33334350585938,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 32483,
+      "waitfor": 143,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "2025-05-16 15:00",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 343.862548828125,
+            "clientY": 226.800048828125,
+            "force": 1,
+            "pageX": 343.862548828125,
+            "pageY": 360.1333923339844,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 432,
+            "screenY": 391.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 343.862548828125,
+            "clientY": 226.800048828125,
+            "force": 1,
+            "pageX": 343.862548828125,
+            "pageY": 360.1333923339844,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 432,
+            "screenY": 391.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 33032,
+      "waitfor": 549,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "2025-05-16 15:00",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 343.862548828125,
+            "clientY": 226.800048828125,
+            "pageX": 343.862548828125,
+            "pageY": 360.1333923339844,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 432,
+            "screenY": 391.20001220703125
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 33089,
+      "waitfor": 57,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker/view",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "2025-05-16 15:00",
+      "eventData": {
+        "detail": {
+          "x": 343.862548828125,
+          "y": 360.1333923339844
+        },
+        "changedTouches": [
+          {
+            "clientX": 343.862548828125,
+            "clientY": 226.800048828125,
+            "force": 1,
+            "pageX": 343.862548828125,
+            "pageY": 360.1333923339844,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 432,
+            "screenY": 391.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 343.862548828125,
+            "clientY": 226.800048828125,
+            "force": 1,
+            "pageX": 343.862548828125,
+            "pageY": 360.1333923339844,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 432,
+            "screenY": 391.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker/view"
+      ],
+      "timeStamp": 33100,
+      "waitfor": 11,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "columnchange",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "2025-05-16 15:00",
+      "eventData": {
+        "detail": {
+          "column": 3,
+          "value": 16
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 34012,
+      "waitfor": 912,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 34631,
+      "waitfor": 619,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "hidePickerView",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker"
+    },
+    {
+      "tagName": "textarea",
+      "command": "touchstart",
+      "target": "/view/view[1]/view[9]/textarea",
+      "childName": "textarea",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请填写活动详细地点\na",
+      "eventData": {
+        "detail": {}
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[9]/textarea"
+      ],
+      "timeStamp": 35357,
+      "waitfor": 726,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "touchend",
+      "target": "/view/view[1]/view[9]/textarea",
+      "childName": "textarea",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请填写活动详细地点\na",
+      "eventData": {
+        "detail": {}
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[9]/textarea"
+      ],
+      "timeStamp": 35360,
+      "waitfor": 3,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "tap",
+      "target": "/view/view[1]/view[9]/textarea",
+      "childName": "textarea",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "请填写活动详细地点\na",
+      "eventData": {
+        "detail": {
+          "x": 274.5250244140625,
+          "y": 467.8583679199219
+        }
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[9]/textarea"
+      ],
+      "timeStamp": 35361,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "picker",
+      "command": "change",
+      "target": "/view/view[1]/view[7]/cmpt-picker-time/picker",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "2025-05-16 15:00",
+      "eventData": {
+        "detail": {
+          "value": [
+            0,
+            4,
+            15,
+            16,
+            0
+          ]
+        },
+        "changedTouches": [],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[1]/view[7]/cmpt-picker-time/picker"
+      ],
+      "timeStamp": 35633,
+      "waitfor": 272,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "input",
+      "target": "/view/view[1]/view[9]/textarea",
+      "value": "22",
+      "childName": "textarea",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "22",
+      "eventData": {},
+      "targetCandidates": [
+        "/view/view[1]/view[9]/textarea"
+      ],
+      "timeStamp": 35808,
+      "waitfor": 175,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 533.3333740234375,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 36935,
+      "waitfor": 1127,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.icon-cameraadd",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 67.60000610351562,
+            "clientY": 238.5250244140625,
+            "force": 1,
+            "pageX": 67.60000610351562,
+            "pageY": 771.8583984375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 224.8000030517578,
+            "screenY": 400
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 67.60000610351562,
+            "clientY": 238.5250244140625,
+            "force": 1,
+            "pageX": 67.60000610351562,
+            "pageY": 771.8583984375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 224.8000030517578,
+            "screenY": 400
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.icon-cameraadd",
+        ".icon-cameraadd",
+        "/view/view[3]/cmpt-form-show/cmpt-img-upload/view[2]/view/view/text"
+      ],
+      "timeStamp": 38088,
+      "waitfor": 1153,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.icon-cameraadd",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 67.60000610351562,
+            "clientY": 238.5250244140625,
+            "pageX": 67.60000610351562,
+            "pageY": 771.8583984375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 224.8000030517578,
+            "screenY": 400
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.icon-cameraadd",
+        ".icon-cameraadd",
+        "/view/view[3]/cmpt-form-show/cmpt-img-upload/view[2]/view/view/text"
+      ],
+      "timeStamp": 38132,
+      "waitfor": 44,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.icon-cameraadd",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "",
+      "eventData": {
+        "detail": {
+          "x": 67.60000610351562,
+          "y": 771.8583984375
+        },
+        "changedTouches": [
+          {
+            "clientX": 67.60000610351562,
+            "clientY": 238.5250244140625,
+            "force": 1,
+            "pageX": 67.60000610351562,
+            "pageY": 771.8583984375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 224.8000030517578,
+            "screenY": 400
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 67.60000610351562,
+            "clientY": 238.5250244140625,
+            "force": 1,
+            "pageX": 67.60000610351562,
+            "pageY": 771.8583984375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 224.8000030517578,
+            "screenY": 400
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.icon-cameraadd",
+        ".icon-cameraadd",
+        "/view/view[3]/cmpt-form-show/cmpt-img-upload/view[2]/view/view/text"
+      ],
+      "timeStamp": 38134,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "layer": "appservice",
+      "command": "mock",
+      "rule": {
+        "ruleId": "ed2d89b9-a094-409e-bcdb-e869c16b1dab",
+        "ruleName": "chooseMedia",
+        "apiName": "chooseMedia",
+        "enable": true,
+        "verifyFail": false,
+        "isOneTime": true,
+        "filterList": [],
+        "returnConfig": {
+          "returnType": "succ",
+          "generateType": "manual",
+          "manual": {
+            "succ": {
+              "resStr": "{\"errMsg\":\"chooseMedia:ok\",\"failedCount\":0,\"type\":\"image\",\"tempFiles\":[{\"tempFilePath\":\"http://tmp/dMkeiwjE0yvN7f43473673a538ce906250dfb7f9e69b.jpg\",\"size\":392897,\"fileType\":\"image\"}]}"
+            },
+            "fail": {
+              "resStr": ""
+            }
+          }
+        },
+        "originArgs": [
+          {
+            "count": 1,
+            "mediaType": [
+              "image"
+            ],
+            "sizeType": [
+              "compressed"
+            ],
+            "sourceType": [
+              "album",
+              "camera"
+            ]
+          }
+        ],
+        "mediaFiles": {
+          "http://tmp/dMkeiwjE0yvN7f43473673a538ce906250dfb7f9e69b.jpg": "dMkeiwjE0yvN7f43473673a538ce906250dfb7f9e69b.jpg"
+        }
+      },
+      "desc": ""
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.form-text.text-orange",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "「活动介绍」未填写",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 346.26251220703125,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 879.5958862304688,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 480.8000183105469
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 346.26251220703125,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 879.5958862304688,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 480.8000183105469
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.form-text.text-orange",
+        ".form-text.text-orange",
+        "/view/view[3]/cmpt-form-show/view/view[2]"
+      ],
+      "timeStamp": 42270,
+      "waitfor": 4136,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.form-text.text-orange",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "「活动介绍」未填写",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 292.3333435058594,
+            "clientY": 348.26666259765625,
+            "pageX": 292.3333435058594,
+            "pageY": 881.6000366210938,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 393.6000061035156,
+            "screenY": 482.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.form-text.text-orange",
+        ".form-text.text-orange",
+        "/view/view[3]/cmpt-form-show/view/view[2]"
+      ],
+      "timeStamp": 42344,
+      "waitfor": 74,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.form-text.text-orange",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "「活动介绍」未填写",
+      "eventData": {
+        "detail": {
+          "x": 292.3333435058594,
+          "y": 881.6000366210938
+        },
+        "changedTouches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 346.26251220703125,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 879.5958862304688,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 480.8000183105469
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 346.26251220703125,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 879.5958862304688,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 480.8000183105469
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.form-text.text-orange",
+        ".form-text.text-orange",
+        "/view/view[3]/cmpt-form-show/view/view[2]"
+      ],
+      "timeStamp": 42345,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "touchstart",
+      "target": "#editor-node-0",
+      "childName": "textarea",
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "a",
+      "eventData": {
+        "detail": {}
+      },
+      "targetCandidates": [
+        "#editor-node-0",
+        "textarea.editor-textarea",
+        ".editor-textarea",
+        "/view[1]/view/view/cmpt-editor/view[2]/view[1]/textarea"
+      ],
+      "timeStamp": 43902,
+      "waitfor": 1557,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "touchend",
+      "target": "#editor-node-0",
+      "childName": "textarea",
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "a",
+      "eventData": {
+        "detail": {}
+      },
+      "targetCandidates": [
+        "#editor-node-0",
+        "textarea.editor-textarea",
+        ".editor-textarea",
+        "/view[1]/view/view/cmpt-editor/view[2]/view[1]/textarea"
+      ],
+      "timeStamp": 43909,
+      "waitfor": 7,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "tap",
+      "target": "#editor-node-0",
+      "childName": "textarea",
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "a",
+      "eventData": {
+        "detail": {
+          "x": 193.13336181640625,
+          "y": 146.66668701171875
+        }
+      },
+      "targetCandidates": [
+        "#editor-node-0",
+        "textarea.editor-textarea",
+        ".editor-textarea",
+        "/view[1]/view/view/cmpt-editor/view[2]/view[1]/textarea"
+      ],
+      "timeStamp": 43909,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "textarea",
+      "command": "input",
+      "target": "#editor-node-0",
+      "value": "22",
+      "childName": "textarea",
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "22",
+      "eventData": {},
+      "targetCandidates": [
+        "#editor-node-0",
+        "textarea.editor-textarea",
+        ".editor-textarea",
+        "/view[1]/view/view/cmpt-editor/view[2]/view[1]/textarea"
+      ],
+      "timeStamp": 44279,
+      "waitfor": 370,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.save",
+      "value": null,
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "保存",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 230.80003356933594,
+            "clientY": 688.66259765625,
+            "force": 1,
+            "pageX": 230.80003356933594,
+            "pageY": 688.66259765625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 347.20001220703125,
+            "screenY": 737.6000366210938
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 230.80003356933594,
+            "clientY": 688.66259765625,
+            "force": 1,
+            "pageX": 230.80003356933594,
+            "pageY": 688.66259765625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 347.20001220703125,
+            "screenY": 737.6000366210938
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.save",
+        ".save",
+        "/view[2]/view[2]"
+      ],
+      "timeStamp": 45253,
+      "waitfor": 974,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.save",
+      "value": null,
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "保存",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 230.80003356933594,
+            "clientY": 688.66259765625,
+            "pageX": 230.80003356933594,
+            "pageY": 688.66259765625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 347.20001220703125,
+            "screenY": 737.6000366210938
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.save",
+        ".save",
+        "/view[2]/view[2]"
+      ],
+      "timeStamp": 45303,
+      "waitfor": 50,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.save",
+      "value": null,
+      "path": "cmpts/public/form/form_show/content/form_show_content",
+      "text": "保存",
+      "eventData": {
+        "detail": {
+          "x": 230.80003356933594,
+          "y": 688.66259765625
+        },
+        "changedTouches": [
+          {
+            "clientX": 230.80003356933594,
+            "clientY": 688.66259765625,
+            "force": 1,
+            "pageX": 230.80003356933594,
+            "pageY": 688.66259765625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 347.20001220703125,
+            "screenY": 737.6000366210938
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 230.80003356933594,
+            "clientY": 688.66259765625,
+            "force": 1,
+            "pageX": 230.80003356933594,
+            "pageY": 688.66259765625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 347.20001220703125,
+            "screenY": 737.6000366210938
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.save",
+        ".save",
+        "/view[2]/view[2]"
+      ],
+      "timeStamp": 45305,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/view[4]/cmpt-form-set/view[1]/view[3]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "必填",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 322.5250244140625,
+            "clientY": 454.00006103515625,
+            "force": 1,
+            "pageX": 322.5250244140625,
+            "pageY": 987.3334350585938,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 416,
+            "screenY": 561.6000366210938
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 322.5250244140625,
+            "clientY": 454.00006103515625,
+            "force": 1,
+            "pageX": 322.5250244140625,
+            "pageY": 987.3334350585938,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 416,
+            "screenY": 561.6000366210938
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[4]/cmpt-form-set/view[1]/view[3]/text[2]"
+      ],
+      "timeStamp": 47166,
+      "waitfor": 1861,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/view[4]/cmpt-form-set/view[1]/view[3]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "必填",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 322.5250244140625,
+            "clientY": 454.00006103515625,
+            "pageX": 322.5250244140625,
+            "pageY": 987.3334350585938,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 416,
+            "screenY": 561.6000366210938
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[4]/cmpt-form-set/view[1]/view[3]/text[2]"
+      ],
+      "timeStamp": 47275,
+      "waitfor": 109,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/view[4]/cmpt-form-set/view[1]/view[3]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "必填",
+      "eventData": {
+        "detail": {
+          "x": 322.5250244140625,
+          "y": 987.3334350585938
+        },
+        "changedTouches": [
+          {
+            "clientX": 322.5250244140625,
+            "clientY": 454.00006103515625,
+            "force": 1,
+            "pageX": 322.5250244140625,
+            "pageY": 987.3334350585938,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 416,
+            "screenY": 561.6000366210938
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 322.5250244140625,
+            "clientY": 454.00006103515625,
+            "force": 1,
+            "pageX": 322.5250244140625,
+            "pageY": 987.3334350585938,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 416,
+            "screenY": 561.6000366210938
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[4]/cmpt-form-set/view[1]/view[3]/text[2]"
+      ],
+      "timeStamp": 47275,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 49771,
+      "waitfor": 2496,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 666.6666870117188,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 51833,
+      "waitfor": 2062,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchstart",
+      "target": "button.btn-base.btn-project.shadow",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "提交",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 186,
+            "clientY": 497.72515869140625,
+            "force": 1,
+            "pageX": 186,
+            "pageY": 1164.391845703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 313.6000061035156,
+            "screenY": 594.4000244140625
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 186,
+            "clientY": 497.72515869140625,
+            "force": 1,
+            "pageX": 186,
+            "pageY": 1164.391845703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 313.6000061035156,
+            "screenY": 594.4000244140625
+          }
+        ]
+      },
+      "targetCandidates": [
+        "button.btn-base.btn-project.shadow",
+        ".btn-base.btn-project.shadow",
+        "/view/button"
+      ],
+      "timeStamp": 52072,
+      "waitfor": 239,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchend",
+      "target": "button.btn-base.btn-project.shadow",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "提交",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 186,
+            "clientY": 497.72515869140625,
+            "pageX": 186,
+            "pageY": 1164.391845703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 313.6000061035156,
+            "screenY": 594.4000244140625
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "button.btn-base.btn-project.shadow",
+        ".btn-base.btn-project.shadow",
+        "/view/button"
+      ],
+      "timeStamp": 52136,
+      "waitfor": 64,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "tap",
+      "target": "button.btn-base.btn-project.shadow",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/add/activity_add",
+      "text": "提交",
+      "eventData": {
+        "detail": {
+          "x": 186,
+          "y": 1164.391845703125
+        },
+        "changedTouches": [
+          {
+            "clientX": 186,
+            "clientY": 497.72515869140625,
+            "force": 1,
+            "pageX": 186,
+            "pageY": 1164.391845703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 313.6000061035156,
+            "screenY": 594.4000244140625
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 186,
+            "clientY": 497.72515869140625,
+            "force": 1,
+            "pageX": 186,
+            "pageY": 1164.391845703125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 313.6000061035156,
+            "screenY": 594.4000244140625
+          }
+        ]
+      },
+      "targetCandidates": [
+        "button.btn-base.btn-project.shadow",
+        ".btn-base.btn-project.shadow",
+        "/view/button"
+      ],
+      "timeStamp": 52140,
+      "waitfor": 4,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 60143,
+      "waitfor": 8003,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "广场",
+      "data": {
+        "url": "projects/dazi/pages/default/index/default_index"
+      }
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/cmpt-comm-list/view[2]/scroll-view/view[2]/view[2]/view/view[1]",
+      "value": null,
+      "path": "projects/dazi/pages/default/index/default_index",
+      "text": "骑行\n2025-05-17",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 260.6625061035156,
+            "clientY": 425.2001037597656,
+            "force": 1,
+            "pageX": 260.6625061035156,
+            "pageY": 425.2001037597656,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 369.6000061035156,
+            "screenY": 540
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 260.6625061035156,
+            "clientY": 425.2001037597656,
+            "force": 1,
+            "pageX": 260.6625061035156,
+            "pageY": 425.2001037597656,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 369.6000061035156,
+            "screenY": 540
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[2]/scroll-view/view[2]/view[2]/view/view[1]"
+      ],
+      "timeStamp": 66046,
+      "waitfor": 5903,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/cmpt-comm-list/view[2]/scroll-view/view[2]/view[2]/view/view[1]",
+      "value": null,
+      "path": "projects/dazi/pages/default/index/default_index",
+      "text": "骑行\n2025-05-17",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 260.6625061035156,
+            "clientY": 425.2001037597656,
+            "pageX": 260.6625061035156,
+            "pageY": 425.2001037597656,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 369.6000061035156,
+            "screenY": 540
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[2]/scroll-view/view[2]/view[2]/view/view[1]"
+      ],
+      "timeStamp": 66122,
+      "waitfor": 76,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/cmpt-comm-list/view[2]/scroll-view/view[2]/view[2]/view/view[1]",
+      "value": null,
+      "path": "projects/dazi/pages/default/index/default_index",
+      "text": "骑行\n2025-05-17",
+      "eventData": {
+        "detail": {
+          "x": 260.6625061035156,
+          "y": 425.2001037597656
+        },
+        "changedTouches": [
+          {
+            "clientX": 260.6625061035156,
+            "clientY": 425.2001037597656,
+            "force": 1,
+            "pageX": 260.6625061035156,
+            "pageY": 425.2001037597656,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 369.6000061035156,
+            "screenY": 540
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 260.6625061035156,
+            "clientY": 425.2001037597656,
+            "force": 1,
+            "pageX": 260.6625061035156,
+            "pageY": 425.2001037597656,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 369.6000061035156,
+            "screenY": 540
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[2]/scroll-view/view[2]/view[2]/view/view[1]"
+      ],
+      "timeStamp": 66123,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.join.bg-project.text-black",
+      "value": null,
+      "path": "projects/dazi/pages/activity/detail/activity_detail",
+      "text": "我要报名",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 315.0625305175781,
+            "clientY": 695.0625,
+            "force": 1,
+            "pageX": 315.0625305175781,
+            "pageY": 695.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 410.3999938964844,
+            "screenY": 742.4000244140625
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 315.0625305175781,
+            "clientY": 695.0625,
+            "force": 1,
+            "pageX": 315.0625305175781,
+            "pageY": 695.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 410.3999938964844,
+            "screenY": 742.4000244140625
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.join.bg-project.text-black",
+        ".join.bg-project.text-black",
+        "/cmpt-detail/view[3]/view/view[2]/view/view[2]"
+      ],
+      "timeStamp": 68486,
+      "waitfor": 2363,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.join.bg-project.text-black",
+      "value": null,
+      "path": "projects/dazi/pages/activity/detail/activity_detail",
+      "text": "我要报名",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 315.0625305175781,
+            "clientY": 695.0625,
+            "pageX": 315.0625305175781,
+            "pageY": 695.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 410.3999938964844,
+            "screenY": 742.4000244140625
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.join.bg-project.text-black",
+        ".join.bg-project.text-black",
+        "/cmpt-detail/view[3]/view/view[2]/view/view[2]"
+      ],
+      "timeStamp": 68564,
+      "waitfor": 78,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.join.bg-project.text-black",
+      "value": null,
+      "path": "projects/dazi/pages/activity/detail/activity_detail",
+      "text": "我要报名",
+      "eventData": {
+        "detail": {
+          "x": 315.0625305175781,
+          "y": 695.0625
+        },
+        "changedTouches": [
+          {
+            "clientX": 315.0625305175781,
+            "clientY": 695.0625,
+            "force": 1,
+            "pageX": 315.0625305175781,
+            "pageY": 695.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 410.3999938964844,
+            "screenY": 742.4000244140625
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 315.0625305175781,
+            "clientY": 695.0625,
+            "force": 1,
+            "pageX": 315.0625305175781,
+            "pageY": 695.0625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 410.3999938964844,
+            "screenY": 742.4000244140625
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.join.bg-project.text-black",
+        ".join.bg-project.text-black",
+        "/cmpt-detail/view[3]/view/view[2]/view/view[2]"
+      ],
+      "timeStamp": 68566,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.main.padding-project",
+      "value": null,
+      "path": "projects/dazi/pages/activity/join/activity_join",
+      "text": "222\n请您填写资料，带*号为必填项\n姓名:\n手机:\n请核对填写的信息\n姓名：\n666\n手机：\n66666666666\n返回修改\n确认提交\n提交",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 246.80003356933594,
+            "clientY": 290.800048828125,
+            "force": 1,
+            "pageX": 246.80003356933594,
+            "pageY": 290.800048828125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 359.20001220703125,
+            "screenY": 439.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 246.80003356933594,
+            "clientY": 290.800048828125,
+            "force": 1,
+            "pageX": 246.80003356933594,
+            "pageY": 290.800048828125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 359.20001220703125,
+            "screenY": 439.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.main.padding-project",
+        ".main.padding-project",
+        "/view"
+      ],
+      "timeStamp": 70750,
+      "waitfor": 2184,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.main.padding-project",
+      "value": null,
+      "path": "projects/dazi/pages/activity/join/activity_join",
+      "text": "222\n请您填写资料，带*号为必填项\n姓名:\n手机:\n请核对填写的信息\n姓名：\n666\n手机：\n66666666666\n返回修改\n确认提交\n提交",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 246.4666748046875,
+            "clientY": 289.5999755859375,
+            "pageX": 246.4666748046875,
+            "pageY": 289.5999755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 359.20001220703125,
+            "screenY": 438.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.main.padding-project",
+        ".main.padding-project",
+        "/view"
+      ],
+      "timeStamp": 70824,
+      "waitfor": 74,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.main.padding-project",
+      "value": null,
+      "path": "projects/dazi/pages/activity/join/activity_join",
+      "text": "222\n请您填写资料，带*号为必填项\n姓名:\n手机:\n请核对填写的信息\n姓名：\n666\n手机：\n66666666666\n返回修改\n确认提交\n提交",
+      "eventData": {
+        "detail": {
+          "x": 246.4666748046875,
+          "y": 289.5999755859375
+        },
+        "changedTouches": [
+          {
+            "clientX": 246.80003356933594,
+            "clientY": 290.800048828125,
+            "force": 1,
+            "pageX": 246.80003356933594,
+            "pageY": 290.800048828125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 359.20001220703125,
+            "screenY": 439.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 246.80003356933594,
+            "clientY": 290.800048828125,
+            "force": 1,
+            "pageX": 246.80003356933594,
+            "pageY": 290.800048828125,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 359.20001220703125,
+            "screenY": 439.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.main.padding-project",
+        ".main.padding-project",
+        "/view"
+      ],
+      "timeStamp": 70825,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchstart",
+      "target": "button.btn-base.btn-project",
+      "value": null,
+      "path": "projects/dazi/pages/activity/join/activity_join",
+      "text": "提交",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 254.2624969482422,
+            "clientY": 285.4625244140625,
+            "force": 1,
+            "pageX": 254.2624969482422,
+            "pageY": 285.4625244140625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 364.8000183105469,
+            "screenY": 435.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 254.2624969482422,
+            "clientY": 285.4625244140625,
+            "force": 1,
+            "pageX": 254.2624969482422,
+            "pageY": 285.4625244140625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 364.8000183105469,
+            "screenY": 435.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "button.btn-base.btn-project",
+        ".btn-base.btn-project",
+        "/view/button"
+      ],
+      "timeStamp": 71840,
+      "waitfor": 1015,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchend",
+      "target": "button.btn-base.btn-project",
+      "value": null,
+      "path": "projects/dazi/pages/activity/join/activity_join",
+      "text": "提交",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 254.2624969482422,
+            "clientY": 285.4625244140625,
+            "pageX": 254.2624969482422,
+            "pageY": 285.4625244140625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 364.8000183105469,
+            "screenY": 435.20001220703125
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "button.btn-base.btn-project",
+        ".btn-base.btn-project",
+        "/view/button"
+      ],
+      "timeStamp": 71908,
+      "waitfor": 68,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "tap",
+      "target": "button.btn-base.btn-project",
+      "value": null,
+      "path": "projects/dazi/pages/activity/join/activity_join",
+      "text": "提交",
+      "eventData": {
+        "detail": {
+          "x": 254.2624969482422,
+          "y": 285.4625244140625
+        },
+        "changedTouches": [
+          {
+            "clientX": 254.2624969482422,
+            "clientY": 285.4625244140625,
+            "force": 1,
+            "pageX": 254.2624969482422,
+            "pageY": 285.4625244140625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 364.8000183105469,
+            "screenY": 435.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 254.2624969482422,
+            "clientY": 285.4625244140625,
+            "force": 1,
+            "pageX": 254.2624969482422,
+            "pageY": 285.4625244140625,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 364.8000183105469,
+            "screenY": 435.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "button.btn-base.btn-project",
+        ".btn-base.btn-project",
+        "/view/button"
+      ],
+      "timeStamp": 71908,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 73646,
+      "waitfor": 1738,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "confirmModal",
+      "text": "确定"
+    },
+    {
+      "timeStamp": 74432,
+      "waitfor": 786,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "timeStamp": 75741,
+      "waitfor": 1309,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "我的",
+      "data": {
+        "url": "projects/dazi/pages/my/index/my_index"
+      }
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view[1]/view[2]/view/view[1]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我报名的活动",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 109.20001220703125,
+            "clientY": 156.40000915527344,
+            "force": 1,
+            "pageX": 109.20001220703125,
+            "pageY": 156.40000915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 256,
+            "screenY": 338.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 109.20001220703125,
+            "clientY": 156.40000915527344,
+            "force": 1,
+            "pageX": 109.20001220703125,
+            "pageY": 156.40000915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 256,
+            "screenY": 338.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[1]/view"
+      ],
+      "timeStamp": 76965,
+      "waitfor": 1224,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view[1]/view[2]/view/view[1]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我报名的活动",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 109.20001220703125,
+            "clientY": 156.40000915527344,
+            "pageX": 109.20001220703125,
+            "pageY": 156.40000915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 256,
+            "screenY": 338.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[1]/view"
+      ],
+      "timeStamp": 77040,
+      "waitfor": 75,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view[1]/view[2]/view/view[1]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我报名的活动",
+      "eventData": {
+        "detail": {
+          "x": 109.20001220703125,
+          "y": 156.40000915527344
+        },
+        "changedTouches": [
+          {
+            "clientX": 109.20001220703125,
+            "clientY": 156.40000915527344,
+            "force": 1,
+            "pageX": 109.20001220703125,
+            "pageY": 156.40000915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 256,
+            "screenY": 338.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 109.20001220703125,
+            "clientY": 156.40000915527344,
+            "force": 1,
+            "pageX": 109.20001220703125,
+            "pageY": 156.40000915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 256,
+            "screenY": 338.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[1]/view"
+      ],
+      "timeStamp": 77041,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchstart",
+      "target": "/cmpt-comm-list/view[2]/scroll-view/view/view[1]/view[5]/button[1]",
+      "value": null,
+      "path": "projects/dazi/pages/activity/my_join_list/activity_my_join_list",
+      "text": "查看详情",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 259.6000061035156,
+            "clientY": 218.2624969482422,
+            "force": 1,
+            "pageX": 259.6000061035156,
+            "pageY": 218.2624969482422,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 368.8000183105469,
+            "screenY": 384.8000183105469
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 259.6000061035156,
+            "clientY": 218.2624969482422,
+            "force": 1,
+            "pageX": 259.6000061035156,
+            "pageY": 218.2624969482422,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 368.8000183105469,
+            "screenY": 384.8000183105469
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[2]/scroll-view/view/view[1]/view[5]/button[1]"
+      ],
+      "timeStamp": 79175,
+      "waitfor": 2134,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "touchend",
+      "target": "/cmpt-comm-list/view[2]/scroll-view/view/view[1]/view[5]/button[1]",
+      "value": null,
+      "path": "projects/dazi/pages/activity/my_join_list/activity_my_join_list",
+      "text": "查看详情",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 258.2000732421875,
+            "clientY": 220.2666473388672,
+            "pageX": 258.2000732421875,
+            "pageY": 220.2666473388672,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 368,
+            "screenY": 386.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[2]/scroll-view/view/view[1]/view[5]/button[1]"
+      ],
+      "timeStamp": 79296,
+      "waitfor": 121,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "button",
+      "command": "tap",
+      "target": "/cmpt-comm-list/view[2]/scroll-view/view/view[1]/view[5]/button[1]",
+      "value": null,
+      "path": "projects/dazi/pages/activity/my_join_list/activity_my_join_list",
+      "text": "查看详情",
+      "eventData": {
+        "detail": {
+          "x": 258.2000732421875,
+          "y": 220.2666473388672
+        },
+        "changedTouches": [
+          {
+            "clientX": 259.6000061035156,
+            "clientY": 218.2624969482422,
+            "force": 1,
+            "pageX": 259.6000061035156,
+            "pageY": 218.2624969482422,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 368.8000183105469,
+            "screenY": 384.8000183105469
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 259.6000061035156,
+            "clientY": 218.2624969482422,
+            "force": 1,
+            "pageX": 259.6000061035156,
+            "pageY": 218.2624969482422,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 368.8000183105469,
+            "screenY": 384.8000183105469
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[2]/scroll-view/view/view[1]/view[5]/button[1]"
+      ],
+      "timeStamp": 79297,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 85831,
+      "waitfor": 6534,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "timeStamp": 86394,
+      "waitfor": 563,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view[1]/view[2]/view/view[1]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我报名的活动",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 101.72500610351562,
+            "clientY": 148.92503356933594,
+            "force": 1,
+            "pageX": 101.72500610351562,
+            "pageY": 148.92503356933594,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 250.40000915527344,
+            "screenY": 332.8000183105469
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 101.72500610351562,
+            "clientY": 148.92503356933594,
+            "force": 1,
+            "pageX": 101.72500610351562,
+            "pageY": 148.92503356933594,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 250.40000915527344,
+            "screenY": 332.8000183105469
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[1]/view"
+      ],
+      "timeStamp": 88332,
+      "waitfor": 1938,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view[1]/view[2]/view/view[1]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我报名的活动",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 101.72500610351562,
+            "clientY": 148.92503356933594,
+            "pageX": 101.72500610351562,
+            "pageY": 148.92503356933594,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 250.40000915527344,
+            "screenY": 332.8000183105469
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[1]/view"
+      ],
+      "timeStamp": 88415,
+      "waitfor": 83,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view[1]/view[2]/view/view[1]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我报名的活动",
+      "eventData": {
+        "detail": {
+          "x": 101.72500610351562,
+          "y": 148.92503356933594
+        },
+        "changedTouches": [
+          {
+            "clientX": 101.72500610351562,
+            "clientY": 148.92503356933594,
+            "force": 1,
+            "pageX": 101.72500610351562,
+            "pageY": 148.92503356933594,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 250.40000915527344,
+            "screenY": 332.8000183105469
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 101.72500610351562,
+            "clientY": 148.92503356933594,
+            "force": 1,
+            "pageX": 101.72500610351562,
+            "pageY": 148.92503356933594,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 250.40000915527344,
+            "screenY": 332.8000183105469
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[1]/view"
+      ],
+      "timeStamp": 88417,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 90512,
+      "waitfor": 2095,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view[1]/view[2]/view/view[3]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我发起的活动",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 330.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 330.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[3]/view"
+      ],
+      "timeStamp": 91149,
+      "waitfor": 637,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view[1]/view[2]/view/view[3]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我发起的活动",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 145.7249755859375,
+            "pageX": 293.7250061035156,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 330.3999938964844
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[3]/view"
+      ],
+      "timeStamp": 91223,
+      "waitfor": 74,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view[1]/view[2]/view/view[3]/view",
+      "value": null,
+      "path": "projects/dazi/pages/my/index/my_index",
+      "text": "我发起的活动",
+      "eventData": {
+        "detail": {
+          "x": 293.7250061035156,
+          "y": 145.7249755859375
+        },
+        "changedTouches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 330.3999938964844
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 293.7250061035156,
+            "clientY": 145.7249755859375,
+            "force": 1,
+            "pageX": 293.7250061035156,
+            "pageY": 145.7249755859375,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 394.3999938964844,
+            "screenY": 330.3999938964844
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view[1]/view[2]/view/view[3]/view"
+      ],
+      "timeStamp": 91225,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/cmpt-comm-list/view[1]/scroll-view/view/view[1]/view[9]/view[2]",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/my_list/activity_my_list",
+      "text": "名单与核销",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 155.0625,
+            "clientY": 189.46250915527344,
+            "force": 1,
+            "pageX": 155.0625,
+            "pageY": 189.46250915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 290.3999938964844,
+            "screenY": 363.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 155.0625,
+            "clientY": 189.46250915527344,
+            "force": 1,
+            "pageX": 155.0625,
+            "pageY": 189.46250915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 290.3999938964844,
+            "screenY": 363.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[1]/scroll-view/view/view[1]/view[9]/view[2]"
+      ],
+      "timeStamp": 93815,
+      "waitfor": 2590,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/cmpt-comm-list/view[1]/scroll-view/view/view[1]/view[9]/view[2]",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/my_list/activity_my_list",
+      "text": "名单与核销",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 155.0625,
+            "clientY": 189.46250915527344,
+            "pageX": 155.0625,
+            "pageY": 189.46250915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 290.3999938964844,
+            "screenY": 363.20001220703125
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[1]/scroll-view/view/view[1]/view[9]/view[2]"
+      ],
+      "timeStamp": 93898,
+      "waitfor": 83,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/cmpt-comm-list/view[1]/scroll-view/view/view[1]/view[9]/view[2]",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/my_list/activity_my_list",
+      "text": "名单与核销",
+      "eventData": {
+        "detail": {
+          "x": 155.0625,
+          "y": 189.46250915527344
+        },
+        "changedTouches": [
+          {
+            "clientX": 155.0625,
+            "clientY": 189.46250915527344,
+            "force": 1,
+            "pageX": 155.0625,
+            "pageY": 189.46250915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 290.3999938964844,
+            "screenY": 363.20001220703125
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 155.0625,
+            "clientY": 189.46250915527344,
+            "force": 1,
+            "pageX": 155.0625,
+            "pageY": 189.46250915527344,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 290.3999938964844,
+            "screenY": 363.20001220703125
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/cmpt-comm-list/view[1]/scroll-view/view/view[1]/view[9]/view[2]"
+      ],
+      "timeStamp": 93899,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.oprt",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/scan/activity_scan",
+      "text": "立即核销",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 241.4625244140625,
+            "clientY": 246,
+            "force": 1,
+            "pageX": 241.4625244140625,
+            "pageY": 246,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 355.20001220703125,
+            "screenY": 405.6000061035156
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 241.4625244140625,
+            "clientY": 246,
+            "force": 1,
+            "pageX": 241.4625244140625,
+            "pageY": 246,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 355.20001220703125,
+            "screenY": 405.6000061035156
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.oprt",
+        ".oprt",
+        "/view/view[2]/view/view[3]"
+      ],
+      "timeStamp": 96551,
+      "waitfor": 2652,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.oprt",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/scan/activity_scan",
+      "text": "立即核销",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 241.4625244140625,
+            "clientY": 246,
+            "pageX": 241.4625244140625,
+            "pageY": 246,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 355.20001220703125,
+            "screenY": 405.6000061035156
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.oprt",
+        ".oprt",
+        "/view/view[2]/view/view[3]"
+      ],
+      "timeStamp": 96605,
+      "waitfor": 54,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.oprt",
+      "value": null,
+      "path": "projects/dazi/pages/activity_client/scan/activity_scan",
+      "text": "立即核销",
+      "eventData": {
+        "detail": {
+          "x": 241.4625244140625,
+          "y": 246
+        },
+        "changedTouches": [
+          {
+            "clientX": 241.4625244140625,
+            "clientY": 246,
+            "force": 1,
+            "pageX": 241.4625244140625,
+            "pageY": 246,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 355.20001220703125,
+            "screenY": 405.6000061035156
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 241.4625244140625,
+            "clientY": 246,
+            "force": 1,
+            "pageX": 241.4625244140625,
+            "pageY": 246,
+            "radiusX": 11.5,
+            "radiusY": 11.5,
+            "screenX": 355.20001220703125,
+            "screenY": 405.6000061035156
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.oprt",
+        ".oprt",
+        "/view/view[2]/view/view[3]"
+      ],
+      "timeStamp": 96606,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 107158,
+      "waitfor": 10000,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "confirmModal",
+      "text": "确定"
+    },
+    {
+      "timeStamp": 108582,
+      "waitfor": 1424,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "timeStamp": 109046,
+      "waitfor": 464,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "timeStamp": 110659,
+      "waitfor": 1613,
+      "desc": "",
+      "layer": "tool",
+      "commandType": "operate",
+      "command": "stopRecord"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+	"usingComponents": {
+		"cmpt-calendar": "/cmpts/public/calendar/calendar_comm/calendar_comm_cmpt",
+		"floating-tabbar": "/components/floating-tabbar/floating-tabbar"
+	},
+	"enablePullDownRefresh": true,
+	"navigationBarTitleText": "活动日历"
+}

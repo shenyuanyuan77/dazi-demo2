@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "structuredTurns": 25,
+  "qaPairs": 78,
+  "adapterContractTests": "passed",
+  "unsupportedQaPairs": 31,
+  "qaCategoryCounts": {
+    "body_analysis": 5,
+    "body_read_only": 3,
+    "body_image": 1,
+    "body_read_only_image": 1,
+    "body_query": 3,
+    "diet_record": 5,
+    "diet_record_image": 1,
+    "diet_read_only": 1,
+    "diet_read_only_image": 1,
+    "diet_suggestion": 8,
+    "training_record": 10,
+    "training_plan_create": 4,
+    "training_plan_update": 3,
+    "confirmation": 1,
+    "unsupported": 31
+  },
+  "checkedAt": "2026-08-09T02:48:48.611Z"
+}

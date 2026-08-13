@@ -1,0 +1,250 @@
+[
+  {
+    "id": "qa-edge-001",
+    "category": "diet_record",
+    "question": "晚餐吃了鸡蛋和苹果，记录一下",
+    "expectedAnswer": "生成包含鸡蛋和苹果的饮食记录确认。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "DIET_RECORD",
+      "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "answerMustContain": ["鸡蛋", "苹果"]
+    }
+  },
+  {
+    "id": "qa-edge-002",
+    "category": "diet_record",
+    "question": "我喝了酸奶，帮我记一下",
+    "expectedAnswer": "生成酸奶饮食记录确认。",
+    "initialState": { "userProfile": { "goal": "维持" } },
+    "expect": {
+      "intent": "DIET_RECORD",
+      "pendingWrite": { "type": "diet_log", "target": "dietLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "answerMustContain": ["酸奶"]
+    }
+  },
+  {
+    "id": "qa-edge-003",
+    "category": "diet_suggestion",
+    "question": "请问我今天吃了这些是否超标",
+    "expectedAnswer": "识别为饮食建议，读取饮食分析工具。",
+    "initialState": { "userProfile": { "goal": "减脂", "dailyCalorieTarget": 1600 } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustCallTools": ["diet.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true
+    }
+  },
+  {
+    "id": "qa-edge-004",
+    "category": "diet_suggestion",
+    "question": "早餐吃什么比较适合减脂",
+    "expectedAnswer": "识别为饮食建议，不误写早餐记录。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "DIET_SUGGESTION",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "mustNotCallTools": ["diet.log.create"]
+    }
+  },
+  {
+    "id": "qa-edge-005",
+    "category": "training_record",
+    "question": "箭步蹲三组，每组十次",
+    "expectedAnswer": "识别中文数字组次并生成训练记录确认。",
+    "initialState": { "userProfile": { "goal": "增肌" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "箭步蹲", "items.0.sets": 3, "items.0.reps": 10 }
+    }
+  },
+  {
+    "id": "qa-edge-006",
+    "category": "training_record",
+    "question": "臀桥 4 组 12 次",
+    "expectedAnswer": "识别臀桥训练组次并要求确认。",
+    "initialState": { "userProfile": { "goal": "增肌" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "臀桥", "items.0.sets": 4, "items.0.reps": 12 }
+    }
+  },
+  {
+    "id": "qa-edge-007",
+    "category": "training_record",
+    "question": "椭圆机 25 分钟",
+    "expectedAnswer": "识别椭圆机有氧时长。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_RECORD",
+      "pendingWrite": { "type": "training_log", "target": "trainingLogs", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "items.0.exerciseName": "椭圆机", "items.0.durationMin": 25 }
+    }
+  },
+  {
+    "id": "qa-edge-008",
+    "category": "training_plan_create",
+    "question": "我想减脂，每周训练三天",
+    "expectedAnswer": "提取减脂目标和三天训练频率。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_PLAN_CREATE",
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "goal": "减脂", "daysPerWeek": 3 }
+    }
+  },
+  {
+    "id": "qa-edge-009",
+    "category": "training_plan_update",
+    "question": "今天不练腿了，换成有氧",
+    "expectedAnswer": "识别训练计划修改，生成修改草稿。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "TRAINING_PLAN_UPDATE",
+      "mustCallTools": ["training.plan.get"],
+      "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "answerMustContain": ["修改", "确认"]
+    }
+  },
+  {
+    "id": "qa-edge-010",
+    "category": "body_analysis",
+    "question": "身高 168，体重 120 斤",
+    "expectedAnswer": "120 斤换算为 60 kg 并要求确认。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "heightCm": 168, "weightJin": 120, "weightKg": 60 }
+    }
+  },
+  {
+    "id": "qa-edge-011",
+    "category": "body_query",
+    "question": "BMI 22 正常吗",
+    "expectedAnswer": "识别为身体分析，不直接保存 BMI。",
+    "initialState": { "userProfile": { "goal": "维持" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustCallTools": ["body.metric.query", "body.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true
+    }
+  },
+  {
+    "id": "qa-edge-012",
+    "category": "body_read_only",
+    "question": "体重 130 斤，只看看趋势，不保存",
+    "expectedAnswer": "换算为 65kg，只读分析不写入。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustNotCreatePendingWrite": true,
+      "slotsShouldContain": { "weightJin": 130, "weightKg": 65 },
+      "answerMustContain": ["不会写入记录"]
+    }
+  },
+  {
+    "id": "qa-edge-013",
+    "category": "confirmation",
+    "question": "确认",
+    "expectedAnswer": "没有 pendingWrite 时不能误写入。",
+    "initialState": { "userProfile": {} },
+    "expect": {
+      "intent": "CONFIRM_WRITE",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "answerMustContain": ["没有等待确认"]
+    }
+  },
+  {
+    "id": "qa-edge-014",
+    "category": "unsupported",
+    "question": "你是谁",
+    "expectedAnswer": "不进行开放闲聊，返回支持范围。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true
+    }
+  },
+  {
+    "id": "qa-edge-015",
+    "category": "unsupported",
+    "question": "帮我生成 SQL 查询",
+    "expectedAnswer": "拒绝编程相关任务。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true
+    }
+  },
+  {
+    "id": "qa-edge-016",
+    "category": "unsupported",
+    "question": "现在适合买房吗",
+    "expectedAnswer": "拒绝房产投资建议。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true
+    }
+  },
+  {
+    "id": "qa-edge-017",
+    "category": "unsupported",
+    "question": "帮我改简历",
+    "expectedAnswer": "拒绝简历修改。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true
+    }
+  },
+  {
+    "id": "qa-edge-018",
+    "category": "unsupported",
+    "question": "讲个笑话",
+    "expectedAnswer": "拒绝闲聊扩展。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true
+    }
+  },
+  {
+    "id": "qa-edge-019",
+    "category": "unsupported",
+    "question": "帮我写 Python 爬虫",
+    "expectedAnswer": "拒绝编程任务，不输出代码。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true,
+      "answerMustNotContain": ["代码如下", "import"]
+    }
+  },
+  {
+    "id": "qa-edge-020",
+    "category": "unsupported",
+    "question": "可以帮我做 PPT 吗",
+    "expectedAnswer": "拒绝 PPT 制作，提示健康管理范围。",
+    "expect": {
+      "intent": "UNSUPPORTED",
+      "mustRefuseUnsupported": true,
+      "forbidUnsupportedExpansion": true
+    }
+  }
+]

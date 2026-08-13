@@ -1,0 +1,11 @@
+{
+  "input": "帮我安排一个居家练腿计划，做六组",
+  "expectedIntent": {
+    "intent": "workout_plan_generate",
+    "domain": "training",
+    "responseMode": "generate_proposal",
+    "targetProposalType": "workoutPlan"
+  },
+  "mustNotCreate": "dietLog",
+  "expectedProposalType": "workoutPlan"
+}

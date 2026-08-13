@@ -1,0 +1,37 @@
+[
+  {
+    "id": "training-plan-update-001",
+    "name": "明天腿部改胸背走训练计划修改",
+    "initialState": { "userProfile": { "goal": "增肌" }, "trainingPlans": [{ "date": "2026-07-04", "name": "腿部训练" }] },
+    "turns": [
+      {
+        "user": "把明天的腿部训练改成胸背",
+        "expect": {
+          "intent": "TRAINING_PLAN_UPDATE",
+          "mustCallTools": ["training.plan.get"],
+          "mustNotCallTools": ["diet.log.create", "training.plan.update"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+          "replyShouldContain": ["修改", "确认"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "training-plan-update-002",
+    "name": "周三训练量减半生成计划修改草稿",
+    "initialState": { "userProfile": { "goal": "减脂" }, "trainingPlans": [] },
+    "turns": [
+      {
+        "user": "把周三训练量减半",
+        "expect": {
+          "intent": "TRAINING_PLAN_UPDATE",
+          "mustCallTools": ["training.plan.get"],
+          "mustNotWriteDb": true,
+          "pendingWrite": { "type": "training_plan", "target": "trainingPlans", "needUserConfirm": true },
+          "slotsShouldContain": { "operation": "reduce_volume" }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+<view class="profile-header">
+  <button
+    class="profile-avatar"
+    open-type="chooseAvatar"
+    bind:chooseavatar="chooseAvatar"
+    catchtap="stop"
+  >
+    <image
+      wx:if="{{user && user.avatar && !avatarFailed}}"
+      src="{{user.avatar}}"
+      mode="aspectFill"
+      binderror="avatarError"
+    />
+    <text wx:else>{{initial}}</text>
+  </button>
+  <view class="profile-copy" bindtap="openProfile">
+    <view class="profile-name">{{user && user.nickname ? user.nickname : nickname}}</view>
+    <view class="profile-note">{{user ? '微信账号已连接' : '点击登录微信账号'}}</view>
+    <view class="profile-goal">{{goalLabel}}</view>
+  </view>
+  <button class="profile-entry" catchtap="openProfile">›</button>
+</view>

@@ -1,0 +1,39 @@
+# === Agent / session data (do not commit) ===
+.zcode/
+
+# === Stripped git dirs from embedded repos (local history backups) ===
+.git_old/
+
+# === Node / pnpm ===
+node_modules/
+.pnpm-store/
+.pnpm-debug.log*
+npm-debug.log*
+yarn-error.log*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# === Secrets / env ===
+.env
+.env.local
+.env.*.local
+*.local
+
+# === OS ===
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+.DS_Store
+
+# === IDE ===
+.idea/
+*.swp

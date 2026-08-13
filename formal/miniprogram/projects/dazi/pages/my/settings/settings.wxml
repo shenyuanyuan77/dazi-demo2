@@ -1,0 +1,70 @@
+<view class="subpage" style="padding-top: {{statusBarHeight + 62}}px;">
+  <view class="subnav" style="top: {{statusBarHeight}}px;">
+    <button class="optical-center" bindtap="goBack">‹</button>
+    <text>应用设置</text>
+    <view class="nav-space"></view>
+  </view>
+
+  <view class="coach-card smooth-corner">
+    <view class="coach-card-title">AI 教练形象</view>
+    <view class="coach-profile">
+      <button
+        class="coach-avatar-button {{coach.avatar ? 'has-image' : 'sparkle-avatar'}}"
+        open-type="chooseAvatar"
+        bind:chooseavatar="chooseCoachAvatar"
+      >
+        <image
+          wx:if="{{coach.avatar}}"
+          class="coach-avatar-image"
+          src="{{coach.avatar}}"
+          mode="aspectFill"
+        />
+        <view wx:else class="sparkle-mark">
+          <view class="sparkle-mark-main"></view>
+          <view class="sparkle-mark-small"></view>
+        </view>
+        <view class="avatar-edit">更换</view>
+      </button>
+      <view class="coach-fields">
+        <text class="field-label">教练名称</text>
+        <input
+          class="coach-name-input"
+          value="{{coach.name}}"
+          maxlength="12"
+          adjust-position="{{true}}"
+          cursor-spacing="32"
+          placeholder="请输入教练名称"
+          bindinput="onCoachNameInput"
+          bindblur="saveCoachName"
+          confirm-type="done"
+          bindconfirm="saveCoachName"
+        />
+      </view>
+    </view>
+    <view class="coach-actions">
+      <text>头像与名称会同步显示在所有 AI 对话中</text>
+      <button class="reset-coach optical-center" bindtap="resetCoach">恢复默认</button>
+    </view>
+  </view>
+
+  <view class="settings-card smooth-corner">
+    <view class="row">
+      <view><text>训练提醒</text><text class="desc">按计划提醒今日训练</text></view>
+      <switch checked="{{settings.notifications}}" color="#2F6B4F" data-field="notifications" bindchange="toggleSetting" />
+    </view>
+    <view class="row">
+      <view><text>操作振动</text><text class="desc">完成训练组时轻微反馈</text></view>
+      <switch checked="{{settings.vibration}}" color="#2F6B4F" data-field="vibration" bindchange="toggleSetting" />
+    </view>
+  </view>
+
+  <view class="settings-card smooth-corner">
+    <view class="row link" data-type="unit" bindtap="openDetail"><text>单位设置</text><text>{{settings.unit}} ›</text></view>
+    <view class="row link" data-type="calorie" bindtap="openDetail"><text>每日热量目标</text><text>{{settings.calorieGoal}} kcal · {{settings.calorieGoalMode}} ›</text></view>
+    <view class="row link" bindtap="openWechatSettings"><text>微信权限设置</text><text>›</text></view>
+  </view>
+
+  <view class="settings-card smooth-corner">
+    <view class="row link" data-type="privacy" bindtap="openDetail"><text>隐私与数据</text><text>›</text></view>
+  </view>
+</view>

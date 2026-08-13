@@ -1,0 +1,143 @@
+[
+  {
+    "id": "qa-body-001",
+    "category": "body_analysis",
+    "question": "我 165，115 斤，帮我分析一下",
+    "expectedAnswer": "把 115 斤换算为 57.5 kg，生成身体数据待确认项。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "mustNotWriteDb": true,
+      "slotsShouldContain": { "heightCm": 165, "weightJin": 115, "weightKg": 57.5 },
+      "answerMustContain": ["57.5", "确认"]
+    }
+  },
+  {
+    "id": "qa-body-002",
+    "category": "body_analysis",
+    "question": "我体脂 22%，体重 58 公斤，怎么减脂",
+    "expectedAnswer": "识别体脂和体重，确认后写入身体数据。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "bodyFatRate": 22, "weightKg": 58 },
+      "answerMustContain": ["体脂", "22"]
+    }
+  },
+  {
+    "id": "qa-body-003",
+    "category": "body_read_only",
+    "question": "我 165，115 斤，只分析不要保存",
+    "expectedAnswer": "换算体重并给只读分析，不生成 pendingWrite。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "slotsShouldContain": { "weightKg": 57.5 },
+      "answerMustContain": ["不会写入记录"],
+      "answerMustNotContain": ["是否确认", "已记录"]
+    }
+  },
+  {
+    "id": "qa-body-004",
+    "category": "body_image",
+    "question": "这是我的体脂秤截图，帮我分析",
+    "images": ["image://scale"],
+    "expectedAnswer": "体脂秤图片必须调用 OCR/vision 工具。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustCallTools": ["vision.bodyScale.ocr"],
+      "mustNotWriteDb": true,
+      "answerMustNotContain": ["我猜", "大概是截图"]
+    }
+  },
+  {
+    "id": "qa-body-005",
+    "category": "body_read_only_image",
+    "question": "这是体脂秤截图，只分析，不要保存",
+    "images": ["image://scale"],
+    "expectedAnswer": "图片只分析仍调用 OCR，但不生成写入项。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustCallTools": ["vision.bodyScale.ocr"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true
+    }
+  },
+  {
+    "id": "qa-body-006",
+    "category": "body_query",
+    "question": "帮我分析体重趋势",
+    "expectedAnswer": "读取身体指标历史并分析，不凭空写入。",
+    "initialState": {
+      "userProfile": { "goal": "减脂" },
+      "bodyMetrics": [{ "date": "2026-07-01", "metrics": { "weightKg": 58 } }]
+    },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustCallTools": ["body.metric.query", "body.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true
+    }
+  },
+  {
+    "id": "qa-body-007",
+    "category": "body_analysis",
+    "question": "体重 200 斤，帮我分析",
+    "expectedAnswer": "200 斤换算为 100 kg，不误当 200 kg。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+      "slotsShouldContain": { "weightJin": 200, "weightKg": 100 },
+      "answerMustContain": ["100"]
+    }
+  },
+  {
+    "id": "qa-body-008",
+    "category": "body_analysis",
+    "question": "我身高 170 cm，体重 60 kg，体脂 18%",
+    "expectedAnswer": "识别身高、体重、体脂并要求确认。",
+    "initialState": { "userProfile": { "goal": "维持" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "pendingWrite": { "type": "body_metric", "target": "bodyMetrics", "needUserConfirm": true },
+      "mustAskConfirmation": true,
+      "slotsShouldContain": { "heightCm": 170, "weightKg": 60, "bodyFatRate": 18 }
+    }
+  },
+  {
+    "id": "qa-body-009",
+    "category": "body_query",
+    "question": "最近体脂变化怎么样",
+    "expectedAnswer": "查询身体数据后分析，不编造不存在的记录。",
+    "initialState": { "userProfile": { "goal": "减脂" }, "bodyMetrics": [] },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustCallTools": ["body.metric.query", "body.analyze"],
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true
+    }
+  },
+  {
+    "id": "qa-body-010",
+    "category": "body_read_only",
+    "question": "体脂 25%，只给建议别保存",
+    "expectedAnswer": "给只读分析，不产生身体数据写入草稿。",
+    "initialState": { "userProfile": { "goal": "减脂" } },
+    "expect": {
+      "intent": "BODY_ANALYSIS",
+      "mustNotCreatePendingWrite": true,
+      "mustNotWriteDb": true,
+      "slotsShouldContain": { "bodyFatRate": 25 },
+      "answerMustContain": ["不会写入记录"]
+    }
+  }
+]

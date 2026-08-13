@@ -1,0 +1,155 @@
+<!-- 首页 - iOS 27 redesign (对齐设计稿) -->
+<view class="ios27-page" style="padding-top: {{safeTop}}px;">
+  <view class="ios27-large-title">今日概览</view>
+  <view class="ios27-subtitle">{{date}} · 管理今天的饮食与训练</view>
+
+  <!-- 能量环 Hero Card - 左信息 / 右环 -->
+  <view class="ios27-ring-card ios27-anim-slideup">
+    <view class="ios27-ring-row">
+      <view class="ios27-ring-info">
+        <view class="ios27-badge blue" style="margin-bottom: 12rpx;">{{goal.shortName || goal.name}}</view>
+        <view class="ios27-ring-info-label">今日热量缺口</view>
+        <view class="ios27-ring-info-value">
+          <text class="ios27-ring-info-now">{{calories.remaining}}</text>
+          <text class="ios27-ring-info-unit"> kcal</text>
+        </view>
+        <!-- 折线装饰 -->
+        <view class="ios27-sparkline" aria-hidden="true">
+          <view class="ios27-sparkline-bar" style="height: 30%;"></view>
+          <view class="ios27-sparkline-bar" style="height: 55%;"></view>
+          <view class="ios27-sparkline-bar" style="height: 40%;"></view>
+          <view class="ios27-sparkline-bar" style="height: 70%;"></view>
+          <view class="ios27-sparkline-bar" style="height: 50%;"></view>
+          <view class="ios27-sparkline-bar" style="height: 85%;"></view>
+          <view class="ios27-sparkline-bar" style="height: 65%;"></view>
+        </view>
+      </view>
+      <view class="ios27-ring-wrap">
+        <svg viewBox="0 0 200 200" class="ios27-ring-svg" aria-hidden="true">
+          <circle cx="100" cy="100" r="86" class="ios27-ring-track" stroke-width="14" />
+          <circle
+            cx="100" cy="100" r="86"
+            class="ios27-ring-progress {{calories.percent >= 100 ? 'red' : (calories.percent >= 80 ? 'orange' : '')}}"
+            stroke-width="14"
+            stroke-dasharray="540.35"
+            stroke-dashoffset="{{540.35 * (1 - calories.percent / 100)}}"
+          />
+        </svg>
+        <view class="ios27-ring-center">
+          <view class="ios27-ring-value">{{calories.remaining}}</view>
+          <view class="ios27-ring-unit">kcal 剩余</view>
+        </view>
+      </view>
+    </view>
+    <view class="ios27-ring-stats">
+      <view class="ios27-ring-stat">
+        <text class="ios27-ring-stat-label">目标</text>
+        <text class="ios27-ring-stat-val" style="color: var(--system-blue);">{{calories.target}}</text>
+      </view>
+      <view class="ios27-ring-stat">
+        <text class="ios27-ring-stat-label">已摄入</text>
+        <text class="ios27-ring-stat-val" style="color: var(--system-green);">{{calories.consumed}}</text>
+      </view>
+      <view class="ios27-ring-stat">
+        <text class="ios27-ring-stat-label">消耗</text>
+        <text class="ios27-ring-stat-val" style="color: var(--system-orange);">{{calories.exercise}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 快速操作 2x2 -->
+  <view class="ios27-quick-grid ios27-anim-slideup" style="animation-delay:.08s">
+    <view class="ios27-quick-tile" bindtap="openTask" data-type="diet">
+      <view class="ios27-quick-tile-icon" style="background: var(--tint-blue-bg); color: var(--system-blue);">餐</view>
+      <view class="ios27-quick-tile-label">记一餐</view>
+    </view>
+    <view class="ios27-quick-tile" bindtap="openTask" data-type="training">
+      <view class="ios27-quick-tile-icon" style="background: var(--tint-green-bg); color: var(--system-green);">训</view>
+      <view class="ios27-quick-tile-label">开始训练</view>
+    </view>
+    <view class="ios27-quick-tile" bindtap="openChat">
+      <view class="ios27-quick-tile-icon" style="background: var(--tint-purple-bg); color: var(--system-purple);">AI</view>
+      <view class="ios27-quick-tile-label">问教练</view>
+    </view>
+    <view class="ios27-quick-tile" bindtap="openBody">
+      <view class="ios27-quick-tile-icon" style="background: var(--tint-orange-bg); color: var(--system-orange);">身</view>
+      <view class="ios27-quick-tile-label">身体数据</view>
+    </view>
+  </view>
+
+  <!-- AI 今日建议 -->
+  <view class="ios27-section-header">
+    <text>AI 今日建议</text>
+    <text class="ios27-section-action" bindtap="openChat">更多 ›</text>
+  </view>
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.14s">
+    <view class="ios27-advice-card">
+      <view class="ios27-advice-icon" aria-hidden="true">AI</view>
+      <view class="ios27-advice-content">
+        <view class="ios27-advice-title">{{advice.title}}</view>
+        <view class="ios27-advice-text">{{advice.summary}}</view>
+        <view wx:if="{{advice.sources.length}}" class="ios27-advice-sources">
+          <text wx:for="{{advice.sources}}" wx:key="*this" class="ios27-badge gray" style="margin-right: 8rpx;">{{item}}</text>
+        </view>
+        <view wx:if="{{advice.actions.length}}" class="ios27-advice-actions">
+          <view wx:for="{{advice.actions}}" wx:key="*this" class="ios27-advice-action">
+            <text class="ios27-advice-dot">•</text>{{item}}
+          </view>
+        </view>
+        <view class="ios27-advice-context">{{advice.context}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 三大营养素 -->
+  <view class="ios27-section-header">
+    <text>三大营养素 · 今日进度</text>
+  </view>
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.20s">
+    <view
+      wx:for="{{macroList}}"
+      wx:key="key"
+      class="ios27-macro-row {{index === macroList.length - 1 ? 'is-last' : ''}}"
+    >
+      <view class="ios27-macro-head">
+        <view class="ios27-macro-name">
+          <view class="ios27-macro-dot {{item.tone}}" aria-hidden="true"></view>
+          <text>{{item.label}}</text>
+        </view>
+        <view class="ios27-macro-val">
+          <text class="ios27-macro-now">{{item.value}}</text>
+          <text class="ios27-macro-target">/{{item.target}}g</text>
+          <text class="ios27-macro-pct">{{item.percent}}%</text>
+        </view>
+      </view>
+      <view class="ios27-progress" style="margin-top: 14rpx;">
+        <view class="ios27-progress-fill {{item.tone}}" style="width: {{item.percent}}%;"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 今日任务 -->
+  <view class="ios27-section-header">
+    <text>今日任务</text>
+    <text class="ios27-section-action">点击前往</text>
+  </view>
+  <view class="ios27-inset-grouped ios27-anim-slideup" style="animation-delay:.26s">
+    <view
+      wx:for="{{tasks}}"
+      wx:key="id"
+      class="ios27-task-row {{index === tasks.length - 1 ? 'is-last' : ''}}"
+      data-type="{{item.type}}"
+      bindtap="openTask"
+    >
+      <view class="ios27-task-check {{item.completed ? 'is-completed' : ''}}">
+        <text wx:if="{{item.completed}}">✓</text>
+      </view>
+      <view class="ios27-task-main">
+        <view class="ios27-task-title">{{item.title}}</view>
+      </view>
+      <text class="ios27-list-chevron">›</text>
+    </view>
+  </view>
+
+  <view style="height: calc(120rpx + env(safe-area-inset-bottom));"></view>
+</view>

@@ -1,0 +1,196 @@
+/* 我的 - iOS 27 */
+
+page { background: var(--bg-system); color: var(--label-primary); }
+
+/* ====== Profile Card ====== */
+.ios27-profile-card {
+  margin: 8rpx 32rpx 24rpx;
+  padding: 28rpx;
+  background: var(--bg-elevated);
+  border-radius: 32rpx;
+  box-shadow: var(--shadow-sm);
+}
+.ios27-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+}
+.ios27-profile-avatar-wrap {
+  position: relative;
+  width: 128rpx;
+  height: 128rpx;
+  flex: none;
+}
+.ios27-profile-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #576171 0%, #242A32 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44rpx;
+  font-weight: 700;
+  overflow: hidden;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.12);
+}
+.ios27-profile-avatar image { width: 100%; height: 100%; display: block; }
+.ios27-profile-badge {
+  position: absolute;
+  right: 4rpx;
+  bottom: 4rpx;
+  width: 36rpx;
+  height: 36rpx;
+  border-radius: 50%;
+  background: var(--system-green);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  font-weight: 800;
+  border: 4rpx solid var(--bg-elevated);
+  box-sizing: border-box;
+}
+.ios27-profile-info { flex: 1; min-width: 0; }
+.ios27-profile-name {
+  font-size: 40rpx;
+  font-weight: 700;
+  letter-spacing: -0.5rpx;
+  color: var(--label-primary);
+  line-height: 1.2;
+}
+.ios27-profile-sub {
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+.ios27-profile-action {
+  font-size: 24rpx;
+  color: var(--system-blue);
+  font-weight: 500;
+}
+
+/* ====== Metrics Inset ====== */
+.ios27-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.ios27-metric-tile {
+  min-width: 0;
+  padding: 28rpx 8rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rpx;
+  position: relative;
+  transition: background-color var(--duration-fast) var(--ease-ios);
+}
+.ios27-metric-tile:active { background: var(--fill-quaternary); }
+.ios27-metric-tile::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  bottom: 20%;
+  width: 1rpx;
+  background: var(--separator-thin);
+}
+.ios27-metric-tile:last-child::after { display: none; }
+.ios27-metric-value {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: var(--label-primary);
+  letter-spacing: -0.5rpx;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.ios27-metric-unit {
+  margin-left: 2rpx;
+  font-size: 20rpx;
+  font-weight: 500;
+  color: var(--label-tertiary);
+}
+.ios27-metric-label {
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+  font-weight: 500;
+}
+
+/* ====== Chart Card ====== */
+.ios27-chart-card {
+  padding: 28rpx 26rpx 18rpx;
+}
+.ios27-chart-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+}
+.ios27-chart-title {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: var(--label-primary);
+  letter-spacing: -0.2rpx;
+}
+.ios27-chart-sub {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: var(--label-tertiary);
+}
+.weight-chart-view {
+  position: relative;
+  width: 100%;
+  height: 200rpx;
+  margin-top: 16rpx;
+  overflow: hidden;
+}
+.chart-grid {
+  position: absolute;
+  left: 30px;
+  right: 0;
+  height: 1rpx;
+  background: var(--separator-thin);
+}
+.grid-top    { top: 24rpx; }
+.grid-middle { top: 100rpx; }
+.grid-bottom { top: 170rpx; }
+.chart-label {
+  position: absolute;
+  left: 0;
+  color: var(--label-tertiary);
+  font-size: 20rpx;
+  line-height: 28rpx;
+}
+.chart-segment {
+  position: absolute;
+  height: 4rpx;
+  background: var(--system-blue);
+  border-radius: 4rpx;
+  transform-origin: 0 50%;
+  transition: all var(--duration-mid) var(--ease-out);
+}
+.chart-point {
+  position: absolute;
+  width: 16rpx;
+  height: 16rpx;
+  background: var(--bg-elevated);
+  border: 4rpx solid var(--system-blue);
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 0 2rpx 8rpx rgba(47, 107, 79, 0.32);
+  transition: all var(--duration-mid) var(--ease-out);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  .ios27-profile-avatar {
+    background: linear-gradient(145deg, #2C2C2E 0%, #1C1C1E 100%);
+  }
+  .chart-point {
+    background: var(--bg-elevated);
+    border-color: var(--system-blue);
+  }
+}

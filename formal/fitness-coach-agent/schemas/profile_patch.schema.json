@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Profile Patch Payload",
+  "type": "object",
+  "required": ["profilePatch"],
+  "properties": {
+    "date": { "type": "string" },
+    "profilePatch": {
+      "type": "object",
+      "properties": {
+        "currentWeight": { "type": ["number", "string"] },
+        "targetWeight": { "type": ["number", "string"] },
+        "bodyFat": { "type": ["number", "string"] },
+        "height": { "type": ["number", "string"] }
+      }
+    }
+  }
+}
